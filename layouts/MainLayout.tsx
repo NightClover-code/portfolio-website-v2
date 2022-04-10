@@ -4,9 +4,11 @@
 const MainLayout: React.FC = ({ children }) => {
   return (
     <div className="app__container">
-      {/* <Header /> */}
-      {children}
-      {/* <Footer /> */}
+      <div className="wrapper">
+        {/* <Header /> */}
+        {children}
+        {/* <Footer /> */}
+      </div>
     </div>
   );
 };
