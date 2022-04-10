@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Mulish:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './global';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app__container {
+  @apply min-h-screen overflow-hidden text-sm font-mulish font-normal text-blue;
+}
+
+.wrapper {
+  @apply min-w-[250px] max-w-[2000px];
+}
