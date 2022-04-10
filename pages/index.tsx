@@ -6,7 +6,7 @@ const HomePage: NextPage = () => {
   return (
     <>
       <SEO {...seoConfigHome} />
-      <div className="custom__container">home</div>
+      <>home</>
     </>
   );
 };
