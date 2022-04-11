@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     fontSize: {
       sm: '16px',
+      lg: '35px',
     },
     fontFamily: {
       mulish: ['Mulish', 'sans-serif'],

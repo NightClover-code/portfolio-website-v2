@@ -18,6 +18,14 @@
   @apply transition-all ease-in-out duration-300;
 }
 
+h1 {
+  @apply font-merriweather font-bold leading-[50px] text-lg;
+}
+
+p {
+  @apply font-medium text-sm leading-[31px] text-offBlack;
+}
+
 * {
   margin: 0;
   padding: 0;
