@@ -11,7 +11,8 @@ const Hero = () => {
       <div className="max-w-[570px]">
         <Socials Icons={socialsIcons} />
         <h1 className="text-[40px] mt-5">
-          Hi, I’m Achraf, FullStack Web Developer and UI/UX Designer
+          Hi, I’m Achraf, FullStack Web <span>Developer</span> and UI/UX{' '}
+          <span>Designer</span>
         </h1>
         <p className="mt-5 text-[18px] max-w-[515px]">
           I design and build beautiful websites for businesses around the globe.
@@ -19,7 +20,7 @@ const Hero = () => {
           a good fit, I will give you a time and cost estimate.
         </p>
 
-        <PrimaryButton className="mt-7">See my work</PrimaryButton>
+        <PrimaryButton className="mt-10">See my work</PrimaryButton>
       </div>
     </section>
   );
