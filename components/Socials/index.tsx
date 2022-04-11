@@ -8,7 +8,11 @@ const Socials: React.FC<SocialsProps> = ({ Icons }) => {
   return (
     <div className="flex">
       {Icons.map(_Icon => {
-        return <_Icon key={v4()} />;
+        return (
+          <div className="mr-5 cursor-pointer" key={v4()}>
+            <_Icon />
+          </div>
+        );
       })}
     </div>
   );
