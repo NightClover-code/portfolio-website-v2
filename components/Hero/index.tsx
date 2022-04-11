@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import PrimaryButton from '../Buttons/Primary';
 import { GitHubIcon, InstagramIcon, LinkedInIcon } from '../Icons/Socials';
@@ -7,7 +8,7 @@ const Hero = () => {
   const socialsIcons = [InstagramIcon, LinkedInIcon, GitHubIcon];
 
   return (
-    <section className="hero__section mt-28">
+    <section className="hero__section mt-28 flex items-center justify-between">
       <div className="max-w-[570px]">
         <Socials Icons={socialsIcons} />
         <h1 className="text-[40px] mt-5">
@@ -21,6 +22,32 @@ const Hero = () => {
         </p>
 
         <PrimaryButton className="mt-10">See my work</PrimaryButton>
+      </div>
+
+      <div className="relative">
+        <div className="border-[1px] border-heroBorder p-6 rounded-full">
+          <div className="relative rounded-full w-[375px] h-[375px] overflow-hidden">
+            <Image
+              src="/images/profile.jpeg"
+              layout="fill"
+              alt="profile"
+              objectFit="cover"
+            />
+          </div>
+        </div>
+
+        <div className="absolute top-16 left-[-80px] z-[-1]">
+          <Image src="/images/waves.svg" width={181} height={116} alt="waves" />
+        </div>
+
+        <div className="absolute bottom-[-70px] right-[-50px] z-[-1]">
+          <Image
+            src="/images/circle-waves.svg"
+            width={250}
+            height={250}
+            alt="waves"
+          />
+        </div>
       </div>
     </section>
   );

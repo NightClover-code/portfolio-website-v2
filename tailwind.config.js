@@ -14,11 +14,14 @@ module.exports = {
     },
     extend: {
       colors: {
+        //primary
         blue: '#0152CC',
         offBlack: 'rgba(13, 13, 13, 0.95)',
         gray: 'rgba(33, 55, 87, 0.15)',
         black: '#0D0D0D',
         offWhite: '#FCFDFF',
+        //secondary
+        heroBorder: 'rgba(217, 215, 215, 0.7)',
       },
     },
   },
