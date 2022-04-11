@@ -45,7 +45,7 @@ const Hero = () => {
             src="/images/circle-waves.svg"
             width={250}
             height={250}
-            alt="waves"
+            alt="circle-waves"
           />
         </div>
       </div>
