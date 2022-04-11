@@ -17,7 +17,7 @@ const Hero = () => {
         good fit, I will give you a time and cost estimate.
       </p>
 
-      <PrimaryButton />
+      <PrimaryButton>See my work</PrimaryButton>
     </section>
   );
 };

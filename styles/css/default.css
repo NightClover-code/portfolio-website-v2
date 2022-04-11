@@ -6,6 +6,18 @@
   @apply border-2 border-black rounded-[4px] font-semibold px-4 py-2 ml-6;
 }
 
+.primary__btn {
+  @apply text-offWhite bg-black py-3 px-7 group-hover:translate-x-[5px] group-hover:translate-y-[4.5px] smooth;
+}
+
+.ghost__btn {
+  @apply absolute w-full h-full left-[5px] top-[4.5px] focus:no-underline outline-none border-2 border-black;
+}
+
+.smooth {
+  @apply transition-all ease-in-out duration-300;
+}
+
 * {
   margin: 0;
   padding: 0;
