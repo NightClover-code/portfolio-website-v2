@@ -16,9 +16,7 @@ const Skills = () => {
   return (
     <section className="skills__section">
       <Content {...contentConfig}>
-        <h1>
-          Technological <span>Skills</span>
-        </h1>
+        Technological <span>Skills</span>
       </Content>
 
       <Tags tags={tags} />

@@ -32,6 +32,7 @@ const Hero = () => {
               layout="fill"
               alt="profile"
               objectFit="cover"
+              priority
             />
           </div>
         </div>
