@@ -1,4 +1,5 @@
 import Content from '../Content';
+import Tags from '../Tags';
 
 const Skills = () => {
   const contentConfig = {
@@ -10,6 +11,8 @@ const Skills = () => {
     alignLeft: true,
   };
 
+  const tags = ['Frontend', 'Backend', 'UI / UX'];
+
   return (
     <section className="skills__section">
       <Content {...contentConfig}>
@@ -17,6 +20,8 @@ const Skills = () => {
           Technological <span>Skills</span>
         </h1>
       </Content>
+
+      <Tags tags={tags} />
     </section>
   );
 };
