@@ -2,7 +2,7 @@ import Content from '../Content';
 import Tags from '../Tags';
 
 const Projects = () => {
-  const config = {
+  const projectsConfig = {
     description: `
       I spend most of time building awesome products, either for myself or
       my clients. Here are some of my greatest projects:
@@ -11,14 +11,16 @@ const Projects = () => {
     withLine: true,
   };
 
+  const tags = ['All works', 'Frontend', 'Backend', 'UI / UX'];
+
   return (
     <section className="projects__section mt-44 mb-10">
       <div className="text-center m-auto flex flex-col items-center">
-        <Content {...config}>
+        <Content {...projectsConfig}>
           My latest <span>work</span>
         </Content>
 
-        <Tags />
+        <Tags tags={tags} />
       </div>
     </section>
   );

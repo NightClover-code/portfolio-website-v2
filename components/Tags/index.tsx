@@ -1,12 +1,16 @@
+import { v4 } from 'uuid';
 import Tag from './Tag';
 
-const Tags = () => {
+interface TagsProps {
+  tags: string[];
+}
+
+const Tags: React.FC<TagsProps> = ({ tags }) => {
   return (
-    <div className="grid grid-cols-4 mt-8 gap-[14px]">
-      <Tag />
-      <Tag />
-      <Tag />
-      <Tag />
+    <div className={`flex mt-8 gap-[14px]`}>
+      {tags.map(_tag => {
+        return <Tag tag={_tag} key={v4()} />;
+      })}
     </div>
   );
 };

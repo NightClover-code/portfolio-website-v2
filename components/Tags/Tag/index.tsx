@@ -1,7 +1,11 @@
-const Tag: React.FC = () => {
+interface TagProps {
+  tag: string;
+}
+
+const Tag: React.FC<TagProps> = ({ tag }) => {
   return (
-    <button className="border-2 border-black rounded-full px-5 py-[0.5px] text-[15px] font-semibold">
-      try me
+    <button className="border-2 border-black rounded-full px-4 py-[2px] text-[14px] font-semibold">
+      {tag}
     </button>
   );
 };
