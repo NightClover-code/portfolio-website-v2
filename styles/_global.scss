@@ -1,3 +1,7 @@
+button {
+  @apply focus:no-underline outline-none;
+}
+
 .contact__btn {
   @apply border-2 border-black rounded-[4px] font-semibold px-4 py-2 ml-6;
 }
@@ -7,7 +11,7 @@
 }
 
 .ghost__btn {
-  @apply absolute w-full h-full left-[6px] top-[5.5px] focus:no-underline outline-none border-2 border-black;
+  @apply absolute w-full h-full left-[6px] top-[5.5px] border-2 border-black;
 }
 
 .smooth {
