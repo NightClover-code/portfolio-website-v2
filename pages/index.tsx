@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import Hero from '../components/Hero';
+import Projects from '../components/Projects';
 import SEO from '../components/SEO';
 import { seoConfigHome } from '../utils/config';
 
@@ -9,6 +10,7 @@ const HomePage: NextPage = () => {
       <SEO {...seoConfigHome} />
       <>
         <Hero />
+        <Projects />
       </>
     </>
   );
