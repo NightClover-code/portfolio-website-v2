@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import { v4 } from 'uuid';
-import { portfolioItems } from '../../utils/data';
+import { portfolioBoxes } from '../../utils/data';
 import Content from '../Content';
 import Tags from '../Tags';
+import PortolioItem from './Item';
 
 const Projects = () => {
   const projectsConfig = {
@@ -27,23 +28,8 @@ const Projects = () => {
       </div>
 
       <div className="grid grid-cols-3 gap-7 mt-16">
-        {portfolioItems.map(({ height, width, url, span }) => {
-          return (
-            <div
-              key={v4()}
-              className={`relative w-[${width}px] h-[${height}px] ${
-                span ? 'row-span-2' : ''
-              }`}
-            >
-              <Image
-                src={`/images/portfolio/${url}`}
-                alt="any"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="0 0"
-              />
-            </div>
-          );
+        {portfolioBoxes.map(_item => {
+          return <PortolioItem {..._item} key={v4()} />;
         })}
       </div>
     </section>

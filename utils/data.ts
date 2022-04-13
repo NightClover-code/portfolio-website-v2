@@ -1,33 +1,23 @@
-export const portfolioItems = [
+export const portfolioBoxes = [
   {
-    category: 'frontend',
-    url: 'frontend/bookmark.jpg',
     height: 369,
     width: 337,
   },
   {
-    category: 'frontend',
-    url: 'frontend/team.jpg',
     height: 771,
-    width: 337,
+    width: 390,
     span: true,
   },
   {
-    category: 'frontend',
-    url: 'frontend/easybank.jpg',
-    height: 369,
+    height: 337,
     width: 337,
   },
   {
-    category: 'frontend',
-    url: 'frontend/manage.jpg',
-    height: 369,
+    height: 372,
     width: 337,
   },
   {
-    category: 'frontend',
-    url: 'frontend/url-shortener.jpg',
-    height: 369,
+    height: 404,
     width: 337,
   },
 ];
