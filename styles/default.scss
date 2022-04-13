@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+body {
+  @apply bg-offWhite;
+}
+
 .app__container {
   @apply min-h-screen font-mulish text-sm text-black font-normal;
 }
