@@ -11,7 +11,7 @@ const Projects = () => {
     withLine: true,
   };
 
-  const tags = ['All works', 'Frontend', 'Backend', 'UI / UX'];
+  const tags = ['Frontend', 'Backend', 'FullStack', 'UI / UX'];
 
   return (
     <section className="projects__section mt-44 mb-10">
