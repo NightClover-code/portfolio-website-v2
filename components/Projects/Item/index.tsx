@@ -8,18 +8,14 @@ interface ItemInterface {
 
 const PortolioItem: React.FC<ItemInterface> = ({ width, height, span }) => {
   return (
-    <div
-      className={`block w-[${width}px] h-[${height}px] border-2 border-gray ${
-        span ? 'row-span-2' : ''
-      }`}
-    >
+    <div className={`border-2 border-gray ${span ? 'row-span-2' : ''}`}>
       <Image
         src="/images/portfolio/frontend/team.jpg"
         width={width}
         height={height}
         objectFit="cover"
         objectPosition="0 0"
-        alt="random" //TODO
+        alt="random"
       />
     </div>
   );

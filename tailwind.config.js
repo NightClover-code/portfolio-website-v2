@@ -23,6 +23,9 @@ module.exports = {
         //secondary
         heroBorder: 'rgba(217, 215, 215, 0.7)',
       },
+      gridTemplateRows: {
+        portfolio: '370px 337px',
+      },
     },
   },
   plugins: [],
@@ -92,11 +95,7 @@ module.exports = {
 //         testimonials: 'repeat(4, 470px)',
 //         testimonialsRes: 'repeat(4, 100%)',
 //       },
-//       gridTemplateRows: {
-//         services: '470px',
-//         testimonials: '320px',
-//         auto: 'auto',
-//       },
+
 //       transitionDuration: {
 //         250: '250ms',
 //       },
