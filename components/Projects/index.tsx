@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import { v4 } from 'uuid';
+import { portfolioItems } from '../../utils/data';
 import Content from '../Content';
 import Tags from '../Tags';
 
@@ -24,12 +27,24 @@ const Projects = () => {
       </div>
 
       <div className="grid grid-cols-3 gap-7 mt-16">
-        <div className="block border-2 border-black h-44"></div>
-        <div className="block border-2 border-black h-44"></div>
-        <div className="block border-2 border-black h-44"></div>
-        <div className="block border-2 border-black h-44"></div>
-        <div className="block border-2 border-black h-44"></div>
-        <div className="block border-2 border-black h-44"></div>
+        {portfolioItems.map(({ height, width, url, span }) => {
+          return (
+            <div
+              key={v4()}
+              className={`relative w-[${width}px] h-[${height}px] ${
+                span ? 'row-span-2' : ''
+              }`}
+            >
+              <Image
+                src={`/images/portfolio/${url}`}
+                alt="any"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="0 0"
+              />
+            </div>
+          );
+        })}
       </div>
     </section>
   );
