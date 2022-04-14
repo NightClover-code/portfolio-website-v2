@@ -1,21 +1,14 @@
 import Image from 'next/image';
 
 interface ItemInterface {
-  height: number;
-  width: number;
   url: string;
   span?: boolean;
 }
 
-const PortolioItem: React.FC<ItemInterface> = ({
-  width,
-  height,
-  span,
-  url,
-}) => {
+const PortolioItem: React.FC<ItemInterface> = ({ span, url }) => {
   return (
     <div
-      className={`block relative w-[${width}px] h-[${height}px] border-2 border-faded ${
+      className={`relative block min-h-[350px] border-2 border-faded ${
         span ? 'row-span-2' : ''
       }`}
     >

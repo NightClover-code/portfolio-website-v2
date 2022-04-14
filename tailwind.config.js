@@ -25,10 +25,10 @@ module.exports = {
         heroBorder: 'rgba(217, 215, 215, 0.7)',
       },
       gridTemplateColumns: {
-        // portfolio: '350px 400px 350px',
+        portfolio: 'repeat(auto-fill, minmax(365px, 1fr))',
       },
       gridTemplateRows: {
-        portfolio: 'repeat(2, minmax(0, 370px))',
+        // portfolio: 'repeat(auto-fill, minmax(300px, 1fr))',
       },
     },
   },
