@@ -16,12 +16,12 @@ export const portfolioBoxes = [
     url: 'easybank.jpg',
   },
   {
-    height: 372,
+    height: 400,
     width: 337,
     url: 'manage.jpg',
   },
   {
-    height: 404,
+    height: 372,
     width: 337,
     url: 'url-shortener.jpg',
   },

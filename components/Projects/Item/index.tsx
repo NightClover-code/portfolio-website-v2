@@ -27,9 +27,9 @@ const PortolioItem: React.FC<ItemInterface> = ({
     >
       <Image
         src={`/images/portfolio/frontend/${url}`}
-        // width={width}
-        // height={height}
-        layout="fill"
+        // layout="fill"
+        width={width}
+        height={height}
         objectFit="cover"
         objectPosition="0 0"
         alt="random"
