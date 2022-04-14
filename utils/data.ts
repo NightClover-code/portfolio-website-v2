@@ -1,30 +1,28 @@
 export const portfolioBoxes = [
   {
-    height: 369,
-    width: 337,
-    imgHeight: 404,
-    imgWidth: 337,
+    height: 374,
+    width: 350,
     url: 'bookmark.jpg',
   },
   {
-    height: 771,
-    width: 390,
+    height: 820,
+    width: 410,
     span: true,
     url: 'team.jpg',
   },
   {
-    height: 337,
-    width: 337,
+    height: 374,
+    width: 350,
     url: 'easybank.jpg',
   },
   {
-    height: 400,
-    width: 337,
+    height: 390,
+    width: 350,
     url: 'manage.jpg',
   },
   {
-    height: 372,
-    width: 337,
+    height: 390,
+    width: 350,
     url: 'url-shortener.jpg',
   },
 ];

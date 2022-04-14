@@ -24,9 +24,9 @@ module.exports = {
         //secondary
         heroBorder: 'rgba(217, 215, 215, 0.7)',
       },
-      // gridTemplateColumns: {
-      //   portfolio: 'repeat(3, minmax(0, 1fr))',
-      // },
+      gridTemplateColumns: {
+        portfolio: '350px 400px 350px',
+      },
     },
   },
   plugins: [],

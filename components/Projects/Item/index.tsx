@@ -1,39 +1,32 @@
 import Image from 'next/image';
-import { useRef } from 'react';
-import { useSpans } from '../../../hooks';
 
 interface ItemInterface {
   height: number;
   width: number;
   url: string;
-  imgHeight?: number;
-  imgWidth?: number;
+  span?: boolean;
 }
 
 const PortolioItem: React.FC<ItemInterface> = ({
   width,
   height,
-  imgHeight,
-  imgWidth,
+  span,
   url,
 }) => {
-  const containerRef = useRef<HTMLDivElement | null>(null);
-
-  const spans = useSpans(height);
-
   return (
     <div
-      className={`relative w-[${width}px] h-[${height}px] border-2 border-white`}
-      style={{ gridRowEnd: `span ${spans}` }}
-      ref={containerRef}
+      className={`block w-[${width}px] h-[${height}px] border-2 border-white ${
+        span ? 'row-span-2' : ''
+      }`}
     >
-      <Image
+      <img
         src={`/images/portfolio/frontend/${url}`}
+        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        // width={width}
+        // height={height}
         // layout="fill"
-        width={imgWidth || width}
-        height={imgHeight || height}
-        objectFit="cover"
-        objectPosition="0 0"
+        // objectFit="cover"
+        // objectPosition="0 0"
         alt="random"
       />
     </div>
