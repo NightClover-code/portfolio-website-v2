@@ -6,13 +6,15 @@ interface ItemInterface {
   height: number;
   width: number;
   url: string;
-  span?: boolean;
+  imgHeight?: number;
+  imgWidth?: number;
 }
 
 const PortolioItem: React.FC<ItemInterface> = ({
   width,
   height,
-  span,
+  imgHeight,
+  imgWidth,
   url,
 }) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -21,15 +23,15 @@ const PortolioItem: React.FC<ItemInterface> = ({
 
   return (
     <div
-      className={`relative w-[${width}px] h-[${height}px] border-2 border-faded`}
+      className={`relative w-[${width}px] h-[${height}px] border-2 border-white`}
       style={{ gridRowEnd: `span ${spans}` }}
       ref={containerRef}
     >
       <Image
         src={`/images/portfolio/frontend/${url}`}
         // layout="fill"
-        width={width}
-        height={height}
+        width={imgWidth || width}
+        height={imgHeight || height}
         objectFit="cover"
         objectPosition="0 0"
         alt="random"

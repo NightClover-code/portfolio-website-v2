@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { v4 } from 'uuid';
 import { portfolioBoxes } from '../../utils/data';
 import Content from '../Content';

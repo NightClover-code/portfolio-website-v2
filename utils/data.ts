@@ -2,6 +2,8 @@ export const portfolioBoxes = [
   {
     height: 369,
     width: 337,
+    imgHeight: 404,
+    imgWidth: 337,
     url: 'bookmark.jpg',
   },
   {
