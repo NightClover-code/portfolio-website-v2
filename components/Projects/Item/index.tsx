@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useRef } from 'react';
 
 interface ItemInterface {
   height: number;
@@ -13,6 +14,10 @@ const PortolioItem: React.FC<ItemInterface> = ({
   span,
   url,
 }) => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+  // const spans;
+
   return (
     <div
       className={`relative w-[${width}px] h-[${height}px] border-2 border-faded ${
@@ -21,8 +26,9 @@ const PortolioItem: React.FC<ItemInterface> = ({
     >
       <Image
         src={`/images/portfolio/frontend/${url}`}
-        width={width}
-        height={height}
+        // width={width}
+        // height={height}
+        layout="fill"
         objectFit="cover"
         objectPosition="0 0"
         alt="random"
