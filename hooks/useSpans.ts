@@ -1,13 +1,9 @@
-import { useState, MutableRefObject, useEffect } from 'react';
-import { useHeight } from './useHeight';
+import { useState, useEffect } from 'react';
 
-export const useSpans = (
-  containerRef: MutableRefObject<HTMLDivElement | null>
-) => {
+export const useSpans = (height: number) => {
   const [spans, setSpans] = useState<number>(0);
-  const height = useHeight(containerRef);
 
-  useEffect(() => setSpans(Math.ceil(height / 10)), [height]);
+  useEffect(() => setSpans(Math.ceil(height / 25 + 1)), [height]);
 
   return spans;
 };

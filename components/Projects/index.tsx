@@ -27,7 +27,7 @@ const Projects = () => {
         <Tags tags={tags} />
       </div>
 
-      <div className="grid grid-cols-3 gap-7 mt-16 auto-rows-[400px]">
+      <div className="grid grid-cols-3 mt-16 gap-7">
         {portfolioBoxes.map(_item => {
           return <PortolioItem {..._item} key={v4()} />;
         })}

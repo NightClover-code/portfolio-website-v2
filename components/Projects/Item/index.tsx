@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { useRef } from 'react';
+import { useSpans } from '../../../hooks';
 
 interface ItemInterface {
   height: number;
@@ -16,13 +17,13 @@ const PortolioItem: React.FC<ItemInterface> = ({
 }) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
-  // const spans;
+  const spans = useSpans(height);
 
   return (
     <div
-      className={`relative w-[${width}px] h-[${height}px] border-2 border-faded ${
-        span ? 'row-span-2' : ''
-      }`}
+      className={`relative w-[${width}px] h-[${height}px] border-2 border-faded`}
+      style={{ gridRowEnd: `span ${spans}` }}
+      ref={containerRef}
     >
       <Image
         src={`/images/portfolio/frontend/${url}`}
