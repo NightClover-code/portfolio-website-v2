@@ -20,12 +20,15 @@ module.exports = {
         gray: 'rgba(33, 55, 87, 0.15)',
         black: '#0D0D0D',
         offWhite: '#FCFDFF',
-        faded: 'rgba(33, 55, 87, 0.04)',
+        faded: 'rgba(33, 55, 87, 0.1)',
         //secondary
         heroBorder: 'rgba(217, 215, 215, 0.7)',
       },
       gridTemplateColumns: {
-        portfolio: '350px 400px 350px',
+        // portfolio: '350px 400px 350px',
+      },
+      gridTemplateRows: {
+        portfolio: 'repeat(2, minmax(0, 370px))',
       },
     },
   },

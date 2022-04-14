@@ -15,19 +15,16 @@ const PortolioItem: React.FC<ItemInterface> = ({
 }) => {
   return (
     <div
-      className={`block w-[${width}px] h-[${height}px] border-2 border-white ${
+      className={`block relative w-[${width}px] h-[${height}px] border-2 border-faded ${
         span ? 'row-span-2' : ''
       }`}
     >
-      <img
+      <Image
         src={`/images/portfolio/frontend/${url}`}
-        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-        // width={width}
-        // height={height}
-        // layout="fill"
-        // objectFit="cover"
-        // objectPosition="0 0"
-        alt="random"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="0 0"
+        alt="random" //TODO
       />
     </div>
   );
