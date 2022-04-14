@@ -42,7 +42,7 @@ h1 span {
 }
 
 body {
-  @apply bg-black;
+  @apply bg-offWhite;
 }
 
 .app__container {
