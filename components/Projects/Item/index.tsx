@@ -22,7 +22,7 @@ const PortolioItem: React.FC<ItemInterface> = () => {
         <PrimaryButton className="mt-8">See this project</PrimaryButton>
       </div>
 
-      <div className="relative">
+      <div className="relative shadow-portfolioCard max-w-[600px] max-h-[600px]">
         <div>
           <Image
             src="/images/portfolio/frontend/team.svg"
@@ -33,7 +33,7 @@ const PortolioItem: React.FC<ItemInterface> = () => {
           />
         </div>
 
-        <div className="absolute bottom-3 left-2 z-[-1]">
+        <div className="absolute -bottom-8 -left-6 z-[-1]">
           <Image
             src="/images/dots.svg"
             width={130}
