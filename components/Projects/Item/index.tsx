@@ -1,42 +1,5 @@
-import Image from 'next/image';
-import PrimaryButton from '../../Buttons/Primary';
-
-const Content = () => (
-  <div>
-    <h4 className="text-[14px] uppercase tracking-[3px]">Latest work</h4>
-    <h1 className="mt-2 text-[40px] max-w-[300px]">Team App website design</h1>
-    <p className={`max-w-[400px] m-auto mt-4 text-offBlack`}>
-      Full website design and build for a concept team collaboration platform.
-      This website also includes a beautiful blog. I’ve built the site from
-      sratch using NextJS and GraphCMS.
-    </p>
-
-    <PrimaryButton className="mt-8">See this project</PrimaryButton>
-  </div>
-);
-
-const Illustration = () => (
-  <div className="relative shadow-portfolioCard max-w-[570px] max-h-[570px]">
-    <div>
-      <Image
-        src="/images/portfolio/frontend/team.svg"
-        width={570}
-        height={570}
-        objectFit="cover"
-        alt="team" //TODO
-      />
-    </div>
-
-    <div className="absolute -bottom-8 -left-6 z-[-1]">
-      <Image
-        src="/images/dots.svg"
-        width={130}
-        height={257}
-        alt="dots" //TODO
-      />
-    </div>
-  </div>
-);
+import Illustration from './Illustration';
+import Content from './Content';
 
 interface ItemInterface {}
 
