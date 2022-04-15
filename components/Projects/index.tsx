@@ -25,7 +25,9 @@ const Projects = () => {
         <Tags tags={tags} />
       </div>
 
-      <div className="flex flex-col">
+      <div className="grid grid-cols-1 gap-10">
+        <PortolioItem />
+        <PortolioItem />
         <PortolioItem />
       </div>
     </section>
