@@ -25,7 +25,7 @@ const Projects = () => {
         <Tags tags={tags} />
       </div>
 
-      <div className="grid grid-cols-3 mt-16 gap-7 justify-center">
+      <div className="flex flex-col">
         <PortolioItem />
       </div>
     </section>
