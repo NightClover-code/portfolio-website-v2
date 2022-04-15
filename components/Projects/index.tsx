@@ -26,11 +26,7 @@ const Projects = () => {
       </div>
 
       <div className="grid grid-cols-3 mt-16 gap-7 justify-center">
-        <div className="border-black border-2"></div>
-        <div className="border-black border-2"></div>
-        <div className="border-black border-2"></div>
-        <div className="border-black border-2"></div>
-        <div className="border-black border-2"></div>
+        <PortolioItem />
       </div>
     </section>
   );
