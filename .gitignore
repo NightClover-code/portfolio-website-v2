@@ -1,8 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 portfolio
-design
-profile.jpeg
+# design
+# profile.jpeg
 
 # dependencies
 /node_modules

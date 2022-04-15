@@ -1,41 +1,28 @@
-import Image from 'next/image';
-import { useRef } from 'react';
-import { useSpans } from '../../../hooks';
+import Illustration, { IllustrationProps } from './Illustration';
+import Content, { ContentProps } from './Content';
+import { isEven } from '../../../utils';
 
 interface ItemInterface {
-  height: number;
-  width: number;
-  url: string;
-  imgHeight?: number;
-  imgWidth?: number;
+  content: ContentProps;
+  image: IllustrationProps;
+  order: number;
 }
 
-const PortolioItem: React.FC<ItemInterface> = ({
-  width,
-  height,
-  imgHeight,
-  imgWidth,
-  url,
-}) => {
-  const containerRef = useRef<HTMLDivElement | null>(null);
-
-  const spans = useSpans(height);
-
+const PortolioItem: React.FC<ItemInterface> = ({ content, image, order }) => {
   return (
-    <div
-      className={`relative w-[${width}px] h-[${height}px] border-2 border-white`}
-      style={{ gridRowEnd: `span ${spans}` }}
-      ref={containerRef}
-    >
-      <Image
-        src={`/images/portfolio/frontend/${url}`}
-        // layout="fill"
-        width={imgWidth || width}
-        height={imgHeight || height}
-        objectFit="cover"
-        objectPosition="0 0"
-        alt="random"
-      />
+    <div className="flex justify-between items-center mt-32">
+      {isEven(order) ? (
+        <>
+          <Content {...content} />
+
+          <Illustration {...image} />
+        </>
+      ) : (
+        <>
+          <Illustration {...image} />
+          <Content {...content} />
+        </>
+      )}
     </div>
   );
 };

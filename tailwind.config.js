@@ -27,6 +27,9 @@ module.exports = {
         //secondary
         heroBorder: 'rgba(217, 215, 215, 0.7)',
       },
+      boxShadow: {
+        portfolioCard: '0px 4px 34px rgba(0, 0, 0, 0.05)',
+      },
       // gridTemplateColumns: {
       //   portfolio: 'repeat(3, minmax(0, 1fr))',
       // },

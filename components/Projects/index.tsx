@@ -1,4 +1,5 @@
 import { v4 } from 'uuid';
+import { portfolioItems } from '../../utils';
 import Content from '../Content';
 import Tags from '../Tags';
 import PortolioItem from './Item';
@@ -25,12 +26,10 @@ const Projects = () => {
         <Tags tags={tags} />
       </div>
 
-      <div className="grid grid-cols-3 mt-16 gap-7 justify-center">
-        <div className="border-black border-2"></div>
-        <div className="border-black border-2"></div>
-        <div className="border-black border-2"></div>
-        <div className="border-black border-2"></div>
-        <div className="border-black border-2"></div>
+      <div className="grid grid-cols-1 gap-y-12">
+        {portfolioItems.map((_item, i) => {
+          return <PortolioItem order={i} {..._item} key={v4()} />;
+        })}
       </div>
     </section>
   );
