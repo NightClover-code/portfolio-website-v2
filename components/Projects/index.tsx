@@ -26,9 +26,9 @@ const Projects = () => {
         <Tags tags={tags} />
       </div>
 
-      <div className="grid grid-cols-1 gap-10">
-        {portfolioItems.map(_item => {
-          return <PortolioItem {..._item} key={v4()} />;
+      <div className="grid grid-cols-1 gap-y-12">
+        {portfolioItems.map((_item, i) => {
+          return <PortolioItem order={i} {..._item} key={v4()} />;
         })}
       </div>
     </section>
