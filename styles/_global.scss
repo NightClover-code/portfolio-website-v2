@@ -29,3 +29,7 @@ p {
 h1 span {
   @apply text-blue;
 }
+
+.center__content {
+  @apply text-center m-auto flex flex-col items-center;
+}

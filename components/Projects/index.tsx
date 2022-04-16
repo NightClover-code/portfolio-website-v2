@@ -5,7 +5,7 @@ import Tags from '../Tags';
 import PortolioItem from './Item';
 
 const Projects = () => {
-  const projectsConfig = {
+  const config = {
     description: `
       I spend most of time building awesome products, either for myself or
       my clients. Here are some of my greatest projects:
@@ -18,8 +18,8 @@ const Projects = () => {
 
   return (
     <section className="projects__section mt-44 mb-10">
-      <div className="text-center m-auto flex flex-col items-center">
-        <Content {...projectsConfig}>
+      <div className="center__content">
+        <Content {...config}>
           My latest <span>work</span>
         </Content>
 

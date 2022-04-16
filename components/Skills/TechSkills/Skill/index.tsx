@@ -9,7 +9,8 @@ const Skill: React.FC<SkillProps> = ({ title, mastery }) => {
       <h4 className="font-semibold text-sm">{title}</h4>
       <div className="relative bg-gray w-[600px] h-[6px] mt-2">
         <div
-          className={`absolute w-[${mastery}] left-0 top-0 bg-blue h-[6px]`}
+          className={`absolute left-0 top-0 bg-blue h-[6px]`}
+          style={{ width: mastery }}
         ></div>
       </div>
     </div>

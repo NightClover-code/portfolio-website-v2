@@ -34,6 +34,10 @@ h1 span {
   @apply text-blue;
 }
 
+.center__content {
+  @apply text-center m-auto flex flex-col items-center;
+}
+
 * {
   margin: 0;
   padding: 0;
