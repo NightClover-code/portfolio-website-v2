@@ -23,7 +23,7 @@ export const portfolioItems = [
     image: {
       imgSrc: 'frontend/url-shortener.svg',
       width: 570,
-      height: 466,
+      height: 467,
     },
   },
   {
