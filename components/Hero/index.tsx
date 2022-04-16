@@ -8,7 +8,7 @@ const Hero = () => {
   const socialsIcons = [InstagramIcon, LinkedInIcon, GitHubIcon];
 
   return (
-    <section className="hero__section mt-28 flex items-center justify-between">
+    <section className="hero__section mt-32 flex items-center justify-between">
       <div className="max-w-[570px]">
         <Socials Icons={socialsIcons} />
         <h1 className="text-[40px] mt-5">

@@ -23,7 +23,7 @@ const Content: React.FC<ContentProps> = ({
       >
         {description}
       </p>
-      {withLine && <div className="w-[56px] h-[2px] block bg-black mt-7"></div>}
+      {withLine && <div className="w-[56px] h-[2px] block bg-black mt-8"></div>}
     </>
   );
 };

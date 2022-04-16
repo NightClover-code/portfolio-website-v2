@@ -4,7 +4,7 @@ export const portfolioItems = [
     content: {
       title: 'Team App website design',
       description: `
-        Full website design and build for a concept team collaboration platform. This website also includes a beautiful blog. I’ve built the site from sratch using NextJS and GraphCMS.
+        Full website design and build for a concept team collaboration platform. This website also includes a beautiful blog. I’ve built the site from scratch using NextJS and GraphCMS.
       `,
     },
     image: {
@@ -30,7 +30,7 @@ export const portfolioItems = [
     content: {
       title: 'Easybank website design',
       description: `
-        Full website design for a digital banking platform landing page. I’ve built the site from sratch using GatsbyJS and ContentfulCMS.
+        Full website design for a digital banking platform landing page. I’ve built the site from scratch using GatsbyJS and ContentfulCMS.
       `,
     },
     image: {

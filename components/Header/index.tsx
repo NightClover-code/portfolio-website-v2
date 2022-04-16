@@ -3,7 +3,7 @@ import NavBar from './NavBar';
 
 const Header = () => {
   return (
-    <header className="flex justify-between mt-8 items-center">
+    <header className="flex justify-between mt-10 items-center">
       <Logo />
       <NavBar />
     </header>
