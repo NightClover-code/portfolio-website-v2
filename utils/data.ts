@@ -1,5 +1,5 @@
 //temp data before cms
-export const portfolioItems = [
+export const portfolio = [
   {
     content: {
       title: 'Team App website design',
@@ -39,4 +39,12 @@ export const portfolioItems = [
       height: 570,
     },
   },
+];
+
+export const skills = [
+  { title: 'React.js / Redux.js', mastery: '95%' },
+  { title: 'Headless CMS', mastery: '95%' },
+  { title: 'Figma', mastery: '90%' },
+  { title: 'Javascript ES6', mastery: '95%' },
+  { title: 'Express.js / Node.js', mastery: '90%' },
 ];

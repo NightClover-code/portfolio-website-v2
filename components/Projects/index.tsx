@@ -1,5 +1,5 @@
 import { v4 } from 'uuid';
-import { portfolioItems } from '../../utils';
+import { portfolio } from '../../utils';
 import Content from '../Content';
 import Tags from '../Tags';
 import PortolioItem from './Item';
@@ -27,7 +27,7 @@ const Projects = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-y-12">
-        {portfolioItems.map((_item, i) => {
+        {portfolio.map((_item, i) => {
           return <PortolioItem order={i} {..._item} key={v4()} />;
         })}
       </div>
