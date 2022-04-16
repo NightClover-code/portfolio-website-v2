@@ -1,5 +1,6 @@
 import Content from '../Content';
 import Tags from '../Tags';
+import TechSkills from './TechSkills';
 
 const Skills = () => {
   const contentConfig = {
@@ -11,15 +12,19 @@ const Skills = () => {
     alignLeft: true,
   };
 
-  const tags = ['Frontend', 'Backend', 'UI / UX'];
+  const tags = ['All skills', 'Frontend', 'Backend'];
 
   return (
-    <section className="skills__section">
-      <Content {...contentConfig}>
-        Technological <span>Skills</span>
-      </Content>
+    <section className="skills__section mt-44 flex items-center justify-between  mb-20">
+      <div>
+        <Content {...contentConfig}>
+          Technological <span>Skills</span>
+        </Content>
 
-      <Tags tags={tags} />
+        <Tags tags={tags} />
+      </div>
+
+      <TechSkills />
     </section>
   );
 };

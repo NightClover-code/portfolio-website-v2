@@ -12,7 +12,7 @@ const HomePage: NextPage = () => {
       <>
         <Hero />
         <Projects />
-        {/* <Skills /> */}
+        <Skills />
       </>
     </>
   );
