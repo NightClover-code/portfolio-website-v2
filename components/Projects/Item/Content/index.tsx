@@ -1,6 +1,11 @@
 import PrimaryButton from '../../../Buttons/Primary';
 
-const Content: React.FC<any> = ({ title, description }) => (
+export interface ContentProps {
+  title: string;
+  description: string;
+}
+
+const Content: React.FC<ContentProps> = ({ title, description }) => (
   <div>
     <h4 className="text-[14px] uppercase tracking-[3px]">Latest work</h4>
     <h1 className="mt-2 text-[40px] max-w-[300px]">{title}</h1>

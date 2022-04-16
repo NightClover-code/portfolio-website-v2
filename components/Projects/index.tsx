@@ -27,14 +27,8 @@ const Projects = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-10">
-        {portfolioItems.map(({ description, height, width, imgSrc, title }) => {
-          const content = { title, description };
-
-          const image = { imgSrc, width, height };
-
-          const item = { content, image };
-
-          return <PortolioItem {...item} key={v4()} />;
+        {portfolioItems.map(_item => {
+          return <PortolioItem {..._item} key={v4()} />;
         })}
       </div>
     </section>

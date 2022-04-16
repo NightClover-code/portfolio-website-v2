@@ -1,17 +1,9 @@
-import Illustration from './Illustration';
-import Content from './Content';
-import { portfolioItems } from '../../../utils';
+import Illustration, { IllustrationProps } from './Illustration';
+import Content, { ContentProps } from './Content';
 
 interface ItemInterface {
-  content: {
-    title: string;
-    description: string;
-  };
-  image: {
-    imgSrc: string;
-    width: number;
-    height: number;
-  };
+  content: ContentProps;
+  image: IllustrationProps;
 }
 
 const PortolioItem: React.FC<ItemInterface> = ({ content, image }) => {

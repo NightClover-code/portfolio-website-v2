@@ -1,10 +1,16 @@
 import Image from 'next/image';
 
-const Illustration: React.FC<any> = ({ width, height, imgSource }) => (
+export interface IllustrationProps {
+  width: number;
+  height: number;
+  imgSrc: string;
+}
+
+const Illustration: React.FC<any> = ({ width, height, imgSrc }) => (
   <div className="relative shadow-portfolioCard max-w-[570px] max-h-[570px]">
     <div>
       <Image
-        src={`/images/portfolio/${imgSource}`}
+        src={`/images/portfolio/${imgSrc}`}
         width={width}
         height={height}
         objectFit="cover"
