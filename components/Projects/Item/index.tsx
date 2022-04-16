@@ -1,15 +1,24 @@
 import Illustration from './Illustration';
 import Content from './Content';
+import { portfolioItems } from '../../../utils';
 
-interface ItemInterface {}
+interface ItemInterface {
+  content: {
+    title: string;
+    description: string;
+  };
+  image: {
+    imgSrc: string;
+    width: number;
+    height: number;
+  };
+}
 
-const PortolioItem: React.FC<ItemInterface> = () => {
-  const config = {};
-
+const PortolioItem: React.FC<ItemInterface> = ({ content, image }) => {
   return (
     <div className="flex justify-between items-center mt-32">
-      <Illustration />
-      <Content />
+      <Illustration {...image} />
+      <Content {...content} />
     </div>
   );
 };

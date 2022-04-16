@@ -1,12 +1,12 @@
 import Image from 'next/image';
 
-const Illustration = () => (
+const Illustration: React.FC<any> = ({ width, height, imgSource }) => (
   <div className="relative shadow-portfolioCard max-w-[570px] max-h-[570px]">
     <div>
       <Image
-        src="/images/portfolio/frontend/team.svg"
-        width={570}
-        height={570}
+        src={`/images/portfolio/${imgSource}`}
+        width={width}
+        height={height}
         objectFit="cover"
         alt="team" //TODO
       />
