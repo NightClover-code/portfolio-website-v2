@@ -2,16 +2,22 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { v4 } from 'uuid';
 import { services } from '../../../utils';
-import Service from './Service';
+import Service, { ServiceProps } from './Service';
 
 const ServicesGrid = () => {
-  // const [activeService, setTag] = useState<string>();
+  const [activeService, setService] = useState<ServiceProps>(services[0]);
 
   return (
     <div className="grid grid-cols-2 gap-x-12 mt-16">
       <div className="grid grid-cols-1 gap-y-8">
         {services.map(_service => {
-          return <Service key={v4()} {..._service} />;
+          return (
+            <Service
+              key={v4()}
+              active={activeService === _service ? true : false}
+              {..._service}
+            />
+          );
         })}
       </div>
 

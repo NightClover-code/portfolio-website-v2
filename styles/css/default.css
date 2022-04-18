@@ -27,7 +27,7 @@ h1 {
 }
 
 p {
-  @apply font-medium text-sm leading-[31px] text-offBlack;
+  @apply font-normal text-sm leading-[31px] text-offBlack;
 }
 
 h1 span {
