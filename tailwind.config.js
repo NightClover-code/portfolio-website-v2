@@ -25,7 +25,7 @@ module.exports = {
         offWhite: '#FCFDFF',
         faded: 'rgba(33, 55, 87, 0.04)',
         //secondary
-        heroBorder: 'rgba(217, 215, 215, 0.7)',
+        heroBorder: 'rgba(217, 215, 215, 0.6)',
       },
       boxShadow: {
         portfolioCard: '0px 4px 34px rgba(0, 0, 0, 0.05)',
