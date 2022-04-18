@@ -1,7 +1,10 @@
 import Image from 'next/image';
+import { useState } from 'react';
 import Service from './Service';
 
 const ServicesGrid = () => {
+  // const [activeService, setTag] = useState<string>();
+
   return (
     <div className="grid grid-cols-2 gap-x-12 mt-16">
       <div className="grid grid-cols-1 gap-y-8">

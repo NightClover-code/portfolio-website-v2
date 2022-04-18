@@ -1,3 +1,9 @@
+import {
+  DesignIcon,
+  DevelopmentIcon,
+  SEOIcon,
+} from '../components/Icons/Services';
+
 //temp data before cms
 export const portfolio = [
   {
@@ -47,4 +53,28 @@ export const skills = [
   { title: 'Figma', mastery: '90%' },
   { title: 'Javascript ES6', mastery: '95%' },
   { title: 'Express.js / Node.js', mastery: '90%' },
+];
+
+export const services = [
+  {
+    title: 'Design',
+    description: `
+      I’ll start by making a suitable design for your website.
+    `,
+    Icon: DesignIcon,
+  },
+  {
+    title: 'Development',
+    description: `
+      Then comes the build, the step where the website goes live on the web. 
+    `,
+    Icon: DevelopmentIcon,
+  },
+  {
+    title: 'SEO',
+    description: `
+      To finish things off, a boost in SEO to rank your website at google’s top searches.
+    `,
+    Icon: SEOIcon,
+  },
 ];
