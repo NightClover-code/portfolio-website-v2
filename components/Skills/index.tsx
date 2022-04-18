@@ -1,6 +1,6 @@
 import Content from '../Content';
 import Tags from '../Tags';
-import TechSkills from './TechSkills';
+import SkillsGrid from './SkillsGrid';
 
 const Skills = () => {
   const contentConfig = {
@@ -24,7 +24,7 @@ const Skills = () => {
         <Tags tags={tags} />
       </div>
 
-      <TechSkills />
+      <SkillsGrid />
     </section>
   );
 };
