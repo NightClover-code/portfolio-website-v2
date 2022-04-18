@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import PrimaryButton from '../Buttons/Primary';
-import { GitHubIcon, InstagramIcon, LinkedInIcon } from '../Icons/Socials';
+import { GitHubIcon, InstagramIcon, LinkedInIcon } from '../Icons';
 import Socials from '../Socials';
 
 const Hero = () => {

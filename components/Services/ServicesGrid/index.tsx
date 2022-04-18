@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
+import { v4 } from 'uuid';
+import { services } from '../../../utils';
 import Service from './Service';
 
 const ServicesGrid = () => {
@@ -8,9 +10,9 @@ const ServicesGrid = () => {
   return (
     <div className="grid grid-cols-2 gap-x-12 mt-16">
       <div className="grid grid-cols-1 gap-y-8">
-        <Service />
-        <Service />
-        <Service />
+        {services.map(_service => {
+          return <Service key={v4()} {..._service} />;
+        })}
       </div>
 
       <div className="relative w-[551px] h-[497px]">
