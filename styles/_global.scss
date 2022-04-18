@@ -33,3 +33,7 @@ h1 span {
 .center__content {
   @apply text-center m-auto flex flex-col items-center;
 }
+
+h2 {
+  @apply font-merriweather font-normal leading-[53px] text-[26px];
+}

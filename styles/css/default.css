@@ -38,6 +38,10 @@ h1 span {
   @apply text-center m-auto flex flex-col items-center;
 }
 
+h2 {
+  @apply font-merriweather font-normal leading-[53px] text-[26px];
+}
+
 * {
   margin: 0;
   padding: 0;
