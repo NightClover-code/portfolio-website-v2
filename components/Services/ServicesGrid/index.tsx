@@ -3,8 +3,8 @@ import Service from './Service';
 
 const ServicesGrid = () => {
   return (
-    <div className="flex justify-between">
-      <div className="grid">
+    <div className="grid grid-cols-2 gap-x-12 mt-16">
+      <div className="grid grid-cols-1 gap-y-8">
         <Service />
         <Service />
         <Service />
