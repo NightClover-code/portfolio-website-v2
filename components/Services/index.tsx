@@ -1,4 +1,5 @@
 import Content from '../Content';
+import ServicesGrid from './ServicesGrid';
 
 const Services = () => {
   const config = {
@@ -17,6 +18,8 @@ const Services = () => {
           What I <span>do</span>
         </Content>
       </div>
+
+      <ServicesGrid />
     </section>
   );
 };
