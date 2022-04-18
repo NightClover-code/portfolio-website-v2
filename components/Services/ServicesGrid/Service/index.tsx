@@ -1,8 +1,9 @@
 export interface ServiceProps {
   title: string;
   description: string;
-  Icon: React.FC;
+  Icon: React.FC<{ color?: string }>;
   active?: boolean;
+  onClick?: () => any;
 }
 
 const Service: React.FC<ServiceProps> = ({
@@ -10,12 +11,14 @@ const Service: React.FC<ServiceProps> = ({
   description,
   Icon,
   active,
+  onClick,
 }) => {
   return (
     <div
-      className={`border-2 ${
+      className={`cursor-pointer border-2 ${
         active ? 'border-blue bg-blue' : 'border-black'
       } rounded-lg px-6 py-3`}
+      onClick={onClick}
     >
       <div
         className={`flex items-center justify-between ${
@@ -23,7 +26,7 @@ const Service: React.FC<ServiceProps> = ({
         }`}
       >
         <h2>{title}</h2>
-        <Icon />
+        <Icon color={active ? '#FCFDFF' : '#0D0D0D'} />
       </div>
       <div className={`flex items-end justify-between`}>
         <p

@@ -14,6 +14,7 @@ const ServicesGrid = () => {
           return (
             <Service
               key={v4()}
+              onClick={() => setService(_service)}
               active={activeService === _service ? true : false}
               {..._service}
             />
