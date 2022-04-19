@@ -15,7 +15,10 @@ const Instagram = () => {
     <section className="instagram__section flex items-center justify-between mt-52">
       <div>
         <Content {...config}>
-          Check out my <span>Instagram</span>
+          Check out my{' '}
+          <span className="bg-gradient-to-r from-instaFrom to-instaTo text-transparent bg-clip-text">
+            Instagram
+          </span>
         </Content>
 
         <PrimaryButton className="mt-8">Follow me</PrimaryButton>
