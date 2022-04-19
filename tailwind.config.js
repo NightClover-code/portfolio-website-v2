@@ -25,7 +25,7 @@ module.exports = {
         offWhite: '#FCFDFF',
         faded: 'rgba(33, 55, 87, 0.04)',
         //secondary
-        heroBorder: 'rgba(217, 215, 215, 0.6)',
+        heroBorder: 'rgba(217, 215, 215, 0.8)',
         lightBlue: 'rgba(27, 162, 238, 1)',
         //gradients
         instaFrom: 'rgba(244, 114, 182, 1)',

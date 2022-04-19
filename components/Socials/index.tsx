@@ -6,7 +6,7 @@ interface SocialsProps {
 
 const Socials: React.FC<SocialsProps> = ({ Icons }) => {
   return (
-    <div className="flex">
+    <div className="flex socials">
       {Icons.map(_Icon => {
         return (
           <div className="mr-4 cursor-pointer" key={v4()}>

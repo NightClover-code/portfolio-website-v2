@@ -11,7 +11,7 @@ button {
 }
 
 .primary__btn {
-  @apply text-offWhite bg-black py-3 px-7 group-hover:translate-x-[6px] group-hover:translate-y-[5.5px] smooth;
+  @apply text-offWhite bg-black py-3 px-7 group-hover:translate-x-[6px] group-hover:translate-y-[5.5px] smooth group-hover:bg-blue;
 }
 
 .ghost__btn {
@@ -40,6 +40,14 @@ h1 span {
 
 h2 {
   @apply font-merriweather font-normal leading-[53px] text-[26px];
+}
+
+.socials svg path {
+  @apply smooth;
+}
+
+.socials svg:hover path {
+  @apply fill-blue;
 }
 
 * {

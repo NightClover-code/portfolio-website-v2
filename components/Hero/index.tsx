@@ -27,7 +27,7 @@ const Hero = () => {
       </div>
 
       <div className="relative">
-        <div className="border-[1px] border-heroBorder p-6 rounded-full">
+        <div className="border-[1px] border-heroBorder p-6 rounded-full border-dotted">
           <div className="relative rounded-full w-[375px] h-[375px] overflow-hidden">
             <Image
               src="/images/profile.jpeg"
