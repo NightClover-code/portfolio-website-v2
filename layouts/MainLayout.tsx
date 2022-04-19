@@ -1,5 +1,5 @@
 import Header from '../components/Header';
-// import Footer from '../components/Footer';
+import Footer from '../components/Footer';
 
 const MainLayout: React.FC = ({ children }) => {
   return (
@@ -7,7 +7,7 @@ const MainLayout: React.FC = ({ children }) => {
       <div className="custom__container">
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );
