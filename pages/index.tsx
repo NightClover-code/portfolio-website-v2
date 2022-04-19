@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import Hero from '../components/Hero';
+import Instagram from '../components/Instagram';
 import Projects from '../components/Projects';
 import SEO from '../components/SEO';
 import Services from '../components/Services';
@@ -15,6 +16,7 @@ const HomePage: NextPage = () => {
         <Projects />
         <Skills />
         <Services />
+        <Instagram />
       </>
     </>
   );
