@@ -1,3 +1,6 @@
+import { Logo } from '../Icons';
+import Socials from '../Socials';
+
 const Footer = () => {
   return (
     <footer className="mt-52">
@@ -20,6 +23,16 @@ const Footer = () => {
           </h4>
           <h2 className="leading-[35px] mt-1">Contact Achraf</h2>
         </div>
+      </div>
+
+      <div className="flex items-center">
+        <Logo />
+
+        <p className="text-[14px]">
+          &copy; Achraf Elmouhib 2022. All rights reserved.
+        </p>
+
+        {/* <Socials /> */}
       </div>
     </footer>
   );
