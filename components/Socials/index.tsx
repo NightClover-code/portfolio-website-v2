@@ -9,7 +9,7 @@ const Socials: React.FC<SocialsProps> = ({ Icons }) => {
     <div className="flex">
       {Icons.map(_Icon => {
         return (
-          <div className="mr-5 cursor-pointer" key={v4()}>
+          <div className="mr-4 cursor-pointer" key={v4()}>
             <_Icon />
           </div>
         );

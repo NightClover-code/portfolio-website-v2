@@ -1,10 +1,18 @@
-import { Logo } from '../Icons';
+import {
+  GitHubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  Logo,
+  MailIcon,
+} from '../Icons';
 import Socials from '../Socials';
 
 const Footer = () => {
+  const icons = [MailIcon, InstagramIcon, LinkedInIcon, GitHubIcon];
+
   return (
-    <footer className="mt-52">
-      <div className="flex items-center justify-between">
+    <footer className="mt-52 mb-6">
+      <div className="flex justify-between">
         <div className="max-w-[400px]">
           <h1>Let’s start working on your project</h1>
           <p className="mt-4">
@@ -17,7 +25,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="text-center px-14 rounded-full flex w-44 h-44 flex-col items-center justify-center border-dotted border-2 border-black">
+        <div className="mt-3 text-center px-14 rounded-full flex w-44 h-44 flex-col items-center justify-center border-dotted border-2 border-black">
           <h4 className="text-[14px] uppercase tracking-[3px] font-medium">
             Project
           </h4>
@@ -25,14 +33,14 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex items-center">
+      <div className="flex items-center justify-between mt-24">
         <Logo />
 
         <p className="text-[14px]">
           &copy; Achraf Elmouhib 2022. All rights reserved.
         </p>
 
-        {/* <Socials /> */}
+        <Socials Icons={icons} />
       </div>
     </footer>
   );
