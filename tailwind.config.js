@@ -26,6 +26,7 @@ module.exports = {
         faded: 'rgba(33, 55, 87, 0.04)',
         //secondary
         heroBorder: 'rgba(217, 215, 215, 0.6)',
+        lightBlue: 'rgba(27, 162, 238, 1)',
         //gradients
         instaFrom: 'rgba(244, 114, 182, 1)',
         instaTo: 'rgba(220, 38, 38, 0.4)',
