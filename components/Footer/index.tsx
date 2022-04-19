@@ -40,7 +40,7 @@ const Footer = () => {
           &copy; Achraf Elmouhib 2022. All rights reserved.
         </p>
 
-        <Socials Icons={icons} />
+        <Socials Icons={icons} margin={14} />
       </div>
     </footer>
   );
