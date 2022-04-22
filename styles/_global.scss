@@ -15,7 +15,7 @@ button {
 }
 
 .smooth {
-  @apply transition-all ease-in-out duration-300;
+  @apply transition-all ease-in-out duration-[270ms];
 }
 
 h1 {
