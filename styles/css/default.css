@@ -42,7 +42,7 @@ h2 {
   @apply font-merriweather font-normal leading-[53px] text-[26px];
 }
 
-.socials svg path {
+svg path {
   @apply smooth;
 }
 

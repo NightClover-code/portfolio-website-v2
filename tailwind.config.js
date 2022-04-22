@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     screens: {
       desktop: '1700px',
-      // xxl: { max: '1300px' },
+      xxl: { max: '1300px' },
       xl: { max: '870px' },
       lg: { max: '780px' },
-      // sm: { max: '750px' },
+      hero: { max: '900px' },
       // xs: { max: '500px' },
     },
     fontSize: {

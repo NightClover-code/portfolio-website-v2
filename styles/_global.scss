@@ -38,11 +38,12 @@ h2 {
   @apply font-merriweather font-normal leading-[53px] text-[26px];
 }
 
+svg path {
+  @apply smooth;
+}
+
 .socials {
   svg {
-    path {
-      @apply smooth;
-    }
     &:hover {
       path {
         @apply fill-blue;
