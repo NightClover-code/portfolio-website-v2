@@ -62,11 +62,11 @@ body {
 }
 
 .app__container {
-  @apply min-h-screen font-mulish text-sm text-black font-normal;
+  @apply min-h-screen font-mulish text-sm text-black font-normal overflow-hidden;
 }
 
 .wrapper {
-  @apply min-w-[250px] max-w-[2000px];
+  @apply min-w-[250px] max-w-[2000px] w-full;
 }
 
 .custom__container {

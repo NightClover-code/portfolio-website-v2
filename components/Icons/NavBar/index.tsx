@@ -1,5 +1,6 @@
 export const MenuIcon = () => (
   <svg
+    className="hidden lg:block cursor-pointer"
     width="25"
     height="20"
     viewBox="0 0 25 20"
@@ -12,8 +13,8 @@ export const MenuIcon = () => (
       x2="24"
       y2="1"
       stroke="#0D0D0D"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
     <line
       x1="1"
@@ -21,8 +22,8 @@ export const MenuIcon = () => (
       x2="24"
       y2="10"
       stroke="#0D0D0D"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
     <line
       x1="1"
@@ -30,8 +31,8 @@ export const MenuIcon = () => (
       x2="24"
       y2="19"
       stroke="#0D0D0D"
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
   </svg>
 );

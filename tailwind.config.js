@@ -6,9 +6,14 @@ module.exports = {
   theme: {
     screens: {
       desktop: '1700px',
+      // xxl: { max: '1300px' },
+      xl: { max: '870px' },
+      lg: { max: '780px' },
+      // sm: { max: '750px' },
+      // xs: { max: '500px' },
     },
     fontSize: {
-      sm: '17px',
+      sm: '16px',
       lg: '35px',
     },
     fontFamily: {
