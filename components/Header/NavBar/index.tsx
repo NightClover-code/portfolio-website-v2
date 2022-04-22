@@ -11,7 +11,7 @@ const NavBar = () => {
           return <NavItem key={v4()}>{_item}</NavItem>;
         })}
         <li>
-          <button className="contact__btn smooth hover:bg-black hover:text-offWhite">
+          <button className="contact__btn smooth hover:bg-blue hover:text-offWhite">
             Contact me
           </button>
         </li>
