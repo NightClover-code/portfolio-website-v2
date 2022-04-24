@@ -9,7 +9,8 @@ module.exports = {
       xxl: { max: '1300px' },
       xl: { max: '870px' },
       lg: { max: '780px' },
-      hero: { max: '900px' },
+      hero: { max: '1100px' },
+      hero2: { max: '900px' },
       // xs: { max: '500px' },
     },
     fontSize: {

@@ -66,10 +66,10 @@ body {
 }
 
 .wrapper {
-  @apply min-w-[250px] max-w-[2000px] w-full;
+  @apply min-w-[250px];
 }
 
 .custom__container {
-  @apply w-[78%] m-auto desktop:w-[65%];
+  @apply w-[78%] m-auto desktop:w-[1150px];
 }
 /*# sourceMappingURL=default.css.map */

@@ -8,11 +8,11 @@ const Hero = () => {
   const socialsIcons = [InstagramIcon, LinkedInIcon, GitHubIcon];
 
   return (
-    <section className="hero__section mt-32 flex items-center justify-between hero:flex-col hero:items-start">
+    <section className="hero__section mt-32 flex items-center justify-between hero2:flex-col hero:items-start">
       <div className="max-w-[570px]">
         <Socials Icons={socialsIcons} />
 
-        <h1 className="text-[40px] mt-5 xxl:text-[36px] xxl:max-w-[463px] xxl:leading-[50px]">
+        <h1 className="text-[40px] mt-5 xxl:text-[36px] xxl:max-w-[463px] xxl:leading-[50px] hero:text-[33px] hero:leading-[46px]">
           Hi, I’m Achraf, FullStack Web <span>Developer</span> and UI/UX{' '}
           <span>Designer</span>
         </h1>
@@ -28,7 +28,7 @@ const Hero = () => {
 
       <div className="relative">
         <div className="border-2 border-heroBorder p-6 rounded-full border-dotted">
-          <div className="relative rounded-full w-[375px] h-[375px] xxl:w-[340px] xxl:h-[340px] overflow-hidden">
+          <div className="relative rounded-full w-[375px] h-[375px] xxl:w-[340px] xxl:h-[340px] overflow-hidden hero:w-[300px] hero:h-[300px]">
             <Image
               src="/images/profile.jpeg"
               layout="fill"
