@@ -5,7 +5,7 @@ import Projects from '../components/Projects';
 import SEO from '../components/SEO';
 import Services from '../components/Services';
 import Skills from '../components/Skills';
-import { seoConfigHome } from '../utils/config';
+import { seoConfigHome } from '../utils';
 
 const HomePage: NextPage = () => {
   return (
