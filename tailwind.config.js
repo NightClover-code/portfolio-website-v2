@@ -5,13 +5,15 @@ module.exports = {
   ],
   theme: {
     screens: {
-      desktop: '1700px',
+      desktop: '1600px',
       xxl: { max: '1300px' },
       xl: { max: '870px' },
       lg: { max: '780px' },
       hero: { max: '1100px' },
       hero2: { max: '900px' },
-      // xs: { max: '500px' },
+      xs: { max: '550px' },
+      xxs: { max: '400px' },
+      tiny: { max: '330px' },
     },
     fontSize: {
       sm: '16px',

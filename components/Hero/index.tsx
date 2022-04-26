@@ -12,7 +12,7 @@ const Hero = () => {
       <div className="max-w-[570px]">
         <Socials Icons={socialsIcons} />
 
-        <h1 className="text-[40px] mt-5 xxl:text-[36px] xxl:max-w-[463px] xxl:leading-[50px] hero:text-[33px] hero:leading-[46px]">
+        <h1 className="text-[40px] mt-5 h1-queries">
           Hi, I’m Achraf, FullStack Web <span>Developer</span> and UI/UX{' '}
           <span>Designer</span>
         </h1>
@@ -26,9 +26,9 @@ const Hero = () => {
         <PrimaryButton className="mt-10">See my work</PrimaryButton>
       </div>
 
-      <div className="relative hero:mt-8">
-        <div className="border-2 border-heroBorder p-6 rounded-full border-dotted">
-          <div className="relative rounded-full w-[375px] h-[375px] xxl:w-[340px] xxl:h-[340px] overflow-hidden hero:w-[300px] hero:h-[300px]">
+      <div className="relative hero2:mt-20">
+        <div className="border-2 border-heroBorder p-6 rounded-full border-dotted xs:p-4">
+          <div className="relative rounded-full w-[375px] h-[375px] xxl:w-[340px] xxl:h-[340px] overflow-hidden hero:w-[300px] hero:h-[300px] hero2:w-[400px] hero2:h-[400px] xs:w-[300px] xs:h-[300px] xxs:w-[270px] xxs:h-[270px] tiny:w-[220px] tiny:h-[220px]">
             <Image
               src="/images/profile.jpeg"
               layout="fill"
