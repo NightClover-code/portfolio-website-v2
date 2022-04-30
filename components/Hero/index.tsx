@@ -46,11 +46,11 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute top-16 left-[-70px] z-[-1]">
+        <div className="absolute top-16 left-[-70px] z-[-1] xxs:hidden">
           <Image src="/images/waves.svg" width={181} height={116} alt="waves" />
         </div>
 
-        <div className="absolute bottom-[-70px] right-[-50px] z-[-1]">
+        <div className="absolute bottom-[-70px] right-[-50px] z-[-1] w-[250px] h-[250px] xxs:hidden">
           <Image
             src="/images/circle-waves.svg"
             width={250}
