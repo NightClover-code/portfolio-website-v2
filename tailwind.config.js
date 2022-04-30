@@ -40,7 +40,7 @@ module.exports = {
         instaTo: 'rgba(220, 38, 38, 0.4)',
       },
       boxShadow: {
-        portfolioCard: '0px 4px 34px rgba(0, 0, 0, 0.05)',
+        portfolioCard: '0px 4px 34px rgba(0, 0, 0, 0.07)',
       },
       // gridTemplateColumns: {
       //   portfolio: 'repeat(3, minmax(0, 1fr))',

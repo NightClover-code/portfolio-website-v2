@@ -1,11 +1,15 @@
 import Image from 'next/image';
 import React from 'react';
+import { useWindowWidth } from '../../hooks';
 import PrimaryButton from '../Buttons/Primary';
 import { GitHubIcon, InstagramIcon, LinkedInIcon } from '../Icons';
 import Socials from '../Socials';
 
 const Hero = () => {
   const socialsIcons = [InstagramIcon, LinkedInIcon, GitHubIcon];
+  const width = useWindowWidth();
+
+  const containerWidth = width! < 550 ? width! * 0.72 : '';
 
   return (
     <section className="hero__section mt-32 flex items-center justify-between hero2:flex-col hero:items-start">
@@ -28,7 +32,10 @@ const Hero = () => {
 
       <div className="relative hero2:mt-20">
         <div className="border-2 border-heroBorder p-6 rounded-full border-dotted xs:p-4">
-          <div className="relative rounded-full w-[375px] h-[375px] xxl:w-[340px] xxl:h-[340px] overflow-hidden hero:w-[300px] hero:h-[300px] hero2:w-[400px] hero2:h-[400px] xs:w-[300px] xs:h-[300px] xxs:w-[270px] xxs:h-[270px] tiny:w-[220px] tiny:h-[220px]">
+          <div
+            className="relative rounded-full w-[375px] h-[375px] xxl:w-[340px] xxl:h-[340px] overflow-hidden hero:w-[300px] hero:h-[300px] hero2:w-[400px] hero2:h-[400px]"
+            style={{ width: containerWidth, height: containerWidth }}
+          >
             <Image
               src="/images/profile.jpeg"
               layout="fill"

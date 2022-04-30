@@ -1,1 +1,1 @@
-export * from './useSpans';
+export * from './useWindowWidth';
