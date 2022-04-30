@@ -8,7 +8,7 @@ export interface IllustrationProps {
 
 const Illustration: React.FC<any> = ({ width, height, imgSrc }) => (
   <div
-    className={`relative shadow-portfolioCard`}
+    className={`relative shadow-portfolioCard portfolio:mt-14`}
     style={{
       maxWidth: `${width}px`,
       maxHeight: `${height}px`,

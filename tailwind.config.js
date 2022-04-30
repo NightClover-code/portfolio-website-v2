@@ -11,6 +11,7 @@ module.exports = {
       lg: { max: '780px' },
       hero: { max: '1100px' },
       hero2: { max: '900px' },
+      portfolio: { max: '970px' },
       xs: { max: '550px' },
       xxs: { max: '400px' },
       tiny: { max: '330px' },
