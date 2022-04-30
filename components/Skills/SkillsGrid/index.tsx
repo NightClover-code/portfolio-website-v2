@@ -4,7 +4,7 @@ import { v4 } from 'uuid';
 
 const TechSkills = () => {
   return (
-    <div>
+    <div className="w-[53%] hero:w-full hero:mt-12">
       {skills.map(_skill => {
         return <Skill {..._skill} key={v4()} />;
       })}
