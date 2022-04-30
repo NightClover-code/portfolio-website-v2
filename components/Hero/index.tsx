@@ -9,7 +9,7 @@ const Hero = () => {
   const socialsIcons = [InstagramIcon, LinkedInIcon, GitHubIcon];
   const width = useWindowWidth();
 
-  const containerWidth = width! < 550 ? width! * 0.72 : '';
+  const containerWidth = width! < 550 ? width! * 0.71 : '';
 
   return (
     <section className="hero__section mt-32 flex items-center justify-between hero2:flex-col hero:items-start">
@@ -46,11 +46,11 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute top-16 left-[-70px] z-[-1] xxs:hidden">
+        <div className="absolute top-16 left-[-70px] z-[-1] tiny:hidden">
           <Image src="/images/waves.svg" width={181} height={116} alt="waves" />
         </div>
 
-        <div className="absolute bottom-[-70px] right-[-50px] z-[-1] w-[250px] h-[250px] xxs:hidden">
+        <div className="absolute bottom-[-70px] right-[-50px] z-[-1] w-[250px] h-[250px] tiny:hidden">
           <Image
             src="/images/circle-waves.svg"
             width={250}
