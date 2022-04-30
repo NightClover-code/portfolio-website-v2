@@ -12,7 +12,7 @@ const Instagram = () => {
   };
 
   return (
-    <section className="instagram__section flex items-center justify-between mt-52">
+    <section className="instagram__section flex items-center justify-between mt-52 gap-x-12 hero:flex-col hero:items-start">
       <div>
         <Content {...config}>
           Check out my{' '}
@@ -24,13 +24,15 @@ const Instagram = () => {
         <PrimaryButton className="mt-8">Follow me</PrimaryButton>
       </div>
 
-      <Image
-        src="/images/instagram-pics.svg"
-        width={589}
-        height={335}
-        objectFit="contain"
-        alt="any" //TODO
-      />
+      <div className="hero:mt-8">
+        <Image
+          src="/images/instagram-pics.svg"
+          width={589}
+          height={335}
+          objectFit="contain"
+          alt="any" //TODO
+        />
+      </div>
     </section>
   );
 };
