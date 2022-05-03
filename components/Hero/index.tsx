@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="max-w-[570px]">
         <Socials Icons={socialsIcons} />
 
-        <h1 className="text-[40px] mt-5 h1-queries">
+        <h1 className="text-[40px] mt-5 xxl:text-[36px] xxl:max-w-[463px] xxl:leading-[50px] mid:text-[40px] xs:text-[36px]">
           Hi, I’m Achraf, FullStack Web <span>Developer</span> and UI/UX{' '}
           <span>Designer</span>
         </h1>

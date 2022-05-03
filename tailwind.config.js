@@ -13,8 +13,6 @@ module.exports = {
       xs: { max: '550px' },
       // xxs: { max: '400px' },
       // tiny: { max: '330px' },
-      //secondary
-      h1: { max: '1100px' },
     },
     fontSize: {
       sm: '16px',
