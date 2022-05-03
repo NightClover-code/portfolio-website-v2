@@ -15,7 +15,7 @@ const Skills = () => {
   const tags = ['All skills', 'Frontend', 'Backend'];
 
   return (
-    <section className="skills__section mt-44 flex items-center justify-between mb-20 gap-x-12 hero:flex-col hero:items-start">
+    <section className="skills__section mt-44 flex items-center justify-between mb-20 gap-x-12 mid:flex-col mid:items-start">
       <div>
         <Content {...contentConfig}>
           Technological <span>Skills</span>
