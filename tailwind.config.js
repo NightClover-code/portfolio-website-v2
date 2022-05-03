@@ -7,12 +7,12 @@ module.exports = {
     screens: {
       desktop: '1600px',
       xxl: { max: '1300px' },
+      xl: { max: '1100px' },
       mid: { max: '1000px' },
-      xl: { max: '870px' },
       lg: { max: '780px' },
       xs: { max: '550px' },
-      xxs: { max: '400px' },
-      tiny: { max: '330px' },
+      // xxs: { max: '400px' },
+      // tiny: { max: '330px' },
       //secondary
       h1: { max: '1100px' },
     },

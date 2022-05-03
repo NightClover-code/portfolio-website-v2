@@ -33,7 +33,7 @@ const Hero = () => {
       <div className="relative mid:mt-20">
         <div className="border-2 border-heroBorder p-6 rounded-full border-dotted xs:p-4">
           <div
-            className="relative rounded-full w-[375px] h-[375px] xxl:w-[340px] xxl:h-[340px] overflow-hidden mid:w-[400px] mid:h-[400px]"
+            className="relative rounded-full w-[375px] h-[375px] xxl:w-[340px] xxl:h-[340px] overflow-hidden mid:w-[400px] mid:h-[400px] xl:w-[300px] xl:h-[300px]"
             style={{ width: containerWidth, height: containerWidth }}
           >
             <Image
