@@ -7,14 +7,14 @@ module.exports = {
     screens: {
       desktop: '1600px',
       xxl: { max: '1300px' },
+      mid: { max: '1000px' },
       xl: { max: '870px' },
       lg: { max: '780px' },
-      hero: { max: '1100px' },
-      hero2: { max: '900px' },
-      portfolio: { max: '970px' },
       xs: { max: '550px' },
       xxs: { max: '400px' },
       tiny: { max: '330px' },
+      //secondary
+      h1: { max: '1100px' },
     },
     fontSize: {
       sm: '16px',
