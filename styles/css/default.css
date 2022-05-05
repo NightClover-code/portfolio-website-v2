@@ -50,10 +50,6 @@ svg path {
   @apply fill-blue;
 }
 
-.h1-queries {
-  @apply xxl:text-[36px] xxl:max-w-[463px] xxl:leading-[50px] hero:text-[33px] hero:leading-[46px];
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -74,6 +70,6 @@ body {
 }
 
 .custom__container {
-  @apply w-[78%] m-auto desktop:w-[1150px];
+  @apply w-[78%] xxl:w-[82%] m-auto desktop:w-[1150px];
 }
 /*# sourceMappingURL=default.css.map */

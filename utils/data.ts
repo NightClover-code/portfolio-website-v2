@@ -61,7 +61,7 @@ export const services = [
     description: `
       I’ll start by making a suitable design for your website.
     `,
-    imgSrc: '/frontend/team.svg',
+    imgSrc: 'design.jpg',
     Icon: DesignIcon,
   },
   {
@@ -69,7 +69,7 @@ export const services = [
     description: `
       Then comes the build, the step where the website goes live on the web. 
     `,
-    imgSrc: '/frontend/easybank.svg',
+    imgSrc: 'development.jpg',
     Icon: DevelopmentIcon,
   },
   {
@@ -77,7 +77,7 @@ export const services = [
     description: `
       To finish things off, a boost in SEO to rank your website at google’s top searches.
     `,
-    imgSrc: '/frontend/url-shortener.svg',
+    imgSrc: 'seo.jpg',
     Icon: SEOIcon,
   },
 ];

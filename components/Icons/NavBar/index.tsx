@@ -1,6 +1,6 @@
 export const MenuIcon = () => (
   <svg
-    className="menu hidden lg:block cursor-pointer"
+    className="menu hidden mid:block cursor-pointer"
     width="25"
     height="20"
     viewBox="0 0 25 20"

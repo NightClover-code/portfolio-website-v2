@@ -6,33 +6,33 @@ export interface IllustrationProps {
   imgSrc: string;
 }
 
-const Illustration: React.FC<any> = ({ width, height, imgSrc }) => (
-  <div
-    className={`relative shadow-portfolioCard portfolio:mt-14`}
-    style={{
-      maxWidth: `${width}px`,
-      maxHeight: `${height}px`,
-    }}
-  >
-    <div>
-      <Image
-        src={`/images/portfolio/${imgSrc}`}
-        width={width}
-        height={height}
-        objectFit="cover"
-        alt="team" //TODO
-      />
-    </div>
+const Illustration: React.FC<IllustrationProps> = ({
+  width,
+  height,
+  imgSrc,
+}) => {
+  return (
+    <div className={`relative portfolio:mt-14`}>
+      <div className="relative mt-12">
+        <Image
+          src={`/images/portfolio/${imgSrc}`}
+          width={width}
+          height={height}
+          objectFit="cover"
+          alt="team" //TODO
+        />
+      </div>
 
-    <div className="absolute -bottom-8 -left-6 z-[-1]">
-      <Image
-        src="/images/dots.svg"
-        width={130}
-        height={257}
-        alt="dots" //TODO
-      />
+      <div className="absolute -bottom-8 -left-6 z-[-1] xs:hidden">
+        <Image
+          src="/images/dots.svg"
+          width={130}
+          height={257}
+          alt="dots" //TODO
+        />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Illustration;

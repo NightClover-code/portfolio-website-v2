@@ -14,9 +14,9 @@ const PortolioItem: React.FC<ItemInterface> = ({ content, image, order }) => {
 
   return (
     <div
-      className={`flex justify-between items-center mt-32 gap-x-20 portfolio:flex-col portfolio:items-start`}
+      className={`flex justify-between items-center mt-32 gap-x-20 mid:flex-col mid:items-start mid:mx-auto`}
     >
-      {isEven(order) || width! < 970 ? (
+      {isEven(order) || width! < 1000 ? (
         <>
           <Content {...content} />
           <Illustration {...image} />
