@@ -12,7 +12,7 @@ const Hero = () => {
   const containerWidth = width! < 550 ? width! * 0.71 : '';
 
   return (
-    <section className="hero__section mt-32 flex items-center justify-between mid:flex-col mid:items-start">
+    <section className="hero__section mt-32 flex items-center justify-between mid:flex-col mid:items-center">
       <div className="max-w-[570px]">
         <Socials Icons={socialsIcons} />
 

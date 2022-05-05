@@ -12,7 +12,7 @@ const ServicesGrid = () => {
   const _width = useWindowWidth();
 
   return (
-    <div className="grid grid-cols-2 gap-x-12 mt-16 mid2:grid-cols-[650px] mid:grid-cols-1 justify-center">
+    <div className="grid grid-cols-2 gap-x-12 mt-16 mid2:grid-cols-[600px] justify-center lg:grid-cols-1">
       <div className="grid grid-cols-1 gap-y-8">
         {services.map((_service, i) => {
           return (
@@ -29,13 +29,11 @@ const ServicesGrid = () => {
         })}
       </div>
 
-      <div
-        className="relative mid2:mt-10"
-        style={{ height: _width! < 1000 ? _width! * 0.7 : 500 }}
-      >
+      <div className="mid2:mt-10">
         <Image
           src={`/images/services/${services[activeIndex].imgSrc}`}
-          layout="fill"
+          width={600}
+          height={_width! < 1000 ? 500 : 540}
           objectFit="cover"
           alt="any" //TODO
         />

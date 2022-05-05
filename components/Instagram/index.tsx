@@ -15,7 +15,7 @@ const Instagram = () => {
   };
 
   return (
-    <section className="instagram__section flex items-center justify-between mt-52 gap-x-12 mid:flex-col mid:items-start">
+    <section className="instagram__section flex items-center justify-between mt-52 gap-x-12 mid:flex-col mid:items-start mid:w-[590px] mid:mx-auto lg:w-full">
       <div>
         <Content {...config}>
           Check out my{' '}
