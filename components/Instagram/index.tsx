@@ -1,11 +1,8 @@
 import Image from 'next/image';
-import { useWindowWidth } from '../../hooks';
 import PrimaryButton from '../Buttons/Primary';
 import Content from '../Content';
 
 const Instagram = () => {
-  const _width = useWindowWidth();
-
   const config = {
     description: `
       I regularly post content on Instagram. I write about anything related to coding, web design and development. Feel free to check it out.
