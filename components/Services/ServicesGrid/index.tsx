@@ -29,7 +29,7 @@ const ServicesGrid = () => {
         })}
       </div>
 
-      <div className="relative w-[px] h-[497px]">
+      <div className="relative h-[500px]">
         <Image
           src={`/images/portfolio${services[activeIndex].imgSrc}`}
           layout="fill"

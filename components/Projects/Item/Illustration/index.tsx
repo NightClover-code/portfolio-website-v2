@@ -7,19 +7,20 @@ export interface IllustrationProps {
   imgSrc: string;
 }
 
-const Illustration: React.FC<any> = ({ width, height, imgSrc }) => {
+const Illustration: React.FC<IllustrationProps> = ({
+  width,
+  height,
+  imgSrc,
+}) => {
   const _width = useWindowWidth();
-
-  const containerWidth = _width! < 1000 ? 820 : width;
-  const containerHeight = _width! < 1000 ? height * 1.4 : height;
 
   return (
     <div className={`relative portfolio:mt-14`}>
       <div className="relative mt-12">
         <Image
           src={`/images/portfolio/${imgSrc}`}
-          width={containerWidth}
-          height={containerHeight}
+          width={_width! < 1000 ? 820 : width}
+          height={_width! < 1000 ? height * 1.4 : height}
           objectFit="cover"
           alt="team" //TODO
         />
@@ -28,8 +29,8 @@ const Illustration: React.FC<any> = ({ width, height, imgSrc }) => {
       <div className="absolute -bottom-8 -left-6 z-[-1]">
         <Image
           src="/images/dots.svg"
-          width={130}
-          height={257}
+          width={_width! < 600 ? 100 : 130}
+          height={_width! < 600 ? 200 : 257}
           alt="dots" //TODO
         />
       </div>
