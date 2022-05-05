@@ -36,7 +36,7 @@ const Footer = () => {
       <div className="flex items-center justify-between mt-24">
         <Logo />
 
-        <p className="text-[14px] xs:hidden">
+        <p className="text-[13px] xs:hidden text-black font-medium">
           &copy; Achraf Elmouhib 2022. All rights reserved.
         </p>
 

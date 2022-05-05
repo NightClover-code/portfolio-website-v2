@@ -70,6 +70,6 @@ body {
 }
 
 .custom__container {
-  @apply w-[82%] m-auto desktop:w-[1150px];
+  @apply w-[78%] xxl:w-[82%] m-auto desktop:w-[1150px];
 }
 /*# sourceMappingURL=default.css.map */
