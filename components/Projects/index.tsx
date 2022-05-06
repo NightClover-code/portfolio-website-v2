@@ -17,7 +17,7 @@ const Projects = () => {
   const tags = ['Frontend', 'Backend', 'FullStack', 'UI / UX'];
 
   return (
-    <section className="projects__section mt-44 mb-10">
+    <section className="projects__section global-mt mb-10">
       <div className="center__content">
         <Content {...config}>
           My latest <span>work</span>

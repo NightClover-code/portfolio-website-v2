@@ -50,6 +50,10 @@ svg path {
   @apply fill-blue;
 }
 
+.global-mt {
+  @apply mt-40;
+}
+
 * {
   margin: 0;
   padding: 0;

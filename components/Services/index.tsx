@@ -12,7 +12,7 @@ const Services = () => {
   };
 
   return (
-    <section className="services__section mt-44">
+    <section className="services__section global-mt">
       <div className="center__content">
         <Content {...config}>
           What I <span>do</span>
