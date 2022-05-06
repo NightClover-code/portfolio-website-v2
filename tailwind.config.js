@@ -14,7 +14,7 @@ module.exports = {
       lg: { max: '780px' },
       xs: { max: '550px' },
       xxs: { max: '400px' },
-      // tiny: { max: '330px' },
+      footer: { max: '700px' },
     },
     fontSize: {
       sm: '16px',
