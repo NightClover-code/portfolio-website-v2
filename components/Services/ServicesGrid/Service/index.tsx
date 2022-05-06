@@ -17,7 +17,7 @@ const Service: React.FC<ServiceProps> = ({
     <div
       className={`cursor-pointer border-2 ${
         active ? 'border-blue bg-blue' : 'border-black'
-      } rounded-lg px-6 py-3 xs:px-4`}
+      } rounded-lg px-6 py-6 xs:py-3 xs:px-4`}
       onClick={onClick}
     >
       <div
@@ -25,12 +25,12 @@ const Service: React.FC<ServiceProps> = ({
           active ? 'text-white' : ''
         }`}
       >
-        <h2 className="xs:leading-[40px] xs:text-[20px]">{title}</h2>
+        <h2 className="leading-[40px] xs:text-[20px]">{title}</h2>
         <Icon color={active ? '#FCFDFF' : '#0D0D0D'} />
       </div>
       <div className={`flex items-end justify-between`}>
         <p
-          className={`max-w-[320px] xs:max-w-[77%] leading-[24px] xs:leading-[22px] text-[16px] xs:text-[13px] ${
+          className={`mt-2 mid:mt-0 max-w-[320px] xs:max-w-[77%] leading-[24px] xs:leading-[22px] text-[16px] xs:text-[13px] ${
             active ? 'text-offWhite' : ''
           }`}
         >

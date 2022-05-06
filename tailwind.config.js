@@ -6,13 +6,14 @@ module.exports = {
   theme: {
     screens: {
       desktop: '1600px',
+      desktopMax: { max: '1600px' },
       xxl: { max: '1300px' },
       mid2: { max: '1200px' },
       xl: { max: '1100px' },
       mid: { max: '1000px' },
       lg: { max: '780px' },
       xs: { max: '550px' },
-      // xxs: { max: '400px' },
+      xxs: { max: '400px' },
       // tiny: { max: '330px' },
     },
     fontSize: {
