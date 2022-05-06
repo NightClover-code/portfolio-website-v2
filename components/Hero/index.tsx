@@ -7,9 +7,9 @@ import Socials from '../Socials';
 
 const Hero = () => {
   const socialsIcons = [InstagramIcon, LinkedInIcon, GitHubIcon];
-  const width = useWindowWidth();
+  const _width = useWindowWidth();
 
-  const containerWidth = width! < 550 ? width! * 0.71 : '';
+  const containerWidth = _width! < 550 ? _width! * 0.8 : '';
 
   return (
     <section className="hero__section mt-32 mid:mt-24 flex items-center justify-between mid:flex-col mid:items-center">
@@ -27,7 +27,9 @@ const Hero = () => {
           a good fit, I will give you a time and cost estimate.
         </p>
 
-        <PrimaryButton className="mt-10">See my work</PrimaryButton>
+        <PrimaryButton className="mt-10 mid:mt-8 xs:mt-6">
+          See my work
+        </PrimaryButton>
       </div>
 
       <div className="relative mid:mt-12">
@@ -53,8 +55,8 @@ const Hero = () => {
         <div className="absolute bottom-[-70px] right-[-50px] z-[-1] w-[250px] h-[250px] tiny:hidden">
           <Image
             src="/images/circle-waves.svg"
-            width={250}
-            height={250}
+            width={_width! < 500 ? 230 : 250}
+            height={_width! < 500 ? 230 : 250}
             alt="circle-waves"
           />
         </div>
