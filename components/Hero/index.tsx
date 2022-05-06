@@ -9,7 +9,7 @@ const Hero = () => {
   const socialsIcons = [InstagramIcon, LinkedInIcon, GitHubIcon];
   const _width = useWindowWidth();
 
-  const containerWidth = _width! < 550 ? _width! * 0.8 : '';
+  const containerWidth = _width! < 550 ? _width! * 0.74 : '';
 
   return (
     <section className="hero__section mt-32 mid:mt-24 flex items-center justify-between mid:flex-col mid:items-center">

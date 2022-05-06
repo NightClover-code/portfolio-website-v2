@@ -13,12 +13,11 @@ const Illustration: React.FC<IllustrationProps> = ({
 }) => {
   return (
     <div className={`relative`}>
-      <div className="relative mt-12 mid:mt-14 xs:mt-10">
+      <div className="relative mt-12 mid:mt-14 xs:mt-10 projects__card shadow-portfolioCard">
         <Image
           src={`/images/portfolio/${imgSrc}`}
           width={width}
           height={height}
-          objectFit="cover"
           alt="team" //TODO
         />
       </div>

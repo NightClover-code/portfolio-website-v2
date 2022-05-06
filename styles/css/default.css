@@ -51,11 +51,15 @@ svg path {
 }
 
 .global-mt {
-  @apply mt-40 mid:mt-24 xs:mt-16;
+  @apply mt-40 mid:mt-24 xs:mt-[70px];
 }
 
 .projects__section h1 {
   @apply xs:text-[33px] xs:leading-[42px];
+}
+
+.projects__card span {
+  display: block !important;
 }
 
 * {
