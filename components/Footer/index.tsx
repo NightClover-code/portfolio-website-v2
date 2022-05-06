@@ -14,7 +14,9 @@ const Footer = () => {
     <footer className="global-mt mb-6">
       <div className="flex justify-between gap-x-12 xs:flex-col xs:items-center">
         <div className="max-w-[400px]">
-          <h1>Let’s start working on your project</h1>
+          <h1 className="xs:leading-[42px] xs:text-[33px]">
+            Let’s start working on your project
+          </h1>
           <p className="mt-4">
             I am currently <span className="text-lightBlue">available</span> for
             work.

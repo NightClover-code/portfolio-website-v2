@@ -12,7 +12,7 @@ const ServicesGrid = () => {
   const _width = useWindowWidth();
 
   return (
-    <div className="grid grid-cols-2 gap-x-12 mt-16 mid:mt-12 mid2:grid-cols-[600px] justify-center lg:grid-cols-1">
+    <div className="grid grid-cols-2 gap-x-12 mt-16 mid:mt-12 xs:mt-10 mid2:grid-cols-[600px] justify-center lg:grid-cols-1">
       <div className="grid grid-cols-1 gap-y-8 xs:gap-y-6">
         {services.map((_service, i) => {
           return (
