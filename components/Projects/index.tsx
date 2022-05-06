@@ -26,7 +26,7 @@ const Projects = () => {
         <Tags className="xs:grid xs:grid-cols-2 xs:gap-y-[14px]" tags={tags} />
       </div>
 
-      <div className="grid grid-cols-1 gap-y-12">
+      <div className="grid grid-cols-1 gap-y-12 mid:mt-8">
         {portfolio.map((_item, i) => {
           return <PortolioItem order={i} {..._item} key={v4()} />;
         })}

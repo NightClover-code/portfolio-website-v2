@@ -12,8 +12,8 @@ const Illustration: React.FC<IllustrationProps> = ({
   imgSrc,
 }) => {
   return (
-    <div className={`relative portfolio:mt-14`}>
-      <div className="relative mt-12">
+    <div className={`relative`}>
+      <div className="relative mt-12 mid:mt-14">
         <Image
           src={`/images/portfolio/${imgSrc}`}
           width={width}

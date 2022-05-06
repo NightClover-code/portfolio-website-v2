@@ -12,7 +12,7 @@ const Hero = () => {
   const containerWidth = width! < 550 ? width! * 0.71 : '';
 
   return (
-    <section className="hero__section mt-32 flex items-center justify-between mid:flex-col mid:items-center">
+    <section className="hero__section mt-32 mid:mt-24 flex items-center justify-between mid:flex-col mid:items-center">
       <div className="max-w-[570px]">
         <Socials Icons={socialsIcons} />
 
@@ -30,7 +30,7 @@ const Hero = () => {
         <PrimaryButton className="mt-10">See my work</PrimaryButton>
       </div>
 
-      <div className="relative mid:mt-20">
+      <div className="relative mid:mt-12">
         <div className="border-2 border-heroBorder p-6 rounded-full border-dotted xs:p-4">
           <div
             className="relative rounded-full w-[375px] h-[375px] xxl:w-[340px] xxl:h-[340px] overflow-hidden mid:w-[400px] mid:h-[400px] xl:w-[300px] xl:h-[300px]"

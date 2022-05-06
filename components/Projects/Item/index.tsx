@@ -14,7 +14,7 @@ const PortolioItem: React.FC<ItemInterface> = ({ content, image, order }) => {
 
   return (
     <div
-      className={`flex justify-between items-center mt-20 gap-x-20 mid:flex-col mid:items-start mid:mx-auto`}
+      className={`flex justify-between items-center mt-20 mid:mt-12 gap-x-20 mid:flex-col mid:items-start mid:mx-auto`}
     >
       {isEven(order) || width! < 1000 ? (
         <>
