@@ -51,7 +51,7 @@ svg path {
 }
 
 .global-mt {
-  @apply mt-40 mid:mt-24 xs:mt-[70px];
+  @apply mt-40 mid:mt-24 xs:mt-20;
 }
 
 .projects__section h1 {

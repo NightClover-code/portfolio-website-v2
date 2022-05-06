@@ -29,7 +29,7 @@ const ServicesGrid = () => {
         })}
       </div>
 
-      <div className="mid2:mt-10 xs:mt-8">
+      <div className="mid2:mt-10">
         <Image
           src={`/images/services/${services[activeIndex].imgSrc}`}
           width={600}
