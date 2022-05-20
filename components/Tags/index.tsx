@@ -10,24 +10,25 @@ interface TagsProps {
 }
 
 const Tags: React.FC<TagsProps> = ({ tags, className, category }) => {
-  const [activeTag, setTag] = useState<string>(tags[0]);
   const { activeTags, setActive } = useContext(TagsContext);
+
+  const [activeTag] = activeTags.filter(_tag => _tag.category === category);
 
   return (
     <div className={`flex mt-9 gap-x-[14px] xs:gap-x-[12px] ${className}`}>
       {tags.map(_tag => {
-        const newTags = activeTags.map(_tag_ =>
-          _tag_.category === category ? { category, tag: _tag } : _tag_
-        );
-
         return (
           <div
             key={v4()}
             onClick={() => {
-              setTag(_tag), setActive(newTags);
+              setActive(
+                activeTags.map(_tag_ =>
+                  _tag_.category === category ? { category, tag: _tag } : _tag_
+                )
+              );
             }}
           >
-            <Tag tag={_tag} active={activeTag === _tag ? true : false} />
+            <Tag tag={_tag} active={activeTag.tag === _tag ? true : false} />
           </div>
         );
       })}
