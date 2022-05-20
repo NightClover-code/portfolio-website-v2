@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { v4 } from 'uuid';
 import { TagsContext } from '../../context';
 import Tag from './Tag';

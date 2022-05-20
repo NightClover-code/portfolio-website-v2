@@ -6,7 +6,7 @@ import {
 import { frontendItems } from './portfolio-data';
 
 //temp data before cms
-export const portfolio = [{ category: 'frontend', items: frontendItems }];
+export const portfolio = [{ category: 'Frontend', items: frontendItems }];
 
 export const skills = [
   { title: 'React.js / Redux.js', mastery: '95%' },
