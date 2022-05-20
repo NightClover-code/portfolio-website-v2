@@ -2,7 +2,7 @@ import NavItem from './NavItem';
 import { v4 } from 'uuid';
 
 const NavBar = () => {
-  const navItems = ['Home', 'Portfolio', 'Testmonials', 'About', 'Blog'];
+  const navItems = ['Home', 'Portfolio', 'Skills', 'Services', 'About'];
 
   return (
     <nav className="mt-1 mid:hidden">
@@ -10,7 +10,7 @@ const NavBar = () => {
         {navItems.map(_item => {
           return <NavItem key={v4()}>{_item}</NavItem>;
         })}
-        <li>
+        <li className="relative">
           <button className="contact__btn smooth hover:bg-blue hover:border-blue hover:text-offWhite">
             Contact me
           </button>

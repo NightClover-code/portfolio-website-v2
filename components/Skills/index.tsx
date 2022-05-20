@@ -21,7 +21,7 @@ const Skills = () => {
           Technological <span>Skills</span>
         </Content>
 
-        <Tags tags={tags} className="xs:mt-8" />
+        <Tags tags={tags} className="xs:mt-8" category="Skills" />
       </div>
 
       <SkillsGrid />
