@@ -30,9 +30,9 @@ const Projects = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-y-12 mid:mt-8 xs:mt-16 xs:gap-y-14">
-        {portfolio.map((_item, i) => {
+        {/* {portfolio.map((_item, i) => {
           return <PortolioItem order={i} {..._item} key={v4()} />;
-        })}
+        })} */}
       </div>
     </section>
   );
