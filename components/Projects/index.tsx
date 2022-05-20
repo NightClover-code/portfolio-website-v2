@@ -24,6 +24,7 @@ const Projects = () => {
         </Content>
 
         <Tags
+          category="Portfolio"
           className="xxs:grid xxs:grid-cols-2 xxs:gap-y-[14px]"
           tags={tags}
         />
