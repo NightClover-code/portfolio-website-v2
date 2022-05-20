@@ -1,17 +1,17 @@
 import { createContext, useState } from 'react';
-import { PortfolioState } from '../interfaces';
+import { ActiveTag, TagsState } from '../interfaces';
 
-export const PortfolioContext = createContext<PortfolioState>({
-  activeTag: '',
+export const TagsContext = createContext<TagsState>({
+  activeTags: [],
   setActive: () => '',
 });
 
 export const NavProvider: React.FC = ({ children }) => {
-  const [activeTag, setActive] = useState<string>('');
+  const [activeTags, setActive] = useState<ActiveTag[]>([]);
 
   return (
-    <PortfolioContext.Provider value={{ activeTag, setActive }}>
+    <TagsContext.Provider value={{ activeTags, setActive }}>
       {children}
-    </PortfolioContext.Provider>
+    </TagsContext.Provider>
   );
 };

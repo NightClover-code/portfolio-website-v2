@@ -1,6 +1,11 @@
 import { Dispatch, SetStateAction } from 'react';
 
-export interface PortfolioState {
-  activeTag: string;
-  setActive: Dispatch<SetStateAction<string>>;
+export interface ActiveTag {
+  category: string;
+  tag: string;
+}
+
+export interface TagsState {
+  activeTags: ActiveTag[];
+  setActive: Dispatch<SetStateAction<ActiveTag[]>>;
 }
