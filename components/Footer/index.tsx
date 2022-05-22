@@ -27,7 +27,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="footer:mt-10 mt-3 text-center px-14 rounded-full flex w-44 h-44 flex-col items-center justify-center border-dotted border-2 border-black">
+        <div className="cursor-pointer smooth footer:mt-10 mt-3 text-center px-14 rounded-full flex w-44 h-44 flex-col items-center justify-center border-dotted border-2 border-black">
           <h4 className="text-[14px] uppercase tracking-[3px] font-medium">
             Project
           </h4>
