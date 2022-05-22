@@ -4,6 +4,7 @@ import {
   SEOIcon,
 } from '../components/Icons/Services';
 import { frontendItems } from './portfolio-data';
+import { allSkills, backendEndSkills, frontEndSkills } from './skills-data';
 
 export const defaultTags = [
   { category: 'Portfolio', tag: 'All works' },
@@ -14,11 +15,9 @@ export const defaultTags = [
 export const portfolio = [{ category: 'Frontend', items: frontendItems }];
 
 export const skills = [
-  { title: 'React.js / Redux.js', mastery: '95%' },
-  { title: 'Headless CMS', mastery: '95%' },
-  { title: 'Figma', mastery: '90%' },
-  { title: 'Javascript ES6', mastery: '95%' },
-  { title: 'Express.js / Node.js', mastery: '90%' },
+  { category: 'All skills', items: allSkills },
+  { category: 'Frontend', items: frontEndSkills },
+  { category: 'Backend', items: backendEndSkills },
 ];
 
 export const services = [

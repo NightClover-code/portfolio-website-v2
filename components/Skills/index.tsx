@@ -1,8 +1,14 @@
+import { useContext } from 'react';
+import { v4 } from 'uuid';
+import { TagsContext } from '../../context';
+import { skills } from '../../utils';
 import Content from '../Content';
 import Tags from '../Tags';
-import SkillsGrid from './SkillsGrid';
+import Skill from './Skill';
 
 const Skills = () => {
+  const category = 'Skills';
+
   const contentConfig = {
     category: 'Skills',
     description: `
@@ -14,6 +20,10 @@ const Skills = () => {
 
   const tags = ['All skills', 'Frontend', 'Backend'];
 
+  const { activeTags } = useContext(TagsContext);
+
+  const [activeTag] = activeTags.filter(_tag => _tag.category === category);
+
   return (
     <section className="skills__section global-mt flex items-center justify-between mb-20 gap-x-12 mid:flex-col mid:items-start mid:w-[600px] mid:mx-auto lg:w-full">
       <div>
@@ -24,7 +34,13 @@ const Skills = () => {
         <Tags tags={tags} className="xs:mt-8" category="Skills" />
       </div>
 
-      <SkillsGrid />
+      <div className="w-[48%] mid:mt-4 xs:mt-4 mid:w-full">
+        {skills.map(_item => {
+          return _item.category === activeTag.tag
+            ? _item.items.map((_item_, i) => <Skill {..._item_} key={v4()} />)
+            : '';
+        })}
+      </div>
     </section>
   );
 };
