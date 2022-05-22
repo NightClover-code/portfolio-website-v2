@@ -18,7 +18,7 @@ const Projects = () => {
     withLine: true,
   };
 
-  const tags = ['Frontend', 'Backend', 'FullStack', 'UI / UX'];
+  const tags = ['All works', 'Frontend', 'Backend', 'FullStack'];
 
   const { activeTags } = useContext(TagsContext);
 

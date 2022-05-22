@@ -5,6 +5,11 @@ import {
 } from '../components/Icons/Services';
 import { frontendItems } from './portfolio-data';
 
+export const defaultTags = [
+  { category: 'Portfolio', tag: 'All works' },
+  { category: 'Skills', tag: 'All skills' },
+];
+
 //temp data before cms
 export const portfolio = [{ category: 'Frontend', items: frontendItems }];
 

@@ -1,10 +1,6 @@
 import { createContext, useState } from 'react';
 import { ActiveTag, TagsState } from '../interfaces';
-
-const defaultTags = [
-  { category: 'Portfolio', tag: 'Frontend' },
-  { category: 'Skills', tag: 'All skills' },
-];
+import { defaultTags } from '../utils';
 
 export const TagsContext = createContext<TagsState>({
   activeTags: defaultTags,
