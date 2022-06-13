@@ -21,7 +21,15 @@ const Illustration: React.FC<IllustrationProps> = ({
 
   return (
     <div className={`relative`}>
-      <div className="relative mid:mt-14 xs:mt-10 projects__card">
+      <div
+        className="relative mid:mt-14 xs:mt-10 projects__card"
+        style={{
+          boxShadow:
+            activeTag.tag === 'Frontend'
+              ? '0px 4px 40px rgba(0, 0, 0, 0.07)'
+              : '',
+        }}
+      >
         <Image
           src={`/images/portfolio/${imgSrc}`}
           width={width}

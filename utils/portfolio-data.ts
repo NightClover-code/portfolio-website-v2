@@ -50,8 +50,24 @@ export const backendItems = [
     },
     image: {
       imgSrc: 'backend/cars.svg',
-      width: 650,
+      width: 680,
       height: 384,
+    },
+  },
+];
+
+export const fullStackItems = [
+  {
+    content: {
+      title: 'Elecshop App Ecommerce',
+      description: `
+        Full-stack eCommerce website, customised and scalable. Featuring authentication, product reviews, PayPal payments, a shopping cart, an admin panel, and much more. 
+      `,
+    },
+    image: {
+      imgSrc: 'full-stack/proshop.png',
+      width: 630,
+      height: 371,
     },
   },
 ];
