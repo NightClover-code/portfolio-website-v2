@@ -39,3 +39,19 @@ export const frontendItems = [
     },
   },
 ];
+
+export const backendItems = [
+  {
+    content: {
+      title: 'Used Cars API',
+      description: `
+        I built this powerful API with a used cars purshasing feature. This project makes use of authentication, authorization, password encryption, and much more.
+      `,
+    },
+    image: {
+      imgSrc: 'backend/cars.svg',
+      width: 650,
+      height: 384,
+    },
+  },
+];

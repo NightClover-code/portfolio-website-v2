@@ -3,7 +3,7 @@ import {
   DevelopmentIcon,
   SEOIcon,
 } from '../components/Icons/Services';
-import { frontendItems } from './portfolio-data';
+import { backendItems, frontendItems } from './portfolio-data';
 import { allSkills, backendEndSkills, frontEndSkills } from './skills-data';
 
 export const defaultTags = [
@@ -12,7 +12,10 @@ export const defaultTags = [
 ];
 
 //temp data before cms
-export const portfolio = [{ category: 'Frontend', items: frontendItems }];
+export const portfolio = [
+  { category: 'Frontend', items: frontendItems },
+  { category: 'Backend', items: backendItems },
+];
 
 export const skills = [
   { category: 'All skills', items: allSkills },

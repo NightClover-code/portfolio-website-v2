@@ -41,8 +41,8 @@ const Projects = () => {
       <div className="grid grid-cols-1 gap-y-12 mid:mt-8 xs:mt-16 xs:gap-y-14">
         {portfolio.map(_item => {
           return _item.category === activeTag.tag
-            ? _item.items.map((_item_, i) => (
-                <PortolioItem order={i} {..._item_} key={v4()} />
+            ? _item.items.map((__item, i) => (
+                <PortolioItem order={i} {...__item} key={v4()} />
               ))
             : '';
         })}
