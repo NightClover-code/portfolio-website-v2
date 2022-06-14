@@ -42,6 +42,10 @@ h2 {
   @apply font-merriweather font-normal leading-[53px] text-[26px];
 }
 
+h4 {
+  @apply text-[14px] uppercase tracking-[3px];
+}
+
 svg path {
   @apply smooth;
 }

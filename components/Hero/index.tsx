@@ -43,6 +43,7 @@ const Hero = () => {
               layout="fill"
               alt="profile" //TODO
               objectFit="cover"
+              objectPosition={'0 55%'}
               priority
             />
           </div>
