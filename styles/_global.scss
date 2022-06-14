@@ -26,7 +26,7 @@ p {
   @apply font-normal text-sm leading-[31px] text-offBlack;
 }
 
-h1 span {
+span {
   @apply text-blue;
 }
 
@@ -66,4 +66,8 @@ svg path {
 
 .projects__card span {
   display: block !important;
+}
+
+.about-section p {
+  @apply mt-6 text-[17px] max-w-[550px];
 }

@@ -18,8 +18,7 @@ const Footer = () => {
             Let’s start working on your project
           </h1>
           <p className="mt-4">
-            I am currently <span className="text-lightBlue">available</span> for
-            work.
+            I am currently <span>available</span> for work.
           </p>
           <p className="mt-4">
             Feel free to reach out if you&apos;re looking for a web designer or
