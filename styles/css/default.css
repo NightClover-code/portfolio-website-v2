@@ -66,7 +66,7 @@ svg path {
   display: block !important;
 }
 
-.about-section p {
+.about__section p {
   @apply mt-6 text-[17px] max-w-[550px];
 }
 

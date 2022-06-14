@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <section className="about-section flex justify-between items-center mt-32">
+    <section className="mid:mt-24 about__section flex justify-between items-center mt-32 mid2:flex-col mid2:justify-center">
       <div>
         <h4 className="text-[16px]">Personal Info</h4>
         <h1 className="text-[40px] mt-1">About Achraf</h1>
@@ -37,12 +37,14 @@ const About = () => {
           <Image src="/images/waves.svg" width={181} height={116} alt="waves" />
         </div>
 
-        <div className="relative w-[418px] h-[547px] rounded-[8px] overflow-hidden">
+        <div className="overflow-hidden mid2:mt-16">
           <Image
             src="/images/about.jpeg"
-            layout="fill"
+            width={418}
+            height={574}
             objectFit="cover"
             objectPosition={'0 90%'}
+            style={{ borderRadius: '8px' }}
             alt="random" //TODO
           />
         </div>
