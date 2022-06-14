@@ -2,7 +2,13 @@ import Image from 'next/image';
 import React from 'react';
 import { useWindowWidth } from '../../hooks';
 import PrimaryButton from '../Buttons/Primary';
-import { GitHubIcon, InstagramIcon, LinkedInIcon } from '../Icons';
+import {
+  CircleWaves,
+  GitHubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  Waves,
+} from '../Icons';
 import Socials from '../Socials';
 
 const Hero = () => {
@@ -49,18 +55,9 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute top-16 left-[-70px] z-[-1] tiny:hidden">
-          <Image src="/images/waves.svg" width={181} height={116} alt="waves" />
-        </div>
+        <Waves left={-70} top={64} />
 
-        <div className="absolute bottom-[-70px] right-[-50px] z-[-1] w-[250px] h-[250px] tiny:hidden">
-          <Image
-            src="/images/circle-waves.svg"
-            width={_width! < 500 ? 230 : 250}
-            height={_width! < 500 ? 230 : 250}
-            alt="circle-waves"
-          />
-        </div>
+        <CircleWaves width={_width!} />
       </div>
     </section>
   );
