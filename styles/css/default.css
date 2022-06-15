@@ -67,7 +67,7 @@ svg path {
 }
 
 .about__section p {
-  @apply mt-6 text-[17px] max-w-[550px];
+  @apply mb-6 text-[17px] max-w-[550px];
 }
 
 * {
