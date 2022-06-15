@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import Challenges from './Challenges';
 import Content from './Content';
 
 const Project = () => {
@@ -10,7 +12,21 @@ const Project = () => {
 
   return (
     <section className="project__details mt-28 mid:mt-24">
-      <Content {...config} />
+      <div className="flex flex-col justify-center">
+        <Content {...config} />
+
+        <div className="mt-20 m-auto shadow-portfolioCard">
+          <Image
+            src="/images/team.svg"
+            height={3089}
+            width={962}
+            style={{ borderRadius: '8px' }}
+            alt="random" //TODO
+          />
+        </div>
+      </div>
+
+      <Challenges />
     </section>
   );
 };
