@@ -13,7 +13,7 @@ const Project = () => {
   };
 
   return (
-    <section className="project__details mt-28 mid:mt-24 px-[10%]">
+    <section className="project__details mt-28 mid:mt-24 px-[10%] xl:px-0">
       <div className="flex flex-col justify-center">
         <Content {...config} />
 
