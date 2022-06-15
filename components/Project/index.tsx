@@ -2,6 +2,7 @@ import Image from 'next/image';
 import BuiltWith from './BuiltWith';
 import Challenges from './Challenges';
 import Content from './Content';
+import SimilarProjects from './Projects';
 
 const Project = () => {
   const config = {
@@ -16,7 +17,7 @@ const Project = () => {
       <div className="flex flex-col justify-center">
         <Content {...config} />
 
-        <div className="mt-20 m-auto shadow-portfolioCard">
+        <div className="mt-20 m-auto shadow-portfolioCard projects__card">
           <Image
             src="/images/team.svg"
             height={3089}
@@ -30,6 +31,8 @@ const Project = () => {
       <Challenges />
 
       <BuiltWith />
+
+      <SimilarProjects />
     </section>
   );
 };
