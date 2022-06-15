@@ -10,8 +10,12 @@ button {
   @apply text-offWhite bg-black py-3 px-7 group-hover:translate-x-[6px] group-hover:translate-y-[5.5px] smooth group-hover:bg-blue;
 }
 
+.secondary__btn {
+  @apply text-black bg-offWhite font-bold border-2 border-black py-3 px-7 group-hover:translate-x-[6px] group-hover:translate-y-[5.5px] smooth;
+}
+
 .ghost__btn {
-  @apply absolute w-full h-full left-[6px] top-[5.5px] border-2 border-black;
+  @apply absolute w-full h-full left-[6px] top-[5.5px] border-2 -z-[1];
 }
 
 .smooth {
@@ -70,4 +74,8 @@ svg path {
 
 .about__section p {
   @apply mb-6 text-[17px] max-w-[550px];
+}
+
+.project__details .primary__btn {
+  @apply px-10 border-2 border-black;
 }
