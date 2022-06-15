@@ -2,8 +2,8 @@ import FormInput from './FormInput';
 
 const Form = () => {
   return (
-    <form className="min-w-[595px]">
-      <div className="flex items-end justify-between">
+    <form>
+      <div className="grid grid-cols-2 gap-x-3 items-end justify-between">
         <FormInput label="Full name" subLabel="First Name" />
 
         <FormInput subLabel="Last Name" />
