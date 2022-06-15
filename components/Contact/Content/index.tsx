@@ -3,7 +3,7 @@ const Content = () => {
     <div>
       <h4 className="text-[16px]">Contact</h4>
       <h1 className="text-[40px] mt-1 xs:text-[36px]">Get in touch</h1>
-      <div className="mt-4">
+      <div className="mt-4 max-w-[445px]">
         <p>
           Feel free to fill the contact form on the right to get in touch with
           me.

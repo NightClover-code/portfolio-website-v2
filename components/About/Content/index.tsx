@@ -3,7 +3,7 @@ const Content = () => {
     <div>
       <h4 className="text-[16px]">Personal Info</h4>
       <h1 className="text-[40px] mt-1 xs:text-[36px]">About Achraf</h1>
-      <div className="mt-4">
+      <div className="mt-4 max-w-[550px]">
         <p>
           My name is Achraf and I&apos;m a <span>Full-stack developer</span> who
           loves to work with modern web technologies.

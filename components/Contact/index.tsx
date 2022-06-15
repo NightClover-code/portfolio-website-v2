@@ -3,8 +3,8 @@ import Form from './Form';
 
 const Contact = () => {
   return (
-    <section className="contact__section">
-      <div className="flex items-center justify-between">
+    <section className="contact__section mt-24">
+      <div className="flex items-start justify-between">
         <Content />
 
         <Form />

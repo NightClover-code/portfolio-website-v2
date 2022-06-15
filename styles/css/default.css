@@ -70,8 +70,9 @@ svg path {
   display: block !important;
 }
 
+.contact__section p,
 .about__section p {
-  @apply mb-6 text-[17px] max-w-[550px];
+  @apply mb-6 text-[17px];
 }
 
 .project__details .primary__btn {

@@ -25,7 +25,7 @@ const FormInput: React.FC<FormInputProps> = ({
         <input
           type="text"
           style={{ width, height: height || 48 }}
-          className="mt-1 border-2 w-full rounded-[4px] border-[#E4E4E4] outline-none px-3 text-[17px]"
+          className="mt-1 min-w-[291px] border-2 w-full rounded-[4px] border-[#E4E4E4] outline-none px-3 text-[17px]"
         />
       ) : (
         <textarea
@@ -34,7 +34,7 @@ const FormInput: React.FC<FormInputProps> = ({
         />
       )}
 
-      {subLabel && <h5 className="font-bold text-[12px] mt-1">{subLabel}</h5>}
+      {subLabel && <h5 className="font-bold text-[12px] mt-2">{subLabel}</h5>}
     </div>
   );
 };

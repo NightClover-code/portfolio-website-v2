@@ -3,7 +3,7 @@ import FormInput from './FormInput';
 const Form = () => {
   return (
     <form className="min-w-[595px]">
-      <div className="flex items-end">
+      <div className="flex items-end justify-between">
         <FormInput label="Full name" subLabel="First Name" />
 
         <FormInput subLabel="Last Name" />
