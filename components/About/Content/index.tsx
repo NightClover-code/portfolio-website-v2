@@ -1,4 +1,9 @@
+import { GitHubIcon, InstagramIcon, LinkedInIcon } from '../../Icons';
+import Socials from '../../Socials';
+
 const Content = () => {
+  const Icons = [InstagramIcon, LinkedInIcon, GitHubIcon];
+
   return (
     <div>
       <h4 className="text-[16px]">Personal Info</h4>
@@ -25,6 +30,8 @@ const Content = () => {
           further discuss your project!
         </p>
       </div>
+
+      <Socials Icons={Icons} />
     </div>
   );
 };

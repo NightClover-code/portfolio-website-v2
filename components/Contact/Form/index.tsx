@@ -1,3 +1,4 @@
+import PrimaryButton from '../../Buttons/Primary';
 import FormInput from './FormInput';
 
 const Form = () => {
@@ -12,6 +13,8 @@ const Form = () => {
       <FormInput label="Email address" />
 
       <FormInput label="Your message" height={112} type="textarea" />
+
+      <PrimaryButton>Submit</PrimaryButton>
     </form>
   );
 };
