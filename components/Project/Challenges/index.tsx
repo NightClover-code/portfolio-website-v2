@@ -11,23 +11,25 @@ const Challenges: React.FC = () => {
   ];
 
   return (
-    <div>
-      <h2>The Challenge</h2>
+    <section className="challenges__section mt-16 max-w-[726px]">
+      <h2 className="font-bold">The Challenge</h2>
 
-      <p>
+      <p className="mt-2">
         I wanted to build a <span>JAMStack</span> website using some modern
         technologies for the blog content. So I went with <span>GraphCMS</span>{' '}
         to fetch content, and I built some reusable components along the way.
       </p>
 
-      <p>Here were some challenges: </p>
+      <p className="mt-3 font-bold">Here were some challenges: </p>
 
-      <div>
+      <div className="ml-10 mt-4">
         {challenges.map(el => (
-          <li key={v4()}>{el}</li>
+          <li key={v4()} className="mb-2">
+            {el}
+          </li>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

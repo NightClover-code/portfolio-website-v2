@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import BuiltWith from './BuiltWith';
 import Challenges from './Challenges';
 import Content from './Content';
 
@@ -11,7 +12,7 @@ const Project = () => {
   };
 
   return (
-    <section className="project__details mt-28 mid:mt-24">
+    <section className="project__details mt-28 mid:mt-24 px-[10%]">
       <div className="flex flex-col justify-center">
         <Content {...config} />
 
@@ -27,6 +28,8 @@ const Project = () => {
       </div>
 
       <Challenges />
+
+      <BuiltWith />
     </section>
   );
 };
