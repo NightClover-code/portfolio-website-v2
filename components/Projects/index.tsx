@@ -18,7 +18,7 @@ const Projects = () => {
     withLine: true,
   };
 
-  const tags = ['All works', 'Frontend', 'Backend', 'FullStack'];
+  const tags = ['Frontend', 'Backend', 'FullStack'];
 
   const { activeTags } = useContext(TagsContext);
 
@@ -31,11 +31,7 @@ const Projects = () => {
           My latest <span>work</span>
         </Content>
 
-        <Tags
-          category={category}
-          className="xxs:grid xxs:grid-cols-2 xxs:gap-y-[14px]"
-          tags={tags}
-        />
+        <Tags category={category} tags={tags} />
       </div>
 
       <div className="grid grid-cols-1 gap-y-12 mid:mt-8 xs:mt-16 xs:gap-y-14">

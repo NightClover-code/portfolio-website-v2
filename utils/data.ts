@@ -7,7 +7,7 @@ import { backendItems, frontendItems, fullStackItems } from './portfolio-data';
 import { allSkills, backendEndSkills, frontEndSkills } from './skills-data';
 
 export const defaultTags = [
-  { category: 'Portfolio', tag: 'All works' },
+  { category: 'Portfolio', tag: 'Frontend' },
   { category: 'Skills', tag: 'All skills' },
 ];
 

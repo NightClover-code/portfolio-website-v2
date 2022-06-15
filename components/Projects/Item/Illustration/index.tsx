@@ -25,7 +25,7 @@ const Illustration: React.FC<IllustrationProps> = ({
         className="relative mid:mt-14 xs:mt-10 projects__card"
         style={{
           boxShadow:
-            activeTag.tag === 'Frontend'
+            activeTag.tag !== 'Backend'
               ? '0px 4px 40px rgba(0, 0, 0, 0.07)'
               : '',
         }}
@@ -38,7 +38,7 @@ const Illustration: React.FC<IllustrationProps> = ({
         />
       </div>
 
-      {activeTag.tag === 'Frontend' && (
+      {activeTag.tag !== 'Backend' && (
         <div className="absolute -bottom-8 -left-6 z-[-1] xs:hidden">
           <Image
             src="/images/dots.svg"

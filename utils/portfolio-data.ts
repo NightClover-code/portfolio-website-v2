@@ -59,15 +59,28 @@ export const backendItems = [
 export const fullStackItems = [
   {
     content: {
-      title: 'Elecshop App Ecommerce',
+      title: 'Web Coding Environment',
       description: `
-        Full-stack eCommerce website, customised and scalable. Featuring authentication, product reviews, PayPal payments, a shopping cart, an admin panel, and much more. 
+        The best web coding environment where you can safely write and execute Javascript / React.js code, as well as documenting your code using markdown editors.
       `,
     },
     image: {
-      imgSrc: 'full-stack/proshop.png',
-      width: 630,
-      height: 371,
+      imgSrc: 'full-stack/coding-env.png',
+      width: 570,
+      height: 434,
     },
   },
+  // {
+  //   content: {
+  //     title: 'Elecshop App Ecommerce',
+  //     description: `
+  //       Full-stack eCommerce website, customised and scalable. Featuring authentication, product reviews, PayPal payments, a shopping cart, an admin panel, and much more.
+  //     `,
+  //   },
+  //   image: {
+  //     imgSrc: 'full-stack/proshop.png',
+  //     width: 630,
+  //     height: 371,
+  //   },
+  // },
 ];
