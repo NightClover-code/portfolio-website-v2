@@ -17,11 +17,11 @@ const Skill: React.FC<SkillProps> = ({ title, mastery }) => {
   }, [mastery]);
 
   return (
-    <div className="skill mt-10 xs:mt-8" data-aos="fade-up">
+    <div className="mt-10 xs:mt-8" data-aos="fade-up">
       <h3 className="font-semibold text-sm">{title}</h3>
       <div className="relative bg-gray w-full h-[6px] mt-2">
         <div
-          className={`mastery absolute left-0 top-0 bg-blue h-[6px]`}
+          className={`absolute left-0 top-0 bg-blue h-[6px]`}
           ref={ref}
         ></div>
       </div>
