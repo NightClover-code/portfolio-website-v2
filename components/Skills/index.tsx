@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { v4 } from 'uuid';
 import { skills } from '../../utils';
 import Content from '../Content';
 import Tags from '../Tags';
 import Skill from './Skill';
+import gsap from 'gsap';
 
 const Skills = () => {
   const tags = ['All skills', 'Frontend', 'Backend'];
@@ -35,7 +36,7 @@ const Skills = () => {
         <Tags className="xs:mt-8" {...tagsConfig} />
       </div>
 
-      <div className="w-[48%] mid:mt-4 xs:mt-4 mid:w-full">
+      <div className="w-[48%] mid:mt-4 xs:mt-4 mid:w-full skills">
         {skills.map(_item => {
           return _item.category === activeTag
             ? _item.items.map((_item_, i) => <Skill {..._item_} key={v4()} />)
