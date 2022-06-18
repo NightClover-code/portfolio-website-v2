@@ -11,7 +11,7 @@ button {
 }
 
 .primary__btn {
-  @apply text-offWhite bg-black py-3 px-7 group-hover:translate-x-[6px] group-hover:translate-y-[5.5px] smooth group-hover:bg-blue;
+  @apply border-2 border-black text-offWhite bg-black py-3 px-7 group-hover:translate-x-[6px] group-hover:translate-y-[5.5px] smooth group-hover:bg-blue;
 }
 
 .secondary__btn {
@@ -76,7 +76,7 @@ svg path {
 }
 
 .project__details .primary__btn {
-  @apply px-10 border-2 border-black;
+  @apply px-10;
 }
 
 * {
