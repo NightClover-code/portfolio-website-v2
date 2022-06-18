@@ -6,10 +6,16 @@ import { useWindowWidth } from '../../../hooks';
 interface ItemInterface {
   content: ContentProps;
   image: IllustrationProps;
+  activeTag: string;
   order: number;
 }
 
-const PortolioItem: React.FC<ItemInterface> = ({ content, image, order }) => {
+const PortolioItem: React.FC<ItemInterface> = ({
+  content,
+  image,
+  order,
+  activeTag,
+}) => {
   const width = useWindowWidth();
 
   return (
@@ -20,11 +26,11 @@ const PortolioItem: React.FC<ItemInterface> = ({ content, image, order }) => {
       {isEven(order) || width! < 1000 ? (
         <>
           <Content {...content} />
-          <Illustration {...image} />
+          <Illustration {...image} activeTag={activeTag} />
         </>
       ) : (
         <>
-          <Illustration {...image} />
+          <Illustration {...image} activeTag={activeTag} />
           <Content {...content} />
         </>
       )}

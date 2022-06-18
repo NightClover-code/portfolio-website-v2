@@ -33,7 +33,12 @@ const Projects = () => {
         {portfolio.map(_item => {
           return _item.category === activeTag
             ? _item.items.map((__item, i) => (
-                <PortolioItem order={i} {...__item} key={v4()} />
+                <PortolioItem
+                  order={i}
+                  key={v4()}
+                  activeTag={activeTag}
+                  {...__item}
+                />
               ))
             : '';
         })}
