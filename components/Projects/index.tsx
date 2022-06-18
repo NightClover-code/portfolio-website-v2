@@ -6,6 +6,10 @@ import Tags from '../Tags';
 import PortolioItem from './Item';
 
 const Projects = () => {
+  const tags = ['Frontend', 'Backend', 'FullStack'];
+
+  const [activeTag, setActive] = useState<string>('Frontend');
+
   const config = {
     description: `
       I spend most of time building awesome products, either for myself or
@@ -15,9 +19,11 @@ const Projects = () => {
     withLine: true,
   };
 
-  const tags = ['Frontend', 'Backend', 'FullStack'];
-
-  const [activeTag, setActive] = useState<string>('Frontend');
+  const tagsConfig = {
+    tags,
+    activeTag,
+    setActive,
+  };
 
   return (
     <section className="projects__section global-mt mb-10">
@@ -26,7 +32,7 @@ const Projects = () => {
           My latest <span>work</span>
         </Content>
 
-        <Tags tags={tags} activeTag={activeTag} setActive={setActive} />
+        <Tags {...tagsConfig} />
       </div>
 
       <div className="grid grid-cols-1 gap-y-12 mid:mt-8 xs:mt-16 xs:gap-y-14">

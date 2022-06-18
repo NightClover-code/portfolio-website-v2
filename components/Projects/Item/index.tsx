@@ -18,6 +18,8 @@ const PortolioItem: React.FC<ItemInterface> = ({
 }) => {
   const width = useWindowWidth();
 
+  const imgConfig = { ...image, activeTag };
+
   return (
     <div
       data-aos="fade-up"
@@ -26,11 +28,11 @@ const PortolioItem: React.FC<ItemInterface> = ({
       {isEven(order) || width! < 1000 ? (
         <>
           <Content {...content} />
-          <Illustration {...image} activeTag={activeTag} />
+          <Illustration {...imgConfig} />
         </>
       ) : (
         <>
-          <Illustration {...image} activeTag={activeTag} />
+          <Illustration {...imgConfig} />
           <Content {...content} />
         </>
       )}

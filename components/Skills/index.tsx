@@ -6,6 +6,10 @@ import Tags from '../Tags';
 import Skill from './Skill';
 
 const Skills = () => {
+  const tags = ['All skills', 'Frontend', 'Backend'];
+
+  const [activeTag, setActive] = useState<string>('All skills');
+
   const contentConfig = {
     category: 'Skills',
     description: `
@@ -15,9 +19,11 @@ const Skills = () => {
     alignLeft: true,
   };
 
-  const tags = ['All skills', 'Frontend', 'Backend'];
-
-  const [activeTag, setActive] = useState<string>('All skills');
+  const tagsConfig = {
+    tags,
+    activeTag,
+    setActive,
+  };
 
   return (
     <section className="skills__section global-mt flex items-center justify-between mb-20 gap-x-12 mid:flex-col mid:items-start mid:w-[600px] mid:mx-auto lg:w-full">
@@ -26,12 +32,7 @@ const Skills = () => {
           Technological <span>Skills</span>
         </Content>
 
-        <Tags
-          tags={tags}
-          className="xs:mt-8"
-          setActive={setActive}
-          activeTag={activeTag}
-        />
+        <Tags className="xs:mt-8" {...tagsConfig} />
       </div>
 
       <div className="w-[48%] mid:mt-4 xs:mt-4 mid:w-full">
