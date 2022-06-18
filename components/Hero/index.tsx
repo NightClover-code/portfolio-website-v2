@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <section className="hero__section mt-32 mid:mt-24 flex items-center justify-between mid:flex-col mid:items-center">
-      <div className="max-w-[570px]">
+      <div className="max-w-[570px]" data-aos="fade-up">
         <Socials Icons={socialsIcons} />
 
         <h1 className="text-[40px] mt-5 xxl:text-[36px] xxl:max-w-[463px] mid:max-w-none xxl:leading-[50px] mid:text-[40px] xs:text-[36px]">
@@ -38,7 +38,11 @@ const Hero = () => {
         </PrimaryButton>
       </div>
 
-      <div className="relative mid:mt-12">
+      <div
+        className="relative mid:mt-12"
+        data-aos="fade-left"
+        data-aos-delay="300"
+      >
         <div className="border-2 border-heroBorder p-6 rounded-full border-dotted xs:p-4">
           <div
             className="relative rounded-full w-[375px] h-[375px] xxl:w-[340px] xxl:h-[340px] overflow-hidden mid:w-[400px] mid:h-[400px] xl:w-[300px] xl:h-[300px]"
