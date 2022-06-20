@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { GitHubIcon, InstagramIcon, LinkedInIcon } from '../../Icons';
 import Socials from '../../Socials';
 
@@ -26,12 +27,15 @@ const Content = () => {
           page for your business, or a very complex web application idea:
         </p>
         <p>
-          Please feel free to <span className="underline">contact me</span> to
-          further discuss your project!
+          Please feel free to{' '}
+          <Link href="contact" passHref>
+            <span className="cursor-pointer underline">contact me</span>
+          </Link>{' '}
+          to further discuss your project!
         </p>
       </div>
 
-      <Socials Icons={Icons} />
+      <Socials Icons={Icons} marginTop={30} />
     </div>
   );
 };

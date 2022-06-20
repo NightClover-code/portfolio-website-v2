@@ -3,17 +3,21 @@ import { IconInterface } from '../../interfaces';
 
 interface SocialsProps {
   Icons: IconInterface[];
-  margin?: number;
+  marginRight?: number;
+  marginTop?: number;
 }
 
-const Socials: React.FC<SocialsProps> = ({ Icons, margin }) => {
+const Socials: React.FC<SocialsProps> = ({ Icons, marginRight, marginTop }) => {
   return (
-    <div className="flex socials items-center">
+    <div
+      className="flex socials items-center"
+      style={{ marginTop: marginTop && `${marginTop}px` }}
+    >
       {Icons.map(({ Icon, href, mailto }) => {
         return (
           <div
             className={`mr-5 cursor-pointer`}
-            style={{ marginRight: `${margin}px` }}
+            style={{ marginRight }}
             key={v4()}
           >
             <a

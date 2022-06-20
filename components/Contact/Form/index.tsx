@@ -14,7 +14,7 @@ const Form = () => {
 
       <FormInput label="Your message" height={112} type="textarea" />
 
-      <PrimaryButton>Submit</PrimaryButton>
+      <PrimaryButton className="mt-2">Submit</PrimaryButton>
     </form>
   );
 };

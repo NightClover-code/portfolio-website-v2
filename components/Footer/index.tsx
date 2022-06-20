@@ -48,7 +48,7 @@ const Footer = () => {
       <div className="flex items-center justify-between mt-20 footer:mt-16">
         <Logo />
 
-        <Socials Icons={icons} margin={14} />
+        <Socials Icons={icons} marginRight={14} />
       </div>
     </footer>
   );
