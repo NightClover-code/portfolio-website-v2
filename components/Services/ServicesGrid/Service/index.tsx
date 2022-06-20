@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRef } from 'react';
 
 export interface ServiceProps {
@@ -42,13 +43,15 @@ const Service: React.FC<ServiceProps> = ({
         >
           {description}
         </p>
-        <span
-          className={`xs:text-[11px] text-[14px] underline text-offBlack cursor-pointer  ${
-            active ? 'text-offWhite' : ''
-          }`}
-        >
-          Learn more
-        </span>
+        <Link href="/contact" passHref>
+          <span
+            className={`xs:text-[11px] text-[14px] underline text-offBlack cursor-pointer  ${
+              active ? 'text-offWhite' : ''
+            }`}
+          >
+            Learn more
+          </span>
+        </Link>
       </div>
     </div>
   );
