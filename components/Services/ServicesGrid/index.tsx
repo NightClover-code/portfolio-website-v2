@@ -10,14 +10,6 @@ const ServicesGrid = () => {
   const [activeIndex, setIndex] = useState<number>(0);
 
   const _width = useWindowWidth();
-  const ref = useRef<HTMLDivElement | null>(null);
-
-  // useEffect(() => {
-  //   gsap
-  //     .timeline({ defaults: { ease: 'in', duration } })
-  //     .from(ref.current, { opacity: 0 })
-  //     .to(ref.current, { opacity: 100 });
-  // }, [activeService]);
 
   return (
     <div className="grid grid-cols-2 gap-x-12 mt-16 mid:mt-12 xs:mt-10 mid2:grid-cols-[600px] justify-center lg:grid-cols-1">
