@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { ArrowIcon } from '../../../Icons';
+import { DotsIcon } from '../../../Icons/SVG/Dots';
 
 export interface IllustrationProps {
   width: number;
@@ -43,12 +44,7 @@ const Illustration: React.FC<IllustrationProps> = ({
 
       {activeTag !== 'Backend' && (
         <div className="absolute -bottom-8 -left-6 z-[-1] xs:hidden">
-          <Image
-            src="/images/dots.svg"
-            width={130}
-            height={257}
-            alt="dots" //TODO
-          />
+          <DotsIcon />
         </div>
       )}
     </div>

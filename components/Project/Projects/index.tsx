@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { DotsIcon } from '../../Icons/SVG/Dots';
 
 const SimilarProjects = () => {
   return (
@@ -18,12 +19,7 @@ const SimilarProjects = () => {
           </div>
 
           <div className="absolute -bottom-8 -left-6 z-[-1] xs:hidden">
-            <Image
-              src="/images/dots.svg"
-              width={130}
-              height={257}
-              alt="dots" //TODO
-            />
+            <DotsIcon />
           </div>
         </div>
 
@@ -39,12 +35,7 @@ const SimilarProjects = () => {
           </div>
 
           <div className="absolute -bottom-8 -left-6 z-[-1] xs:hidden">
-            <Image
-              src="/images/dots.svg"
-              width={130}
-              height={257}
-              alt="dots" //TODO
-            />
+            <DotsIcon />
           </div>
         </div>
       </div>

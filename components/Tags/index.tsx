@@ -18,12 +18,7 @@ const Tags: React.FC<TagsProps> = ({
     <div className={`flex mt-9 gap-x-[14px] xs:gap-x-[12px] ${className}`}>
       {tags.map(_tag => {
         return (
-          <div
-            key={v4()}
-            onClick={() => {
-              setActive(_tag);
-            }}
-          >
+          <div key={v4()} onClick={() => setActive(_tag)}>
             <Tag tag={_tag} active={activeTag === _tag ? true : false} />
           </div>
         );

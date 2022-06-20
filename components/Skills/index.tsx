@@ -1,10 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { v4 } from 'uuid';
 import { skills } from '../../utils';
 import Content from '../Content';
 import Tags from '../Tags';
 import Skill from './Skill';
-import gsap from 'gsap';
 
 const Skills = () => {
   const tags = ['All skills', 'Frontend', 'Backend'];
