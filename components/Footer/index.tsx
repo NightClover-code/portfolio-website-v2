@@ -30,13 +30,15 @@ const Footer = () => {
         </div>
 
         <Link href="/contact" passHref>
-          <div className="relative cursor-pointer smooth footer:mt-10 mt-3 text-center px-14 rounded-full flex w-44 h-44 flex-col items-center justify-center border-dotted border-2 border-black">
-            <h4 className="text-[14px] uppercase tracking-[3px] font-medium">
-              Project
-            </h4>
-            <h2 className="leading-[35px] mt-1">Contact Achraf</h2>
+          <div className="group relative cursor-pointer smooth footer:mt-10 mt-3 text-center px-14 rounded-full flex w-44 h-44 flex-col items-center justify-center border-dotted border-2 border-black">
+            <div className="group-hover:opacity-0 opacity-100 transition-opacity duration-300">
+              <h4 className="text-[14px] uppercase tracking-[3px] font-medium">
+                Project
+              </h4>
+              <h2 className="leading-[35px] mt-1">Contact Achraf</h2>
+            </div>
 
-            <div className="absolute bottom-2">
+            <div className="opacity-0 group-hover:opacity-100 absolute bottom-[50%] left-[50%] -translate-x-[50%] translate-y-[50%] animate scale-[200%]">
               <ArrowIcon color="#0D0D0D" />
             </div>
           </div>
