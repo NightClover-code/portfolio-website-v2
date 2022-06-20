@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
   GitHubIcon,
   InstagramIcon,
@@ -26,12 +27,14 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="cursor-pointer smooth footer:mt-10 mt-3 text-center px-14 rounded-full flex w-44 h-44 flex-col items-center justify-center border-dotted border-2 border-black">
-          <h4 className="text-[14px] uppercase tracking-[3px] font-medium">
-            Project
-          </h4>
-          <h2 className="leading-[35px] mt-1">Contact Achraf</h2>
-        </div>
+        <Link href="/contact" passHref>
+          <div className="cursor-pointer smooth footer:mt-10 mt-3 text-center px-14 rounded-full flex w-44 h-44 flex-col items-center justify-center border-dotted border-2 border-black">
+            <h4 className="text-[14px] uppercase tracking-[3px] font-medium">
+              Project
+            </h4>
+            <h2 className="leading-[35px] mt-1">Contact Achraf</h2>
+          </div>
+        </Link>
       </div>
 
       <div className="flex items-center justify-between mt-20 footer:mt-16">

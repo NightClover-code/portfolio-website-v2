@@ -21,7 +21,13 @@ const Instagram = () => {
           </span>
         </Content>
 
-        <PrimaryButton className="mt-8">Follow me</PrimaryButton>
+        <a
+          href="https://instagram.com/achrafdev"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <PrimaryButton className="mt-8">Follow me</PrimaryButton>
+        </a>
       </div>
 
       <div className="mid:mt-8">
