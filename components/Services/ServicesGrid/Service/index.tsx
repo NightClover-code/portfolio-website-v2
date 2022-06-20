@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+
 export interface ServiceProps {
   title: string;
   description: string;
@@ -13,11 +15,15 @@ const Service: React.FC<ServiceProps> = ({
   active,
   onClick,
 }) => {
+  const ref = useRef<HTMLDivElement | null>(null);
+
   return (
     <div
-      className={`cursor-pointer border-2 ${
+      className={`cursor-pointer transition-colors border-2 ${
         active ? 'border-blue bg-blue' : 'border-black'
       } rounded-lg px-6 py-6 xs:py-3 xs:px-4`}
+      ref={ref}
+      data-aos={active && 'fade-in'}
       onClick={onClick}
     >
       <div

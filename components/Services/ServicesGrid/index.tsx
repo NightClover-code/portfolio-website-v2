@@ -4,15 +4,13 @@ import { v4 } from 'uuid';
 import { useWindowWidth } from '../../../hooks';
 import { services } from '../../../utils';
 import Service, { ServiceProps } from './Service';
-import classNames from 'classnames';
-import styles from './Services.module.css';
 
 const ServicesGrid = () => {
   const [activeService, setService] = useState<ServiceProps>(services[0]);
   const [activeIndex, setIndex] = useState<number>(0);
 
   const _width = useWindowWidth();
-  // const ref = useRef<HTMLDivElement | null>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
 
   // useEffect(() => {
   //   gsap
@@ -20,10 +18,6 @@ const ServicesGrid = () => {
   //     .from(ref.current, { opacity: 0 })
   //     .to(ref.current, { opacity: 100 });
   // }, [activeService]);
-
-  const [animate, setAnimate] = useState(false);
-
-  const handleClick = () => setAnimate(!animate);
 
   return (
     <div className="grid grid-cols-2 gap-x-12 mt-16 mid:mt-12 xs:mt-10 mid2:grid-cols-[600px] justify-center lg:grid-cols-1">
@@ -35,7 +29,6 @@ const ServicesGrid = () => {
               onClick={() => {
                 setService(_service);
                 setIndex(i);
-                handleClick();
               }}
               active={activeService === _service ? true : false}
               {..._service}
@@ -44,7 +37,7 @@ const ServicesGrid = () => {
         })}
       </div>
 
-      <div className={classNames(styles.animate, animate && styles.grow)}>
+      <div className="mid2:mt-10">
         <Image
           src={`/images/services/${services[activeIndex].imgSrc}`}
           width={600}

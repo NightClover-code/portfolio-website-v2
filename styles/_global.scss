@@ -78,5 +78,13 @@ svg path {
 }
 
 .project__details .primary__btn {
-  @apply px-10 ;
+  @apply px-10;
+}
+
+.animate__services {
+  @apply transition-colors border-blue bg-blue;
+
+  .text {
+    @apply text-offWhite;
+  }
 }

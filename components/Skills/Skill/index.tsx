@@ -17,7 +17,7 @@ const Skill: React.FC<SkillProps> = ({ title, mastery }) => {
   }, [mastery]);
 
   return (
-    <div className="mt-10 xs:mt-8" data-aos="fade-up">
+    <div className="mt-10 xs:mt-8" data-aos="fade-in">
       <h3 className="font-semibold text-sm">{title}</h3>
       <div className="relative bg-gray w-full h-[6px] mt-2">
         <div

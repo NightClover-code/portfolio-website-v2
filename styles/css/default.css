@@ -79,6 +79,14 @@ svg path {
   @apply px-10;
 }
 
+.animate__services {
+  @apply transition-colors border-blue bg-blue;
+}
+
+.animate__services .text {
+  @apply text-offWhite;
+}
+
 * {
   margin: 0;
   padding: 0;
