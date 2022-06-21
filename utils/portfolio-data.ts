@@ -7,7 +7,7 @@ export const frontendItems = [
       `,
     },
     image: {
-      imgSrc: 'frontend/team.svg',
+      imgSrc: 'frontend/team.png',
       width: 570,
       height: 570,
     },

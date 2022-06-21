@@ -25,7 +25,7 @@ const Illustration: React.FC<IllustrationProps> = ({
         }}
       >
         <Image
-          src={`/images/portfolio/${imgSrc}`}
+          src={`https://res.cloudinary.com/achraf-dev/image/upload/v1655829128/Portfolio-v2/team_g0coen.jpg`}
           width={width}
           height={height}
           alt="team" //TODO
