@@ -7,7 +7,7 @@ export const frontendItems = [
       `,
     },
     image: {
-      imgSrc: 'frontend/team.png',
+      imgSrc: 'frontend/team.jpg',
       width: 570,
       height: 570,
     },
@@ -33,9 +33,9 @@ export const frontendItems = [
       `,
     },
     image: {
-      imgSrc: 'frontend/easybank.svg',
+      imgSrc: 'frontend/easybank.jpg',
       width: 570,
-      height: 570,
+      height: 510,
     },
   },
 ];
@@ -65,7 +65,7 @@ export const fullStackItems = [
       `,
     },
     image: {
-      imgSrc: 'full-stack/coding-env.png',
+      imgSrc: 'full-stack/coding-env.jpg',
       width: 570,
       height: 434,
     },

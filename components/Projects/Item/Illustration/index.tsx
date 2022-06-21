@@ -25,10 +25,11 @@ const Illustration: React.FC<IllustrationProps> = ({
         }}
       >
         <Image
-          src={`https://res.cloudinary.com/achraf-dev/image/upload/v1655829128/Portfolio-v2/team_g0coen.jpg`}
+          src={`/images/portfolio/${imgSrc}`}
           width={width}
           height={height}
           alt="team" //TODO
+          quality={100}
         />
       </div>
 
