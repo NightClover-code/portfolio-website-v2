@@ -25,7 +25,11 @@ export const services = [
     description: `
       I’ll start by making a suitable design for your website.
     `,
-    imgSrc: 'design.jpg',
+    image: {
+      imgSrc: 'design.jpg',
+      width: 1171,
+      height: 781,
+    },
     Icon: DesignIcon,
   },
   {
@@ -33,7 +37,11 @@ export const services = [
     description: `
       Then comes the build, the step where the website goes live on the web. 
     `,
-    imgSrc: 'development.jpg',
+    image: {
+      imgSrc: 'development.jpg',
+      width: 1172,
+      height: 780,
+    },
     Icon: DevelopmentIcon,
   },
   {
@@ -41,7 +49,11 @@ export const services = [
     description: `
       To finish things off, a boost in SEO to rank your website at google’s top searches.
     `,
-    imgSrc: 'seo.jpg',
+    image: {
+      imgSrc: 'seo.jpg',
+      width: 3008,
+      height: 2177,
+    },
     Icon: SEOIcon,
   },
 ];

@@ -30,7 +30,7 @@ const Instagram = () => {
         </a>
       </div>
 
-      <div className="mid:mt-8 max-w-[600px]">
+      <div className="mid:mt-10 max-w-[600px] mid2:max-w-[500px] mid:max-w-none">
         <Image
           src="/images/instagram.jpg"
           width={6252}
