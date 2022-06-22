@@ -1,11 +1,18 @@
 import { useState } from 'react';
 import { v4 } from 'uuid';
+import { ProjectInterface } from '../../interfaces';
 import { portfolio } from '../../utils';
 import Content from '../Content';
 import Tags from '../Tags';
 import PortolioItem from './Item';
 
-const Projects = () => {
+interface ProjectsProps {
+  projects: ProjectInterface[];
+}
+
+const Projects: React.FC<ProjectsProps> = ({ projects }) => {
+  console.log(projects);
+
   const tags = ['Frontend', 'Backend', 'FullStack'];
 
   const [activeTag, setActive] = useState<string>('Frontend');
