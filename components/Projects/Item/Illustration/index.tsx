@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { ImageInterface } from '../../../../interfaces';
-import { ArrowIcon } from '../../../Icons';
-import { DotsIcon } from '../../../Icons/SVG/Dots';
+import { ArrowIcon, DotsIcon } from '../../../Icons';
 
 interface IllustrationProps extends ImageInterface {
   activeTag?: string;
@@ -10,7 +9,8 @@ interface IllustrationProps extends ImageInterface {
 const Illustration: React.FC<IllustrationProps> = ({
   width,
   height,
-  src,
+  url,
+  alt,
   activeTag,
 }) => {
   return (
@@ -23,12 +23,7 @@ const Illustration: React.FC<IllustrationProps> = ({
             activeTag !== 'Backend' ? '0px 4px 40px rgba(0, 0, 0, 0.07)' : '',
         }}
       >
-        <Image
-          src={`/images/portfolio/${src}`}
-          width={width}
-          height={height}
-          alt="team" //TODO
-        />
+        <Image src={url} width={width} height={height} alt={alt} />
       </div>
 
       <div className="overflow-hidden opacity-0 group-hover:opacity-100 flex items-center absolute -bottom-8 right-0 transition-opacity duration-200">

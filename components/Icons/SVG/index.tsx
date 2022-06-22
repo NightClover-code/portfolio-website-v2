@@ -46,3 +46,5 @@ export const ArrowIcon: React.FC<{ color?: string }> = ({ color }) => (
     />
   </svg>
 );
+
+export * from './Dots';

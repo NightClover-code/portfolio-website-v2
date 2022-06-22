@@ -14,7 +14,7 @@ export interface ProjectInterface {
 }
 
 export interface ImageInterface {
-  src: string;
+  url: string;
   width: number;
   height: number;
   alt: string;
