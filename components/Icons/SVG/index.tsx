@@ -16,12 +16,17 @@ export const Waves: React.FC<WavesProps> = ({ left, right, bottom, top }) => (
   </div>
 );
 
-export const CircleWaves: React.FC<{ width: number }> = ({ width }) => (
-  <div className="absolute bottom-[-70px] right-[-50px] z-[-1] w-[250px] h-[250px] tiny:hidden">
+export const CircleWaves: React.FC = () => (
+  <div
+    className="absolute bottom-[-70px] right-[-50px]
+    xs:bottom-[-20px] xs:right-[-20px]
+    z-[-1] xs:max-w-[220px] xs:max-h-[220px] tiny:hidden"
+  >
     <Image
       src="/images/circle-waves.svg"
-      width={width! < 500 ? 230 : 250}
-      height={width! < 500 ? 230 : 250}
+      width={250}
+      height={250}
+      layout="intrinsic"
       alt="circle-waves"
     />
   </div>

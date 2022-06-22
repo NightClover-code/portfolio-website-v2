@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import { useWindowWidth } from '../../hooks';
 import PrimaryButton from '../Buttons/Primary';
 import {
   CircleWaves,
@@ -13,9 +12,6 @@ import Socials from '../Socials';
 
 const Hero = () => {
   const socialsIcons = [InstagramIcon, LinkedInIcon, GitHubIcon];
-  const _width = useWindowWidth();
-
-  const containerWidth = _width! < 550 ? _width! * 0.74 : '';
 
   return (
     <section className="hero__section mt-32 mid:mt-24 flex items-center justify-between mid:flex-col mid:items-center">
@@ -44,16 +40,14 @@ const Hero = () => {
         data-aos-delay="300"
       >
         <div className="border-2 border-heroBorder p-6 rounded-full border-dotted xs:p-4">
-          <div
-            className="relative rounded-full w-[375px] h-[375px] xxl:w-[340px] xxl:h-[340px] overflow-hidden mid:w-[400px] mid:h-[400px] xl:w-[300px] xl:h-[300px]"
-            style={{ width: containerWidth, height: containerWidth }}
-          >
+          <div className="rounded-full max-w-[375px] max-h-[375px] mid:max-w-[400px] mid:max-h-[400px] xl:max-w-[300px] xl:max-h-[300px] overflow-hidden flex items-center">
             <Image
               src="/images/profile.jpeg"
-              layout="fill"
+              layout="intrinsic"
+              width={900}
+              height={900}
               alt="profile" //TODO
               objectFit="cover"
-              objectPosition={'0 55%'}
               priority
             />
           </div>
@@ -61,7 +55,7 @@ const Hero = () => {
 
         <Waves left={-70} top={64} />
 
-        <CircleWaves width={_width!} />
+        <CircleWaves />
       </div>
     </section>
   );
