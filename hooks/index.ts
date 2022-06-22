@@ -1,2 +1,1 @@
-// export * from './useWindowWidth';
-export {};
+export * from './useWindowWidth';
