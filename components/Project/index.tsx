@@ -17,12 +17,11 @@ const Project = () => {
       <div className="flex flex-col justify-center">
         <Content {...config} />
 
-        <div className="mt-20 m-auto shadow-portfolioCard projects__card">
+        <div className="overflow-hidden rounded-[8px] mt-20 m-auto shadow-portfolioCard projects__card">
           <Image
-            src="/images/team.jpg"
-            height={4622}
+            src="/images/showcase/frontend/team.png"
+            height={4620}
             width={1440}
-            style={{ borderRadius: '8px' }}
             alt="random" //TODO
           />
         </div>
