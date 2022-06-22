@@ -1,7 +1,6 @@
 import Illustration, { IllustrationProps } from './Illustration';
 import Content, { ContentProps } from './Content';
 import { isEven } from '../../../utils';
-import { useWindowWidth } from '../../../hooks';
 
 interface ItemInterface {
   content: ContentProps;
@@ -16,8 +15,6 @@ const PortolioItem: React.FC<ItemInterface> = ({
   order,
   activeTag,
 }) => {
-  const width = useWindowWidth();
-
   const imgConfig = { ...image, activeTag };
 
   return (
@@ -25,7 +22,7 @@ const PortolioItem: React.FC<ItemInterface> = ({
       data-aos="fade-up"
       className={`project__item flex justify-between items-center mt-28 mid:mt-12 xs:mt-0 gap-x-20 mid:flex-col mid:items-start mid:mx-auto`}
     >
-      {isEven(order) || width! < 1000 ? (
+      {isEven(order) ? (
         <>
           <Content {...content} />
           <Illustration {...imgConfig} />
