@@ -8,7 +8,7 @@ const ServicesGrid = () => {
   const [activeService, setService] = useState<ServiceProps>(services[0]);
   const [activeIndex, setIndex] = useState<number>(0);
 
-  const { imgSrc } = services[activeIndex].image;
+  const { imgSrc } = services[activeIndex];
 
   return (
     <div className="grid grid-cols-2 gap-x-12 mt-16 mid:mt-12 xs:mt-10 mid2:grid-cols-[600px] justify-center lg:grid-cols-1">

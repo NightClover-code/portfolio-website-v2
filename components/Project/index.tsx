@@ -2,7 +2,6 @@ import Image from 'next/image';
 import BuiltWith from './BuiltWith';
 import Challenges from './Challenges';
 import Content from './Content';
-import SimilarProjects from './Projects';
 
 const Project = () => {
   const config = {
@@ -19,7 +18,7 @@ const Project = () => {
 
         <div className="overflow-hidden rounded-[8px] mt-20 m-auto shadow-portfolioCard projects__card">
           <Image
-            src="/images/showcase/frontend/team.png"
+            src="/images/showcase/frontend/team.webp"
             height={4620}
             width={1440}
             alt="random" //TODO
