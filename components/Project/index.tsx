@@ -19,9 +19,9 @@ const Project = () => {
 
         <div className="mt-20 m-auto shadow-portfolioCard projects__card">
           <Image
-            src="/images/team.svg"
-            height={3089}
-            width={962}
+            src="/images/team.jpg"
+            height={4622}
+            width={1440}
             style={{ borderRadius: '8px' }}
             alt="random" //TODO
           />

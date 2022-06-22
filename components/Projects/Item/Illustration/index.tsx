@@ -20,6 +20,7 @@ const Illustration: React.FC<IllustrationProps> = ({
       <div
         className="relative mid:mt-14 xs:mt-10 projects__card smooth group-hover:-translate-y-2 group-hover:translate-x-2"
         style={{
+          maxWidth: activeTag !== 'Backend' ? '570px' : '650px',
           boxShadow:
             activeTag !== 'Backend' ? '0px 4px 40px rgba(0, 0, 0, 0.07)' : '',
         }}
@@ -29,7 +30,6 @@ const Illustration: React.FC<IllustrationProps> = ({
           width={width}
           height={height}
           alt="team" //TODO
-          quality={100}
         />
       </div>
 

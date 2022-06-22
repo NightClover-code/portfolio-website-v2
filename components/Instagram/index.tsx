@@ -30,11 +30,11 @@ const Instagram = () => {
         </a>
       </div>
 
-      <div className="mid:mt-8">
+      <div className="mid:mt-8 max-w-[600px]">
         <Image
-          src="/images/instagram.webp"
-          width={589}
-          height={335}
+          src="/images/instagram.jpg"
+          width={6252}
+          height={3556}
           objectFit="cover"
           alt="any" //TODO
         />

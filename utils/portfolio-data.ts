@@ -8,8 +8,8 @@ export const frontendItems = [
     },
     image: {
       imgSrc: 'frontend/team.jpg',
-      width: 570,
-      height: 570,
+      width: 1080,
+      height: 1080,
     },
   },
   {
@@ -21,8 +21,8 @@ export const frontendItems = [
     },
     image: {
       imgSrc: 'frontend/manage.jpg',
-      width: 570,
-      height: 510,
+      width: 1080,
+      height: 969,
     },
   },
   {
@@ -34,8 +34,8 @@ export const frontendItems = [
     },
     image: {
       imgSrc: 'frontend/easybank.jpg',
-      width: 570,
-      height: 510,
+      width: 1080,
+      height: 969,
     },
   },
 ];
@@ -49,9 +49,9 @@ export const backendItems = [
       `,
     },
     image: {
-      imgSrc: 'backend/cars.svg',
-      width: 680,
-      height: 384,
+      imgSrc: 'backend/cars.jpg',
+      width: 2127,
+      height: 1250,
     },
   },
 ];
@@ -66,8 +66,8 @@ export const fullStackItems = [
     },
     image: {
       imgSrc: 'full-stack/coding-env.jpg',
-      width: 570,
-      height: 434,
+      width: 1080,
+      height: 824,
     },
   },
   // {
