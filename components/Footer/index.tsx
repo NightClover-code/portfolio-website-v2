@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="group relative cursor-pointer smooth footer:mt-10 mt-3 text-center px-14 rounded-full flex w-44 h-44 flex-col items-center justify-center border-dotted border-2 border-black">
             <div
               className={`${
-                !isTouch && 'group-hover:opacity-0'
+                !isTouch ? 'group-hover:opacity-0' : ''
               } transition-opacity duration-300`}
             >
               <h4 className="text-[14px] uppercase tracking-[3px] font-medium">
@@ -46,7 +46,7 @@ const Footer = () => {
 
             <div
               className={`${
-                !isTouch && 'group-hover:opacity-100 '
+                !isTouch ? 'group-hover:opacity-100' : ''
               } opacity-0 absolute bottom-[50%] left-[50%] -translate-x-[50%] translate-y-[50%] animate scale-[200%]`}
             >
               <ArrowIcon color="#0D0D0D" />
