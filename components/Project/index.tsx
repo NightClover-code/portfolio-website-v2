@@ -31,7 +31,7 @@ const Project = () => {
 
       <BuiltWith />
 
-      <SimilarProjects />
+      {/* <SimilarProjects /> */}
     </section>
   );
 };

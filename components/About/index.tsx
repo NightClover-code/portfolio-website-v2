@@ -12,14 +12,15 @@ const About = () => {
 
         <Waves right={-80} bottom={48} />
 
-        <div className="overflow-hidden mid2:mt-16">
+        <div className="overflow-hidden xmid2:mt-16">
           <Image
             src="/images/about.jpeg"
+            layout="intrinsic"
             width={418}
             height={574}
             objectFit="cover"
-            objectPosition={'0 90%'}
             style={{ borderRadius: '8px' }}
+            objectPosition={'0 90%'}
             alt="random" //TODO
           />
         </div>
