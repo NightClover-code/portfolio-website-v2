@@ -28,7 +28,7 @@ const Content = () => {
         </p>
         <p>
           Please feel free to{' '}
-          <Link href="contact" passHref>
+          <Link href="/contact" passHref>
             <span className="cursor-pointer underline">contact me</span>
           </Link>{' '}
           to further discuss your project!
