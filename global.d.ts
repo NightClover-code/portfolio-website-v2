@@ -1,3 +1,0 @@
-interface Window {
-  DocumentTouch: any;
-}
