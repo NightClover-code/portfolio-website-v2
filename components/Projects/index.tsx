@@ -11,8 +11,6 @@ interface ProjectsProps {
 }
 
 const Projects: React.FC<ProjectsProps> = ({ projects }) => {
-  console.log(projects);
-
   const tags = ['Frontend', 'Backend', 'FullStack'];
 
   const [activeTag, setActive] = useState<string>('Frontend');
@@ -43,14 +41,14 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
       </div>
 
       <div className="grid grid-cols-1 gap-y-12 mid:mt-8 xs:mt-16 xs:gap-y-14">
-        {portfolio.map(_item => {
-          return _item.category === activeTag
-            ? _item.items.map((__item, i) => (
+        {projects.map(({ category, projectItems }) => {
+          return category === activeTag
+            ? projectItems.map((_item, i) => (
                 <PortolioItem
                   order={i}
                   key={v4()}
                   activeTag={activeTag}
-                  {...__item}
+                  {..._item}
                 />
               ))
             : '';

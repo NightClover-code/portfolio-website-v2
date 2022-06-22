@@ -1,9 +1,7 @@
+import { ContentInterface } from '../../../../interfaces';
 import PrimaryButton from '../../../Buttons/Primary';
 
-export interface ContentProps {
-  title: string;
-  description: string;
-}
+interface ContentProps extends ContentInterface {}
 
 const Content: React.FC<ContentProps> = ({ title, description }) => (
   <div>

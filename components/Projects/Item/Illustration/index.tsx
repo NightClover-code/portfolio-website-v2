@@ -1,18 +1,16 @@
 import Image from 'next/image';
+import { ImageInterface } from '../../../../interfaces';
 import { ArrowIcon } from '../../../Icons';
 import { DotsIcon } from '../../../Icons/SVG/Dots';
 
-export interface IllustrationProps {
-  width: number;
-  height: number;
-  imgSrc: string;
+interface IllustrationProps extends ImageInterface {
   activeTag?: string;
 }
 
 const Illustration: React.FC<IllustrationProps> = ({
   width,
   height,
-  imgSrc,
+  src,
   activeTag,
 }) => {
   return (
@@ -26,7 +24,7 @@ const Illustration: React.FC<IllustrationProps> = ({
         }}
       >
         <Image
-          src={`/images/portfolio/${imgSrc}`}
+          src={`/images/portfolio/${src}`}
           width={width}
           height={height}
           alt="team" //TODO

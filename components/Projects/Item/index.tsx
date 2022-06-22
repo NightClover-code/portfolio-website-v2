@@ -1,24 +1,25 @@
-import Illustration, { IllustrationProps } from './Illustration';
-import Content, { ContentProps } from './Content';
+import Illustration from './Illustration';
+import Content from './Content';
 import { isEven } from '../../../utils';
 import { useWindowWidth } from '../../../hooks';
+import { ContentInterface, ImageInterface } from '../../../interfaces';
 
 interface ItemInterface {
-  content: ContentProps;
-  image: IllustrationProps;
+  content: ContentInterface;
+  homeImg: ImageInterface;
   activeTag: string;
   order: number;
 }
 
 const PortolioItem: React.FC<ItemInterface> = ({
   content,
-  image,
+  homeImg,
   order,
   activeTag,
 }) => {
   const width = useWindowWidth();
 
-  const imgConfig = { ...image, activeTag };
+  const imgConfig = { ...homeImg, activeTag };
 
   return (
     <div

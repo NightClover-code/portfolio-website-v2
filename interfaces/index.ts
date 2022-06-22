@@ -5,38 +5,39 @@ export interface IconInterface {
 }
 
 export interface ProjectInterface {
-  content: {
-    title: string;
-    description: string;
-    richTitle: {
-      raw: any;
-    };
-    slug: string;
-    link: {
-      website: string;
-      github: string;
-    };
-    challenge: {
-      description: {
-        raw: any;
-      };
-      challenges: string[];
-    };
-    technologies: {
-      raw: any;
-    }[];
-  };
-  homeImg: {
-    src: string;
-    width: number;
-    height: number;
-    alt: string;
-  };
+  category: string;
+  projectItems: {
+    content: ContentInterface;
+    homeImg: ImageInterface;
+    showcaseImg: ImageInterface;
+  }[];
+}
 
-  showcaseImg: {
-    src: string;
-    width: number;
-    height: number;
-    alt: string;
+export interface ImageInterface {
+  src: string;
+  width: number;
+  height: number;
+  alt: string;
+}
+
+export interface ContentInterface {
+  title: string;
+  description: string;
+  richTitle: {
+    raw: any;
   };
+  slug: string;
+  link: {
+    website: string;
+    github: string;
+  };
+  challenge: {
+    description: {
+      raw: any;
+    };
+    challenges: string[];
+  };
+  technologies: {
+    raw: any;
+  }[];
 }
