@@ -1,5 +1,6 @@
 interface PrimaryButtonProps {
   className?: string;
+  link?: string;
 }
 
 const PrimaryButton: React.FC<PrimaryButtonProps> = ({

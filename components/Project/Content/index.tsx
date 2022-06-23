@@ -20,19 +20,15 @@ const Content: React.FC<ContentProps> = ({ description, richTitle, link }) => {
 
       <div className="flex mt-8">
         {link?.website && (
-          <PrimaryButton className="mr-3">
-            <a href={link.website} target="_blank" rel="noreferrer">
-              Live site
-            </a>
-          </PrimaryButton>
+          <a href={link.website} target="_blank" rel="noreferrer">
+            <PrimaryButton className="mr-3">Live site</PrimaryButton>
+          </a>
         )}
 
         {link?.github && (
-          <SecondaryButton className="ml-3">
-            <a href={link.github} target="_blank" rel="noreferrer">
-              View code
-            </a>
-          </SecondaryButton>
+          <a href={link.github} target="_blank" rel="noreferrer">
+            <SecondaryButton className="ml-3">View code</SecondaryButton>
+          </a>
         )}
       </div>
     </div>
