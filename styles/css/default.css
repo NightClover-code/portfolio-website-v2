@@ -91,6 +91,14 @@ svg path {
   @apply transition-all duration-300 ease-in-out group-hover:-rotate-45;
 }
 
+.richTitle__container h1 {
+  @apply text-center xs:text-[36px] text-[40px];
+}
+
+code {
+  @apply font-merriweather text-blue;
+}
+
 * {
   margin: 0;
   padding: 0;

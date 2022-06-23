@@ -36,9 +36,7 @@ export interface ProjectItemInterface {
 }
 
 export interface Challenge {
-  description: {
-    raw: any;
-  };
+  description: Raw;
   challenges: string[];
 }
 
