@@ -6,11 +6,7 @@ export interface IconInterface {
 
 export interface ProjectInterface {
   category: string;
-  projectItems: {
-    content: ContentInterface;
-    homeImg: ImageInterface;
-    showcaseImg: ImageInterface;
-  }[];
+  projectItems: ProjectItem[];
 }
 
 export interface ImageInterface {
@@ -26,7 +22,6 @@ export interface ContentInterface {
   richTitle: {
     raw: any;
   };
-  slug: string;
   link: {
     website: string;
     github: string;
@@ -40,4 +35,11 @@ export interface ContentInterface {
   technologies: {
     raw: any;
   }[];
+}
+
+export interface ProjectItem {
+  slug: string;
+  content: ContentInterface;
+  homeImg: ImageInterface;
+  showcaseImg: ImageInterface;
 }

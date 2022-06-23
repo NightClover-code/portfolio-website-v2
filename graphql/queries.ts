@@ -7,6 +7,7 @@ export const projectsQuery = gql`
     projects {
       category
       projectItems {
+        slug
         content {
           title
           description

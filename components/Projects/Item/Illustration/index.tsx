@@ -1,9 +1,11 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { ImageInterface } from '../../../../interfaces';
 import { ArrowIcon, DotsIcon } from '../../../Icons';
 
 interface IllustrationProps extends ImageInterface {
   activeTag?: string;
+  slug: string;
 }
 
 const Illustration: React.FC<IllustrationProps> = ({
@@ -12,6 +14,7 @@ const Illustration: React.FC<IllustrationProps> = ({
   url,
   alt,
   activeTag,
+  slug,
 }) => {
   return (
     <div className={`relative cursor-pointer group`}>
@@ -23,7 +26,9 @@ const Illustration: React.FC<IllustrationProps> = ({
             activeTag !== 'Backend' ? '0px 4px 40px rgba(0, 0, 0, 0.07)' : '',
         }}
       >
-        <Image src={url} width={width} height={height} alt={alt} />
+        <Link href={`/${slug}`} passHref>
+          <Image src={url} width={width} height={height} alt={alt} />
+        </Link>
       </div>
 
       <div className="overflow-hidden opacity-0 group-hover:opacity-100 flex items-center absolute -bottom-8 right-0 transition-opacity duration-200">

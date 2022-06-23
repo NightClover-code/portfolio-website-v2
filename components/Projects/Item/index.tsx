@@ -2,11 +2,9 @@ import Illustration from './Illustration';
 import Content from './Content';
 import { isEven } from '../../../utils';
 import { useWindowWidth } from '../../../hooks';
-import { ContentInterface, ImageInterface } from '../../../interfaces';
+import { ProjectItem } from '../../../interfaces';
 
-interface ItemInterface {
-  content: ContentInterface;
-  homeImg: ImageInterface;
+interface ItemInterface extends ProjectItem {
   activeTag: string;
   order: number;
 }
@@ -15,11 +13,14 @@ const PortolioItem: React.FC<ItemInterface> = ({
   content,
   homeImg,
   order,
+  slug,
   activeTag,
 }) => {
   const width = useWindowWidth();
 
-  const imgConfig = { ...homeImg, activeTag };
+  const imgConfig = { ...homeImg, activeTag, slug };
+
+  const contentConfig = { ...content, slug };
 
   return (
     <div
@@ -28,13 +29,13 @@ const PortolioItem: React.FC<ItemInterface> = ({
     >
       {isEven(order) || width! < 1000 ? (
         <>
-          <Content {...content} />
+          <Content {...contentConfig} />
           <Illustration {...imgConfig} />
         </>
       ) : (
         <>
           <Illustration {...imgConfig} />
-          <Content {...content} />
+          <Content {...contentConfig} />
         </>
       )}
     </div>
