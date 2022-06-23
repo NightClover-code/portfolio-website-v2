@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import {
   ArrowIcon,
   GitHubIcon,
@@ -12,8 +13,19 @@ import Socials from '../Socials';
 const Footer = () => {
   const icons = [MailIcon, InstagramIcon, LinkedInIcon, GitHubIcon];
 
+  const router = useRouter();
+
+  const condition =
+    router.asPath !== '/about' &&
+    router.asPath !== '/' &&
+    router.asPath !== '/contact';
+
   return (
-    <footer className="mt-32 mid:mt-24 xs:mt-[70px] mb-6">
+    <footer
+      className={`${
+        !condition ? 'mt-32 mid:mt-24' : 'mt-24'
+      } xs:mt-[70px] mb-6`}
+    >
       <div className="flex justify-between gap-x-12 footer:flex-col xs:items-center">
         <div className="max-w-[400px]">
           <h1 className="leading-[46px] xs:text-[33px] xs:leading-[42px]">
