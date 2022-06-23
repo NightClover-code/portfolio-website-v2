@@ -13,7 +13,7 @@ const Footer = () => {
   const icons = [MailIcon, InstagramIcon, LinkedInIcon, GitHubIcon];
 
   return (
-    <footer className="global-mt mid:mt-34 mb-6">
+    <footer className="mt-32 mid:mt-24 xs:mt-[70px] mb-6">
       <div className="flex justify-between gap-x-12 footer:flex-col xs:items-center">
         <div className="max-w-[400px]">
           <h1 className="leading-[46px] xs:text-[33px] xs:leading-[42px]">

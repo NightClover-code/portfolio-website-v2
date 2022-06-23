@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { v4 } from 'uuid';
 import { ProjectInterface } from '../../interfaces';
-import { portfolio } from '../../utils';
 import Content from '../Content';
 import Tags from '../Tags';
 import PortolioItem from './Item';
