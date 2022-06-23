@@ -11,38 +11,55 @@ export const projectsQuery = gql`
         content {
           title
           description
-          richTitle {
-            raw
-          }
-          link {
-            website
-            github
-          }
-          challenge {
-            description {
-              raw
-            }
-            challenges
-          }
-          technologies {
-            raw
-          }
         }
-
         homeImg {
           width
           height
           alt
           url
         }
+      }
+    }
+  }
+`;
 
-        showcaseImgs {
-          width
-          height
-          alt
-          url
+export const projectQuery = gql`
+  query ProjectQuery($slug: String!) {
+    project: projectItem(where: { slug: $slug }) {
+      content {
+        title
+        description
+        richTitle {
+          raw
+        }
+        link {
+          website
+          github
+        }
+        challenge {
+          description {
+            raw
+          }
+          challenges
+        }
+        technologies {
+          raw
         }
       }
+      showcaseImgs {
+        width
+        height
+        alt
+        url
+      }
+    }
+  }
+`;
+
+export const projectItemsQuery = gql`
+  query ProjectItemsQuery {
+    projectItems {
+      slug
     }
   }
 `;

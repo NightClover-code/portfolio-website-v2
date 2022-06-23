@@ -2,9 +2,9 @@ import Illustration from './Illustration';
 import Content from './Content';
 import { isEven } from '../../../utils';
 import { useWindowWidth } from '../../../hooks';
-import { ProjectItem } from '../../../interfaces';
+import { ProjectItemInterface } from '../../../interfaces';
 
-interface ItemInterface extends ProjectItem {
+interface ItemInterface extends ProjectItemInterface {
   activeTag: string;
   order: number;
 }

@@ -1,17 +1,16 @@
+import { RichText } from '@graphcms/rich-text-react-renderer';
+import { ContentInterface } from '../../../interfaces';
 import PrimaryButton from '../../Buttons/Primary';
 import SecondaryButton from '../../Buttons/Secondary';
 
-interface ContentProps {
-  title: string;
-  description: string;
-}
+interface ContentProps extends ContentInterface {}
 
-const Content: React.FC<ContentProps> = ({ description, title }) => {
+const Content: React.FC<ContentProps> = ({ description, richTitle, link }) => {
   return (
     <div className="flex flex-col items-center justify-center">
       <h4 className="text-[16px]">Project Showcase</h4>
       <h1 className="mt-2 xs:text-[36px] text-[40px] text-center">
-        <span>Team</span> App website
+        <RichText content={richTitle?.raw.children} />
       </h1>
       <p
         className={`m-auto mt-4 text-offBlack max-w-[520px] text-center text-[17px]`}
@@ -20,8 +19,21 @@ const Content: React.FC<ContentProps> = ({ description, title }) => {
       </p>
 
       <div className="flex mt-8">
-        <PrimaryButton className="mr-3">Live site</PrimaryButton>
-        <SecondaryButton className="ml-3">View code</SecondaryButton>
+        {link?.website && (
+          <PrimaryButton className="mr-3">
+            <a href={link.website} target="_blank" rel="noreferrer">
+              Live site
+            </a>
+          </PrimaryButton>
+        )}
+
+        {link?.github && (
+          <SecondaryButton className="ml-3">
+            <a href={link.github} target="_blank" rel="noreferrer">
+              View code
+            </a>
+          </SecondaryButton>
+        )}
       </div>
     </div>
   );

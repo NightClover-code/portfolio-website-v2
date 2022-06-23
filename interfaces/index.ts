@@ -6,7 +6,7 @@ export interface IconInterface {
 
 export interface ProjectInterface {
   category: string;
-  projectItems: ProjectItem[];
+  projectItems: ProjectItemInterface[];
 }
 
 export interface ImageInterface {
@@ -17,27 +17,27 @@ export interface ImageInterface {
 }
 
 export interface ContentInterface {
-  title: string;
+  title?: string;
   description: string;
-  richTitle: {
+  richTitle?: {
     raw: any;
   };
-  link: {
+  link?: {
     website: string;
     github: string;
   };
-  challenge: {
+  challenge?: {
     description: {
       raw: any;
     };
     challenges: string[];
   };
-  technologies: {
+  technologies?: {
     raw: any;
   }[];
 }
 
-export interface ProjectItem {
+export interface ProjectItemInterface {
   slug: string;
   content: ContentInterface;
   homeImg: ImageInterface;
