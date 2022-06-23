@@ -10,7 +10,8 @@ interface ProjectProps {
 }
 
 const Project: React.FC<ProjectProps> = ({ project }) => {
-  const { richTitle, description, link, challenge } = project.content;
+  const { richTitle, description, link, challenge, technologies } =
+    project.content;
 
   const contentConfig = {
     richTitle,
@@ -35,7 +36,7 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
 
       <Challenges challenge={challenge!} />
 
-      <BuiltWith />
+      <BuiltWith technologies={technologies!} />
 
       {/* <SimilarProjects /> */}
     </section>

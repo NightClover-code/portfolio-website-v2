@@ -14,11 +14,11 @@ const Challenges: React.FC<{ challenge: Challenge }> = ({ challenge }) => {
       <p className="mt-3 font-bold">Here were some challenges: </p>
 
       <div className="ml-10 mt-4">
-        {/* {challenge.challenges.map(el => (
+        {challenge.challenges.map(el => (
           <li key={v4()} className="mb-2">
             {el}
           </li>
-        ))} */}
+        ))}
       </div>
     </section>
   );
