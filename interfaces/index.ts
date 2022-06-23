@@ -18,28 +18,30 @@ export interface ImageInterface {
 
 export interface ContentInterface {
   title?: string;
-  description: string;
-  richTitle?: {
-    raw: any;
-  };
+  description?: string;
+  richTitle?: Raw;
   link?: {
     website: string;
     github: string;
   };
-  challenge?: {
-    description: {
-      raw: any;
-    };
-    challenges: string[];
-  };
-  technologies?: {
-    raw: any;
-  }[];
+  challenge?: Challenge;
+  technologies?: Raw[];
 }
 
 export interface ProjectItemInterface {
   slug: string;
   content: ContentInterface;
   homeImg: ImageInterface;
-  showcaseImg: ImageInterface;
+  showcaseImgs: ImageInterface[];
+}
+
+export interface Challenge {
+  description: {
+    raw: any;
+  };
+  challenges: string[];
+}
+
+export interface Raw {
+  raw: any;
 }
