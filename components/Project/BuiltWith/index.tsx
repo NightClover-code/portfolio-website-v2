@@ -7,10 +7,8 @@ const BuiltWith: React.FC<{ technologies: Raw[] }> = ({ technologies }) => {
     <section className="built__with__section mt-12">
       <h2 className="font-bold">Built With</h2>
 
-      <div className="ml-10 mt-2">
-        {technologies.map(el => (
-          <RichText content={el.raw.children} key={v4()} />
-        ))}
+      <div className="ml-14 mt-2 builtWith">
+        <RichText content={technologies[0].raw.children} key={v4()} />
       </div>
     </section>
   );

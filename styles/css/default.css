@@ -99,6 +99,22 @@ code {
   @apply font-merriweather text-blue;
 }
 
+.challenges__section code {
+  @apply font-mulish;
+}
+
+.builtWith li {
+  @apply mb-2 list-disc;
+}
+
+.builtWith li a {
+  @apply text-blue;
+}
+
+.builtWith li a:hover {
+  @apply underline;
+}
+
 * {
   margin: 0;
   padding: 0;

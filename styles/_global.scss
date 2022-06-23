@@ -102,3 +102,21 @@ svg path {
 code {
   @apply font-merriweather text-blue;
 }
+
+.challenges__section {
+  code {
+    @apply font-mulish;
+  }
+}
+
+.builtWith {
+  li {
+    a {
+      @apply text-blue;
+      &:hover {
+        @apply underline;
+      }
+    }
+    @apply mb-2 list-disc;
+  }
+}

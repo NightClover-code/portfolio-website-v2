@@ -46,8 +46,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
     query: projectItemsQuery,
   });
 
-  console.log(data.projectItems);
-
   const paths = data.projectItems.map((project: ProjectItemInterface) => ({
     params: { slug: project.slug },
   }));
