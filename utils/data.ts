@@ -3,15 +3,7 @@ import {
   DevelopmentIcon,
   SEOIcon,
 } from '../components/Icons/Services';
-import { backendItems, frontendItems, fullStackItems } from './portfolio-data';
 import { allSkills, backendEndSkills, frontEndSkills } from './skills-data';
-
-//temp data before cms
-export const portfolio = [
-  { category: 'Frontend', items: frontendItems },
-  { category: 'Backend', items: backendItems },
-  { category: 'FullStack', items: fullStackItems },
-];
 
 export const skills = [
   { category: 'All skills', items: allSkills },

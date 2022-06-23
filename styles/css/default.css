@@ -103,6 +103,10 @@ code {
   @apply font-mulish;
 }
 
+.challenges__section .challenges__description p {
+  @apply mb-4;
+}
+
 .builtWith li {
   @apply mb-2 list-disc;
 }

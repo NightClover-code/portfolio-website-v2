@@ -1,6 +1,4 @@
-import Link from 'next/link';
 import { ContentInterface } from '../../../../interfaces';
-import PrimaryButton from '../../../Buttons/Primary';
 import PrimaryLink from '../../../Buttons/PrimaryLink';
 
 interface ContentProps extends ContentInterface {
