@@ -1,3 +1,4 @@
+import jump from 'jump.js';
 import Image from 'next/image';
 import React from 'react';
 import PrimaryButton from '../Buttons/Primary';
@@ -12,6 +13,13 @@ import Socials from '../Socials';
 
 const Hero = () => {
   const socialsIcons = [InstagramIcon, LinkedInIcon, GitHubIcon];
+
+  const onClickHandler = () => {
+    jump('.projects__section', {
+      offset: -140,
+      duration: 1000,
+    });
+  };
 
   return (
     <section className="hero__section mt-32 mid:mt-24 flex items-center justify-between mid:flex-col mid:items-center">
@@ -29,7 +37,10 @@ const Hero = () => {
           a good fit, I will give you a time and cost estimate.
         </p>
 
-        <PrimaryButton className="mt-10 mid:mt-8 xs:mt-6">
+        <PrimaryButton
+          onClick={onClickHandler}
+          className="mt-10 mid:mt-8 xs:mt-6"
+        >
           See my work
         </PrimaryButton>
       </div>

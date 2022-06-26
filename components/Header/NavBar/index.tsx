@@ -1,22 +1,15 @@
 import NavItem from './NavItem';
 import { v4 } from 'uuid';
 import Link from 'next/link';
+import { navItems } from '../../../utils';
 
 const NavBar = () => {
-  const navItems = [
-    { title: 'Home', href: '/' },
-    { title: 'Portfolio' },
-    { title: 'Skills' },
-    { title: 'Services' },
-    { title: 'About', href: '/about' },
-  ];
-
   return (
     <nav className="mt-1 mid:hidden">
       <ul className="flex items-center">
-        {navItems.map(({ title, href }) => {
+        {navItems.map(({ title, href, jumpOptions }) => {
           return (
-            <NavItem href={href} key={v4()}>
+            <NavItem href={href} jumpOptions={jumpOptions} key={v4()}>
               {title}
             </NavItem>
           );

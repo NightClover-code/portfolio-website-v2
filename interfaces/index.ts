@@ -43,3 +43,8 @@ export interface Challenge {
 export interface Raw {
   raw: any;
 }
+
+export interface JumpOptions {
+  jumpVal: string;
+  duration: number;
+}

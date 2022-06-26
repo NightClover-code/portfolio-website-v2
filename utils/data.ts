@@ -11,6 +11,32 @@ export const skills = [
   { category: 'Backend', items: backendEndSkills },
 ];
 
+export const navItems = [
+  { title: 'Home', href: '/' },
+  {
+    title: 'Portfolio',
+    jumpOptions: {
+      jumpVal: '.projects__section',
+      duration: 1000,
+    },
+  },
+  {
+    title: 'Skills',
+    jumpOptions: {
+      jumpVal: '.skills__section',
+      duration: 1500,
+    },
+  },
+  {
+    title: 'Services',
+    jumpOptions: {
+      jumpVal: '.services__section',
+      duration: 2000,
+    },
+  },
+  { title: 'About', href: '/about' },
+];
+
 export const services = [
   {
     title: 'Design',
