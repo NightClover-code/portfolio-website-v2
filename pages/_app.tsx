@@ -4,6 +4,7 @@ import '../styles/css/default.css';
 import type { AppProps } from 'next/app';
 import MainLayout from '../layouts/MainLayout';
 import { useEffect } from 'react';
+import { NavProvider } from '../context';
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -14,9 +15,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <MainLayout>
-      <Component {...pageProps} />
-    </MainLayout>
+    <NavProvider>
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
+    </NavProvider>
   );
 }
 

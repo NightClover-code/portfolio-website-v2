@@ -1,19 +1,20 @@
-// import { createContext, useState } from 'react';
-// import { ActiveTag, TagsState } from '../interfaces';
-// import { defaultTags } from '../utils';
+//importing context
+import { createContext, useState } from 'react';
+//importing types
+import { BooleanState } from '../interfaces';
 
-// export const TagsContext = createContext<TagsState>({
-//   activeTags: defaultTags,
-//   setActive: () => {},
-// });
+//context
+export const NavContext = createContext<BooleanState>({
+  isNavOpen: false,
+  setIsNavOpen: () => '',
+});
 
-// export const TagsProvider: React.FC = ({ children }) => {
-//   const [activeTags, setActive] = useState<ActiveTag[]>(defaultTags);
+export const NavProvider: React.FC = ({ children }) => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
-//   return (
-//     <TagsContext.Provider value={{ activeTags, setActive }}>
-//       {children}
-//     </TagsContext.Provider>
-//   );
-// };
-export {};
+  return (
+    <NavContext.Provider value={{ isNavOpen, setIsNavOpen }}>
+      {children}
+    </NavContext.Provider>
+  );
+};

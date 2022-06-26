@@ -1,3 +1,10 @@
+import { SetStateAction, Dispatch } from 'react';
+
+export interface BooleanState {
+  isNavOpen: boolean;
+  setIsNavOpen: Dispatch<SetStateAction<boolean>>;
+}
+
 export interface IconInterface {
   Icon: JSX.Element;
   href?: string;
