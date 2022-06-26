@@ -5,6 +5,7 @@ interface WavesProps {
   right?: number;
   top?: number;
   bottom?: number;
+  className?: string;
 }
 
 export const Waves: React.FC<WavesProps> = ({ left, right, bottom, top }) => (
@@ -16,11 +17,16 @@ export const Waves: React.FC<WavesProps> = ({ left, right, bottom, top }) => (
   </div>
 );
 
-export const CircleWaves: React.FC = () => (
+export const CircleWaves: React.FC<WavesProps> = ({
+  left,
+  right,
+  bottom,
+  top,
+  className,
+}) => (
   <div
-    className="absolute bottom-[-70px] right-[-50px]
-    xs:bottom-[-20px] xs:right-[-20px]
-    z-[-1] xs:max-w-[220px] xs:max-h-[220px] tiny:hidden"
+    className={`absolute z-[-1] ${className}`}
+    style={{ left, right, bottom, top }}
   >
     <Image
       src="/images/circle-waves.svg"

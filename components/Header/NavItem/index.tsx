@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { JumpOptions } from '../../../../interfaces';
-import { smoothJump } from '../../../../utils';
+import { JumpOptions } from '../../../interfaces';
+import { smoothJump } from '../../../utils';
 
 interface NavItemInterface {
   href?: string;

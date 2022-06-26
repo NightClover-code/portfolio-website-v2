@@ -1,4 +1,4 @@
-import NavItem from './NavItem';
+import NavItem from '../NavItem';
 import { v4 } from 'uuid';
 import Link from 'next/link';
 import { navItems } from '../../../utils';
@@ -16,7 +16,7 @@ const NavBar = () => {
         })}
         <li className="relative">
           <Link href="/contact" passHref>
-            <button className="contact__btn smooth hover:bg-blue hover:border-blue hover:text-offWhite">
+            <button className="ml-6 contact__btn smooth hover:bg-blue hover:border-blue hover:text-offWhite">
               Contact me
             </button>
           </Link>

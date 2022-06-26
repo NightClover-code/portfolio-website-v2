@@ -5,12 +5,18 @@ interface SocialsProps {
   Icons: IconInterface[];
   marginRight?: number;
   marginTop?: number;
+  className?: string;
 }
 
-const Socials: React.FC<SocialsProps> = ({ Icons, marginRight, marginTop }) => {
+const Socials: React.FC<SocialsProps> = ({
+  Icons,
+  marginRight,
+  marginTop,
+  className,
+}) => {
   return (
     <div
-      className="flex socials items-center"
+      className={`flex socials items-center ${className}`}
       style={{ marginTop: marginTop && `${marginTop}px` }}
     >
       {Icons.map(({ Icon, href, mailto }) => {

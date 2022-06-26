@@ -1,13 +1,21 @@
-import { Logo } from '../Icons';
-import { MenuIcon } from '../Icons/NavBar';
+import { useContext } from 'react';
+import { NavContext } from '../../context';
+import { Logo, MenuIcon } from '../Icons';
 import NavBar from './NavBar';
 
 const Header = () => {
+  const { setIsNavOpen } = useContext(NavContext);
+
   return (
     <header className="flex justify-between mt-10 items-center">
       <Logo />
       <NavBar />
-      <MenuIcon />
+      <div
+        className="menu hidden mid:block cursor-pointer"
+        onClick={() => setIsNavOpen(true)}
+      >
+        <MenuIcon />
+      </div>
     </header>
   );
 };

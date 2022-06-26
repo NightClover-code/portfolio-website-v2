@@ -7,7 +7,7 @@ button {
 }
 
 .contact__btn {
-  @apply border-2 border-black rounded-[4px] font-semibold px-4 py-2 ml-6;
+  @apply border-2 border-black rounded-[4px] font-semibold px-4 py-2;
 }
 
 .primary__btn {

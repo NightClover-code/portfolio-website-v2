@@ -66,7 +66,11 @@ const Hero = () => {
 
         <Waves left={-70} top={64} />
 
-        <CircleWaves />
+        <CircleWaves
+          bottom={-70}
+          right={-50}
+          className="xs:bottom-[-20px] xs:right-[-20px]  xs:max-w-[220px] xs:max-h-[220px] tiny:hidden"
+        />
       </div>
     </section>
   );
