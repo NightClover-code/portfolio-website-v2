@@ -6,7 +6,7 @@ const Content = () => {
   const Icons = [InstagramIcon, LinkedInIcon, GitHubIcon];
 
   return (
-    <div>
+    <div data-aos="fade-up">
       <h4 className="text-[16px]">Personal Info</h4>
       <h1 className="text-[40px] mt-1 xs:text-[36px]">About Achraf</h1>
       <div className="mt-4 max-w-[550px]">

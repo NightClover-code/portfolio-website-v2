@@ -28,6 +28,8 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
           <div
             className="overflow-hidden rounded-[8px] mt-20 m-auto shadow-portfolioCard projects__card"
             key={v4()}
+            data-aos="fade-up"
+            data-aos-delay="300"
           >
             <Image width={width} height={height} src={url} alt={alt} />
           </div>

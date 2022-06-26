@@ -13,7 +13,7 @@ const Instagram = () => {
 
   return (
     <section className="instagram__section flex items-center justify-between global-mt gap-x-12 mid:flex-col mid:items-start mid:w-[590px] mid:mx-auto lg:w-full">
-      <div>
+      <div data-aos="fade-up">
         <Content {...config}>
           Check out my{' '}
           <span className="bg-gradient-to-r from-instaFrom to-instaTo text-transparent bg-clip-text">
@@ -30,7 +30,11 @@ const Instagram = () => {
         </a>
       </div>
 
-      <div className="mid:mt-10 max-w-[600px] mid2:max-w-[500px] mid:max-w-none">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="200"
+        className="mid:mt-10 max-w-[600px] mid2:max-w-[500px] mid:max-w-none"
+      >
         <Image
           src="/images/instagram.jpg"
           width={6252}

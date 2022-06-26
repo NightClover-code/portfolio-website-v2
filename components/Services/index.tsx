@@ -13,7 +13,7 @@ const Services = () => {
 
   return (
     <section className="services__section global-mt">
-      <div className="center__content">
+      <div className="center__content" data-aos="fade-up">
         <Content {...config}>
           What I <span>do</span>
         </Content>

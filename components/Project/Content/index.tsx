@@ -7,7 +7,10 @@ interface ContentProps extends ContentInterface {}
 
 const Content: React.FC<ContentProps> = ({ description, richTitle, link }) => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div
+      className="flex flex-col items-center justify-center"
+      data-aos="fade-up"
+    >
       <h4 className="text-[16px] text-center">Project Showcase</h4>
       <div className="richTitle__container">
         <RichText content={richTitle?.raw.children} />

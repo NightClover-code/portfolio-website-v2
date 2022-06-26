@@ -27,7 +27,7 @@ const Skills = () => {
 
   return (
     <section className="skills__section global-mt flex items-center justify-between mb-20 gap-x-12 mid:flex-col mid:items-start mid:w-[600px] mid:mx-auto lg:w-full">
-      <div>
+      <div data-aos="fade-right">
         <Content {...contentConfig}>
           Technological <span>Skills</span>
         </Content>
@@ -35,7 +35,11 @@ const Skills = () => {
         <Tags className="xs:mt-8" {...tagsConfig} />
       </div>
 
-      <div className="w-[48%] mid:mt-4 xs:mt-4 mid:w-full skills">
+      <div
+        className="w-[48%] mid:mt-4 xs:mt-4 mid:w-full skills"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         {skills.map(_item => {
           return _item.category === activeTag
             ? _item.items.map((_item_, i) => <Skill {..._item_} key={v4()} />)

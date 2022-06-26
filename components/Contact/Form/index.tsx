@@ -19,7 +19,12 @@ const Form = () => {
   };
 
   return (
-    <form ref={ref} onSubmit={onSubmitHandler}>
+    <form
+      ref={ref}
+      onSubmit={onSubmitHandler}
+      data-aos="fade-left"
+      data-aos-delay="300"
+    >
       <div className="grid grid-cols-2 gap-x-3 items-end justify-between">
         <FormInput name="firstName" label="Full name" subLabel="First Name" />
 

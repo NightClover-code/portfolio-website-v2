@@ -12,7 +12,11 @@ const About = () => {
 
         <Waves right={-80} bottom={48} />
 
-        <div className="overflow-hidden mid2:mt-16">
+        <div
+          className="overflow-hidden mid2:mt-16"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
           <Image
             src="/images/about.jpeg"
             layout="intrinsic"

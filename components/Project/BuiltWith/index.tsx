@@ -4,7 +4,7 @@ import { Raw } from '../../../interfaces';
 
 const BuiltWith: React.FC<{ technologies: Raw[] }> = ({ technologies }) => {
   return (
-    <section className="built__with__section mt-12">
+    <section className="built__with__section mt-12" data-aos="fade-up">
       <h2 className="font-bold">Built With</h2>
 
       <div className="ml-14 mt-2 builtWith">

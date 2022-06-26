@@ -31,7 +31,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
 
   return (
     <section className="projects__section global-mt mb-10">
-      <div className="center__content">
+      <div className="center__content" data-aos="fade-up">
         <Content {...config}>
           My latest <span>work</span>
         </Content>
