@@ -16,7 +16,7 @@ const NavItem: React.FC<NavItemInterface> = ({
   const router = useRouter();
 
   const onClickHandler = () => {
-    if (router.query.id) {
+    if (router.asPath !== '/') {
       router
         .push('/')
         .then(() => smoothJump(jumpOptions!))
