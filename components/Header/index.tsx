@@ -1,10 +1,19 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { NavContext } from '../../context';
+import { disableScroll, hideNav } from '../../utils';
 import { Logo, MenuIcon } from '../Icons';
 import NavBar from './NavBar';
 
 const Header = () => {
-  const { setIsNavOpen } = useContext(NavContext);
+  const { setIsNavOpen, isNavOpen } = useContext(NavContext);
+
+  useEffect(() => {
+    hideNav(setIsNavOpen);
+  }, [setIsNavOpen]);
+
+  useEffect(() => {
+    disableScroll(isNavOpen);
+  }, [isNavOpen]);
 
   return (
     <header className="flex justify-between mt-10 items-center">

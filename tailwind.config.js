@@ -39,6 +39,8 @@ module.exports = {
         //gradients
         instaFrom: 'rgba(244, 114, 182, 1)',
         instaTo: 'rgba(220, 38, 38, 0.4)',
+        //background
+        overlay: 'rgba(0, 0, 0, 0.04)',
       },
       boxShadow: {
         portfolioCard: '0px 4px 40px rgba(0, 0, 0, 0.07)',

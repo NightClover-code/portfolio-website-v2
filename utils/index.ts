@@ -12,7 +12,7 @@ export const smoothJump = (jumpOptions: JumpOptions) =>
 
 export const hideNav = (setIsNavOpen: Dispatch<SetStateAction<boolean>>) => {
   window.addEventListener('resize', (e: any) => {
-    if (e.target.innerWidth > 710) {
+    if (e.target.innerWidth > 1000) {
       setIsNavOpen(false);
     }
   });

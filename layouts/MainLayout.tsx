@@ -8,12 +8,11 @@ const MainLayout: React.FC = ({ children }) => {
   const { isNavOpen } = useContext(NavContext);
 
   return (
-    <div className="app__container wrapper">
-      <div className="custom__container">
-        <div className={`${isNavOpen ? 'block translate-x-6' : 'hidden'}`}>
-          <MobileHeader />
-        </div>
-
+    <div className={`app__container wrapper`}>
+      <MobileHeader />
+      <div
+        className={`${isNavOpen ? 'overlay' : ''} relative custom__container`}
+      >
         <Header />
         {children}
         <Footer />
