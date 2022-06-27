@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-website-v2-nightclover-code.vercel.app/api/portfolio-sitemap
+Sitemap: https://achrafdev.com/api/portfolio-sitemap
