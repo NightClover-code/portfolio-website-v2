@@ -10,6 +10,7 @@ const MainLayout: React.FC = ({ children }) => {
   return (
     <div className={`app__container wrapper`}>
       <MobileHeader />
+
       <div
         className={`${isNavOpen ? 'overlay' : ''} relative custom__container`}
       >
