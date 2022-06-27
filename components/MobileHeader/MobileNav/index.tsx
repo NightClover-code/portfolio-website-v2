@@ -3,19 +3,17 @@ import Link from 'next/link';
 import { navItems } from '../../../utils';
 import NavItem from '../NavItem';
 
-const MobileNavBar = () => {
+const NavBar = () => {
   return (
     <nav className="mt-10">
-      <ul>
-        <div className="flex flex-col items-start">
-          {navItems.map(({ title, href, jumpOptions }) => {
-            return (
-              <NavItem href={href} jumpOptions={jumpOptions} key={v4()}>
-                {title}
-              </NavItem>
-            );
-          })}
-        </div>
+      <ul className="flex flex-col items-start">
+        {navItems.map(({ title, href, jumpOptions }) => {
+          return (
+            <NavItem href={href} jumpOptions={jumpOptions} key={v4()}>
+              {title}
+            </NavItem>
+          );
+        })}
         <li className="relative">
           <Link href="/contact" passHref>
             <button className="mt-10 contact__btn smooth hover:bg-blue hover:border-blue hover:text-offWhite">
@@ -28,4 +26,4 @@ const MobileNavBar = () => {
   );
 };
 
-export default MobileNavBar;
+export default NavBar;

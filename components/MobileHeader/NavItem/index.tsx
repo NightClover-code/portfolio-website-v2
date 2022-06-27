@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useContext, useEffect } from 'react';
-import { NavContext } from '../../../context';
 import { JumpOptions } from '../../../interfaces';
 import { smoothJump } from '../../../utils';
 
@@ -15,7 +13,6 @@ const NavItem: React.FC<NavItemInterface> = ({
   href,
   jumpOptions,
 }) => {
-  const { setIsNavOpen, isNavOpen } = useContext(NavContext);
   const router = useRouter();
 
   const onClickHandler = () => {

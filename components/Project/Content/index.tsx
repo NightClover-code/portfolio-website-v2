@@ -12,11 +12,11 @@ const Content: React.FC<ContentProps> = ({ description, richTitle, link }) => {
       data-aos="fade-up"
     >
       <h4 className="text-[16px] text-center">Project Showcase</h4>
-      <div className="richTitle__container">
+      <div className="richTitle__container mt-2">
         <RichText content={richTitle?.raw.children} />
       </div>
       <p
-        className={`m-auto mt-4 text-offBlack max-w-[520px] text-center text-[17px]`}
+        className={`m-auto mt-4 text-offBlack max-w-[500px] text-center text-[17px]`}
       >
         {description}
       </p>
