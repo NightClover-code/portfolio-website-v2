@@ -3,6 +3,7 @@ interface FormInputProps {
   height?: number;
   name?: string;
   label?: string;
+  fieldType?: string;
   type?: 'textarea' | 'text';
   subLabel?: string;
 }
@@ -12,6 +13,7 @@ const FormInput: React.FC<FormInputProps> = ({
   label,
   name,
   subLabel,
+  fieldType,
   height,
   type = 'text',
 }) => {
@@ -27,7 +29,7 @@ const FormInput: React.FC<FormInputProps> = ({
         <input
           required
           name={name}
-          type="text"
+          type={fieldType || 'text'}
           style={{ width, height: height || 48 }}
           className="mt-1 border-2 w-full rounded-[4px] border-[#E4E4E4] outline-none px-3 text-[17px]"
         />
