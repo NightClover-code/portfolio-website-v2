@@ -63,3 +63,15 @@ export const projectItemsQuery = gql`
     }
   }
 `;
+
+export const skillsQuery = gql`
+  query SkillsQuery {
+    skills {
+      category
+      skillItems {
+        mastery
+        title
+      }
+    }
+  }
+`;

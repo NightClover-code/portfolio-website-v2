@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import { v4 } from 'uuid';
-import { skills } from '../../utils';
+import { SkillInterface } from '../../interfaces';
 import Content from '../Content';
 import Tags from '../Tags';
 import Skill from './Skill';
 
-const Skills = () => {
+interface SkillsProps {
+  skills: SkillInterface[];
+}
+
+const Skills: React.FC<SkillsProps> = ({ skills }) => {
   const tags = ['All skills', 'Frontend', 'Backend'];
 
   const [activeTag, setActive] = useState<string>('All skills');
@@ -40,9 +44,9 @@ const Skills = () => {
         data-aos="fade-up"
         data-aos-delay="300"
       >
-        {skills.map(_item => {
-          return _item.category === activeTag
-            ? _item.items.map((_item_, i) => <Skill {..._item_} key={v4()} />)
+        {skills.map(({ category, skillItems }) => {
+          return category === activeTag
+            ? skillItems.map(_item => <Skill {..._item} key={v4()} />)
             : '';
         })}
       </div>

@@ -16,6 +16,16 @@ export interface ProjectInterface {
   projectItems: ProjectItemInterface[];
 }
 
+export interface SkillInterface {
+  category: string;
+  skillItems: SkillItemInterface[];
+}
+
+export interface SkillItemInterface {
+  title: string;
+  mastery: string;
+}
+
 export interface ImageInterface {
   url: string;
   width: number;

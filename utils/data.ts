@@ -3,13 +3,6 @@ import {
   DevelopmentIcon,
   SEOIcon,
 } from '../components/Icons/Services';
-import { allSkills, backendEndSkills, frontEndSkills } from './skills-data';
-
-export const skills = [
-  { category: 'All skills', items: allSkills },
-  { category: 'Frontend', items: frontEndSkills },
-  { category: 'Backend', items: backendEndSkills },
-];
 
 export const navItems = [
   { title: 'Home', href: '/' },

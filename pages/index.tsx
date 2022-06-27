@@ -5,23 +5,24 @@ import Projects from '../components/Projects';
 import SEO from '../components/SEO';
 import Services from '../components/Services';
 import Skills from '../components/Skills';
-import { projectsQuery } from '../graphql';
-import { ProjectInterface } from '../interfaces';
+import { projectsQuery, skillsQuery } from '../graphql';
+import { ProjectInterface, SkillInterface } from '../interfaces';
 import { client } from '../lib';
 import { seoConfigHome } from '../utils';
 
 interface HomeProps {
   projects: ProjectInterface[];
+  skills: SkillInterface[];
 }
 
-const HomePage: NextPage<HomeProps> = ({ projects }) => {
+const HomePage: NextPage<HomeProps> = ({ projects, skills }) => {
   return (
     <>
       <SEO {...seoConfigHome} />
       <>
         <Hero />
         <Projects projects={projects} />
-        <Skills />
+        <Skills skills={skills} />
         <Services />
         <Instagram />
       </>
@@ -30,15 +31,22 @@ const HomePage: NextPage<HomeProps> = ({ projects }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await client.query({
+  const {
+    data: { projects },
+  } = await client.query({
     query: projectsQuery,
   });
 
-  const projects = data.projects;
+  const {
+    data: { skills },
+  } = await client.query({
+    query: skillsQuery,
+  });
 
   return {
     props: {
       projects,
+      skills,
     },
   };
 };
