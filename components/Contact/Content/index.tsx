@@ -14,7 +14,7 @@ const Content = () => {
           <span>get in touch</span> with me.
         </p>
         <p>
-          Being for a <span>project</span>, a part-time role, a speaking
+          Be it for a <span>project</span>, a part-time role, a speaking
           engagement or simply to say hello, I&apos;m always happy and looking
           forward to hearing from you.
         </p>
