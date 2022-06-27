@@ -8,7 +8,7 @@ const ServicesGrid = () => {
   const [activeService, setService] = useState<ServiceProps>(services[0]);
   const [activeIndex, setIndex] = useState<number>(0);
 
-  const { imgSrc } = services[activeIndex];
+  const { imgSrc, title } = services[activeIndex];
 
   return (
     <div
@@ -36,7 +36,7 @@ const ServicesGrid = () => {
           src={`/images/services/${imgSrc}`}
           layout="fill"
           objectFit="cover"
-          alt="any" //TODO
+          alt={title.toLowerCase()}
         />
       </div>
     </div>

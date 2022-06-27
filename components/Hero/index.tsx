@@ -57,7 +57,7 @@ const Hero = () => {
               layout="intrinsic"
               width={900}
               height={900}
-              alt="profile" //TODO
+              alt="profile"
               objectFit="cover"
               priority
             />
