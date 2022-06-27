@@ -15,7 +15,7 @@ const sitemap = async (req: NextApiRequest, res: NextApiResponse) => {
       data: { projectItems },
     } = await client.query({ query: projectItemsQuery });
 
-    projectItems.data.map((_project: ProjectItemInterface) => {
+    projectItems.map((_project: ProjectItemInterface) => {
       links.push({
         url: `/${_project.slug}`,
         changefreq: 'daily',
