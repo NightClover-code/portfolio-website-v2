@@ -24,16 +24,18 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
       <div className="flex flex-col justify-center">
         <Content {...contentConfig} />
 
-        {project.showcaseImgs.map(({ alt, height, url, width }) => (
-          <div
-            className="overflow-hidden rounded-[8px] mt-20 m-auto shadow-portfolioCard projects__card"
-            key={v4()}
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <Image width={width} height={height} src={url} alt={alt} />
-          </div>
-        ))}
+        <div className="mt-4">
+          {project.showcaseImgs.map(({ alt, height, url, width }) => (
+            <div
+              className="overflow-hidden mt-14 mid:mt-10 rounded-[8px] m-auto shadow-portfolioCard projects__card"
+              key={v4()}
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <Image width={width} height={height} src={url} alt={alt} />
+            </div>
+          ))}
+        </div>
       </div>
 
       <Challenges challenge={challenge!} />

@@ -5,7 +5,7 @@ import { Challenge } from '../../../interfaces';
 const Challenges: React.FC<{ challenge: Challenge }> = ({ challenge }) => {
   return (
     <section
-      className="challenges__section mt-16 max-w-[700px]"
+      className="challenges__section mt-16 mid:mt-12 max-w-[700px]"
       data-aos="fade-up"
     >
       <h2 className="font-bold text-[28px] xs:text-[26px]">The Challenge</h2>
