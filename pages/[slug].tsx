@@ -5,16 +5,21 @@ import { projectItemsQuery, projectQuery } from '../graphql';
 import { ProjectItemInterface } from '../interfaces';
 import { client } from '../lib';
 
-import { seoConfigHome } from '../utils';
-
 interface ProjectPageProps {
   project: ProjectItemInterface;
 }
 
 const ProjectPage: NextPage<ProjectPageProps> = ({ project }) => {
+  const seoConfigProject = {
+    title: `${project.content.richTitleText} | Achraf Elmouhib`,
+    description: project.content.description!,
+    keywords:
+      'Web Designer, Web Developer, AchrafDev, Achraf Elmouhib, Freelancer, Design, Development, SEO, Portfolio Website, Achraf Dev, Websites, HTML, CSS, Modern Website, Portolfio',
+  };
+
   return (
     <>
-      <SEO {...seoConfigHome} />
+      <SEO {...seoConfigProject} />
       <>
         <Project project={project} />
       </>

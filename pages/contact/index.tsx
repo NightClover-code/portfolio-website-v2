@@ -1,12 +1,12 @@
 import { NextPage } from 'next';
 import Contact from '../../components/Contact';
 import SEO from '../../components/SEO';
-import { seoConfigHome } from '../../utils';
+import { seoConfigContact } from '../../utils';
 
 const HomePage: NextPage = () => {
   return (
     <>
-      <SEO {...seoConfigHome} />
+      <SEO {...seoConfigContact} />
       <>
         <Contact />
       </>

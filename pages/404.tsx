@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import SEO from '../components/SEO';
-import { seoConfigHome } from '../utils';
+import { seoConfigNotFound } from '../utils';
 
 const NotFound = () => {
   return (
     <>
-      <SEO {...seoConfigHome} />
+      <SEO {...seoConfigNotFound} />
       <div className="mt-24 text-[17px] font-bold">
         <p className="font-bold text-[17px] ">
           We couldn&apos;t find the page you were looking for. This is either

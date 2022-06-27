@@ -32,6 +32,7 @@ export const projectQuery = gql`
         richTitle {
           raw
         }
+        richTitleText
         link {
           website
           github

@@ -35,8 +35,9 @@ export interface ImageInterface {
 
 export interface ContentInterface {
   title?: string;
+  richTitleText?: string;
   description?: string;
-  richTitle?: Raw;
+  richTitle?: Raw | any;
   link?: {
     website: string;
     github: string;
