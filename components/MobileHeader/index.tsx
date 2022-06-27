@@ -18,7 +18,7 @@ const MobileHeader = () => {
 
   return (
     <div
-      className={`z-30 smooth fade-right absolute overflow-hidden bg-offWhite h-full max-w-[300px] w-[80%] shadow-lg top-0 pt-10 !duration-300 ${
+      className={`z-30 smooth fade-right absolute overflow-hidden bg-offWhite h-full max-w-[300px] w-[80%] shadow-navbar top-0 pt-10 !duration-300 ${
         isNavOpen ? 'left-0 opacity-100' : '-left-[100%] opacity-0'
       }`}
     >

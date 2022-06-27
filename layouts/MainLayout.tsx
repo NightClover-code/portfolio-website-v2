@@ -11,9 +11,7 @@ const MainLayout: React.FC = ({ children }) => {
     <div className={`app__container wrapper`}>
       <MobileHeader />
 
-      <div
-        className={`${isNavOpen ? 'overlay' : ''} relative custom__container`}
-      >
+      <div className={`custom__container`}>
         <Header />
         {children}
         <Footer />

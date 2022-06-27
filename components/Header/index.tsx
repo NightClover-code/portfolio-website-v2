@@ -16,11 +16,7 @@ const Header = () => {
   }, [isNavOpen]);
 
   return (
-    <header
-      className={`flex justify-between mt-10 items-center m-auto ${
-        isNavOpen ? 'w-[80%]' : ''
-      }`}
-    >
+    <header className={`flex justify-between mt-10 items-center m-auto`}>
       <Logo />
       <NavBar />
       <div
