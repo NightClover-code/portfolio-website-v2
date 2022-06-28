@@ -17,7 +17,10 @@ const SEO: React.FC<SEOProps> = ({ title, description, keywords }) => {
       {keywords && <meta name="keywords" content={keywords} />}
 
       <meta name="author" content="Achraf Elmouhib" />
-      {/* <meta name="google-site-verification" content="OdNjxBOWAKLRxcPw1mjjzOpIRjFoccL5r-0ann3QDOU" /> */}
+      <meta
+        name="google-site-verification"
+        content="9HJVggjWpsfNCddGtv1zT0GjC50nrJRYs1oMAof6r1o"
+      />
     </Head>
   );
 };
