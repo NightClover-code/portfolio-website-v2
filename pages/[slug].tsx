@@ -11,10 +11,9 @@ interface ProjectPageProps {
 
 const ProjectPage: NextPage<ProjectPageProps> = ({ project }) => {
   const seoConfigProject = {
-    title: `${project.content.richTitleText} | Achraf Elmouhib`,
+    title: `${project.content.richTitleText} Project | Achraf Elmouhib`,
     description: project.content.description!,
-    keywords:
-      'Web Designer, Web Developer, AchrafDev, Achraf Elmouhib, Freelancer, Design, Development, SEO, Portfolio Website, Achraf Dev, Websites, HTML, CSS, Modern Website, Portolfio',
+    keywords: `${project.content.richTitleText} project, Web Design, Web Development, Achraf Elmouhib, Design, Development, SEO, Portfolio Website, Frontend, Backend, Fullstack, Portfolio`,
   };
 
   return (
