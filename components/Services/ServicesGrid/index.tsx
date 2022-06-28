@@ -8,7 +8,26 @@ const ServicesGrid = () => {
   const [activeService, setService] = useState<ServiceProps>(services[0]);
   const [activeIndex, setIndex] = useState<number>(0);
 
+  const [counter, setCounter] = useState<number>(0);
+
   const { imgSrc, title } = services[activeIndex];
+
+  setTimeout(() => {
+    setTimeout(() => {
+      if (counter > 2) {
+        setCounter(0);
+      } else {
+        setService(services[counter]);
+        setIndex(counter);
+
+        setCounter(counter + 1);
+
+        if (counter === 2) {
+          setCounter(0);
+        }
+      }
+    }, 10);
+  }, 2500);
 
   return (
     <div

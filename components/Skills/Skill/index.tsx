@@ -13,8 +13,8 @@ const Skill: React.FC<SkillProps> = ({ title, mastery }) => {
     gsap
       .timeline({ defaults: { ease: 'in' } })
       .from(ref.current, { width: 0, duration: 0 })
-      .to(ref.current, { width: mastery, duration: 1 });
-  }, [mastery]);
+      .to(ref.current, { width: '100%', duration: 1 });
+  }, []);
 
   return (
     <div className="mt-10 xs:mt-8" data-aos="fade-in">
