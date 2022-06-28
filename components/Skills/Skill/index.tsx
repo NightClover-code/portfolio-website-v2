@@ -6,7 +6,7 @@ interface SkillProps {
   mastery: string;
 }
 
-const Skill: React.FC<SkillProps> = ({ title, mastery }) => {
+const Skill: React.FC<SkillProps> = ({ title }) => {
   const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {

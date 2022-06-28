@@ -70,7 +70,6 @@ export const skillsQuery = gql`
     skills {
       category
       skillItems {
-        mastery
         title
       }
     }
